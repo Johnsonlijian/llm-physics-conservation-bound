@@ -1,0 +1,1033 @@
+item_id,model_label,n_params_b,source_benchmark,topic,has_diagram,answer_type,d_c,question_chars,answer_chars,solution_chars,tokens_in,tokens_out,latency_s,is_correct,answer_type_proxy,benchmark_difficulty,benchmark_subfield,question_number_count,solution_number_count,question_equation_count,solution_equation_count,body_entity_term_count,latex_symbol_count
+PHYBench_495,Qwen14B,14.0,PHYBench,OPTICS,0,formula,0,2266,94,4588,529.0,530.0,11.48,0,formula,,,3,120,2,22,4,254
+PHYBench_600,Qwen14B,14.0,PHYBench,OPTICS,0,formula,0,731,24,551,258.0,697.0,15.14,0,formula,,,13,20,1,5,0,29
+PHYBench_285,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,0,593,26,1341,198.0,442.0,9.47,0,formula,,,1,29,0,7,9,59
+PHYBench_321,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,1139,101,724,335.0,423.0,9.11,0,formula,,,2,32,2,7,10,74
+PHYBench_674,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,4,554,32,1822,198.0,502.0,10.75,0,formula,,,1,102,0,20,3,150
+PHYBench_83,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,0,1130,42,2064,329.0,325.0,7.05,0,formula,,,9,127,5,16,1,202
+PHYBench_54,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,549,34,473,186.0,508.0,10.86,0,formula,,,1,23,0,5,1,20
+PHYBench_10,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,1,410,117,1085,185.0,649.0,13.79,0,formula,,,3,48,0,6,1,65
+PHYBench_33,Qwen14B,14.0,PHYBench,THERMODYNAMICS,0,formula,1,843,104,1409,262.0,320.0,7.06,0,formula,,,2,28,0,3,1,83
+PHYBench_41,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,469,51,352,183.0,558.0,12.1,0,formula,,,4,20,1,5,0,19
+PHYBench_453,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,1,2068,121,1091,533.0,707.0,15.27,0,formula,,,10,65,1,15,11,105
+PHYBench_281,Qwen14B,14.0,PHYBench,THERMODYNAMICS,0,formula,0,1063,48,1707,315.0,293.0,6.46,0,formula,,,7,45,1,15,0,109
+PHYBench_95,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,953,131,3020,307.0,771.0,16.84,0,formula,,,7,139,5,21,5,204
+PHYBench_101,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,5,1747,42,3871,472.0,817.0,17.77,0,formula,,,6,154,4,20,7,329
+PHYBench_630,Qwen14B,14.0,PHYBench,THERMODYNAMICS,0,formula,1,1166,78,1147,370.0,597.0,12.83,0,formula,,,17,59,0,13,8,114
+PHYBench_134,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,0,304,21,1419,158.0,452.0,9.77,0,formula,,,2,15,1,9,0,55
+PHYBench_650,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,2,767,70,1892,243.0,398.0,8.48,0,formula,,,1,55,0,11,2,106
+PHYBench_332,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,4,955,445,2997,287.0,567.0,12.35,0,formula,,,2,82,0,17,9,323
+PHYBench_250,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,1,1077,304,2246,343.0,803.0,17.32,0,formula,,,11,67,1,18,2,142
+PHYBench_409,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,1,1807,72,3453,485.0,513.0,11.22,0,formula,,,3,67,4,20,2,164
+PHYBench_133,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,0,191,21,1029,112.0,467.0,10.19,0,formula,,,0,13,0,11,1,50
+PHYBench_336,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,2,829,101,1447,231.0,593.0,12.75,0,formula,,,0,57,0,10,3,72
+PHYBench_88,Qwen14B,14.0,PHYBench,MODERN,0,formula,2,1639,149,2915,475.0,582.0,12.63,0,formula,,,12,62,0,20,4,244
+PHYBench_105,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,1,907,16,1294,356.0,686.0,14.81,0,formula,,,9,12,6,11,4,130
+PHYBench_617,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,2,941,51,2001,267.0,861.0,18.75,0,formula,,,1,67,1,20,10,137
+PHYBench_702,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,0,1012,51,4686,311.0,597.0,12.7,0,formula,,,5,163,0,20,4,296
+PHYBench_367,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,0,432,92,2458,192.0,668.0,14.45,0,formula,,,6,99,1,18,6,174
+PHYBench_497,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,1041,83,1423,303.0,392.0,8.47,0,formula,,,4,78,0,11,20,103
+PHYBench_457,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,2,696,297,881,212.0,791.0,17.06,0,formula,,,0,37,0,6,1,65
+PHYBench_432,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,1,985,139,690,293.0,842.0,18.45,0,formula,,,2,45,0,8,7,63
+PHYBench_284,Qwen14B,14.0,PHYBench,OPTICS,0,formula,0,1221,107,1745,357.0,253.0,5.57,0,formula,,,12,73,1,8,0,124
+PHYBench_39,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,626,47,495,205.0,595.0,12.9,1,formula,,,4,10,0,3,5,16
+PHYBench_124,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,514,52,1797,190.0,486.0,10.52,0,formula,,,2,36,0,16,10,150
+PHYBench_55,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,0,731,70,1621,227.0,642.0,14.02,0,formula,,,1,27,0,11,8,52
+PHYBench_419,Qwen14B,14.0,PHYBench,OPTICS,0,formula,0,710,258,1026,254.0,1024.0,22.17,0,formula,,,9,54,1,6,0,101
+PHYBench_458,Qwen14B,14.0,PHYBench,ADVANCED,0,formula,1,597,47,507,242.0,482.0,10.61,0,formula,,,1,21,1,5,0,48
+PHYBench_206,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,0,675,206,1318,251.0,280.0,6.06,0,formula,,,6,31,4,12,0,106
+PHYBench_204,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,0,658,81,769,217.0,834.0,17.94,0,formula,,,2,40,2,5,6,56
+PHYBench_478,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,1,795,41,670,241.0,335.0,7.4,1,formula,,,2,18,0,4,8,33
+PHYBench_71,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,2,1173,105,5316,394.0,702.0,15.19,0,formula,,,7,47,2,27,6,257
+PHYBench_259,Qwen14B,14.0,PHYBench,MODERN,0,formula,0,743,55,3134,250.0,880.0,19.06,0,formula,,,2,90,3,20,2,123
+PHYBench_766,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,2,367,73,3076,155.0,1024.0,22.53,0,formula,,,0,79,0,20,4,174
+PHYBench_716,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,2,1577,49,987,395.0,506.0,11.03,0,formula,,,2,43,0,8,10,47
+PHYBench_103,Qwen14B,14.0,PHYBench,THERMODYNAMICS,0,formula,1,744,30,1250,271.0,696.0,15.12,0,formula,,,12,23,1,9,0,47
+PHYBench_310,Qwen14B,14.0,PHYBench,MODERN,0,formula,3,550,151,510,196.0,657.0,14.22,0,formula,,,3,33,0,3,3,45
+PHYBench_110,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,2,597,73,1420,221.0,437.0,9.59,0,formula,,,10,27,0,14,3,83
+PHYBench_256,Qwen14B,14.0,PHYBench,MODERN,0,formula,3,906,34,2057,310.0,464.0,10.22,0,formula,,,9,82,4,20,6,138
+PHYBench_112,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,2,563,71,5191,204.0,1013.0,22.27,0,formula,,,4,140,1,24,5,346
+PHYBench_505,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,1370,108,818,379.0,897.0,19.4,0,formula,,,6,11,1,9,7,50
+PHYBench_331,Qwen14B,14.0,PHYBench,OPTICS,0,formula,0,1229,71,1503,308.0,434.0,9.45,0,formula,,,1,34,1,9,0,131
+PHYBench_498,Qwen14B,14.0,PHYBench,OPTICS,0,formula,0,1483,219,4675,396.0,794.0,17.04,0,formula,,,4,164,2,20,0,433
+PHYBench_737,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,3,592,45,1500,208.0,829.0,18.15,0,formula,,,1,102,1,12,4,100
+PHYBench_636,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,3,725,74,2021,249.0,575.0,12.42,0,formula,,,7,116,0,14,6,173
+PHYBench_420,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,982,40,2051,286.0,202.0,4.42,0,formula,,,2,67,1,19,2,84
+PHYBench_228,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,3,887,162,3088,268.0,385.0,8.33,0,formula,,,7,99,0,16,9,150
+PHYBench_450,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,2,767,104,719,234.0,703.0,15.36,0,formula,,,3,23,1,6,1,48
+PHYBench_708,Qwen14B,14.0,PHYBench,OPTICS,0,formula,0,1353,66,1571,367.0,802.0,17.31,0,formula,,,5,38,1,12,2,119
+PHYBench_649,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,3,915,96,1531,284.0,720.0,15.31,0,formula,,,5,83,2,9,8,114
+PHYBench_688,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,3,547,39,3170,198.0,665.0,14.31,0,formula,,,3,179,1,20,4,194
+PHYBench_118,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,1,256,29,791,140.0,450.0,9.77,0,formula,,,1,24,1,7,0,25
+PHYBench_318,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,0,433,60,650,172.0,620.0,13.35,0,formula,,,2,21,1,9,2,54
+PHYBench_62,Qwen14B,14.0,PHYBench,ADVANCED,0,formula,1,1959,28,1287,704.0,916.0,19.94,0,formula,,,31,34,10,8,0,192
+PHYBench_143,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,0,432,52,4134,159.0,245.0,5.37,0,formula,,,0,74,0,20,5,157
+PHYBench_401,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,3,702,69,2545,225.0,750.0,16.21,0,formula,,,3,61,0,20,4,133
+PHYBench_443,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,0,2090,105,1978,568.0,582.0,12.67,0,formula,,,15,94,5,20,6,161
+PHYBench_115,Qwen14B,14.0,PHYBench,ADVANCED,0,formula,1,1097,161,3972,343.0,647.0,13.99,0,formula,,,12,120,2,26,8,298
+PHYBench_493,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,2,990,92,2632,283.0,658.0,14.38,0,formula,,,2,202,0,16,1,217
+PHYBench_69,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,3,2905,102,4543,834.0,527.0,11.9,0,formula,,,21,129,5,20,13,398
+PHYBench_65,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,2,818,62,3674,237.0,294.0,6.4,0,formula,,,2,31,0,15,5,125
+PHYBench_131,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,0,680,26,918,263.0,446.0,9.75,0,formula,,,4,22,1,5,3,46
+PHYBench_709,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,879,45,1845,272.0,472.0,10.47,0,formula,,,0,68,0,15,0,130
+PHYBench_423,Qwen14B,14.0,PHYBench,THERMODYNAMICS,0,formula,1,643,105,3319,270.0,1024.0,22.0,0,formula,,,2,138,12,32,1,244
+PHYBench_36,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,2,914,62,3560,305.0,1021.0,22.04,0,formula,,,6,171,3,18,2,218
+PHYBench_333,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,2,477,170,1333,195.0,365.0,7.91,0,formula,,,3,54,0,13,1,108
+PHYBench_50,Qwen14B,14.0,PHYBench,THERMODYNAMICS,0,formula,1,820,182,3555,256.0,543.0,11.68,0,formula,,,5,64,0,20,10,158
+PHYBench_221,Qwen14B,14.0,PHYBench,MODERN,0,formula,3,853,403,1530,289.0,803.0,17.38,0,formula,,,7,72,1,17,8,115
+PHYBench_120,Qwen14B,14.0,PHYBench,THERMODYNAMICS,0,formula,1,445,54,875,169.0,390.0,8.51,0,formula,,,2,15,0,6,1,44
+PHYBench_121,Qwen14B,14.0,PHYBench,MODERN,0,formula,0,620,177,2348,201.0,701.0,15.15,0,formula,,,2,120,0,16,0,170
+PHYBench_648,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,3,933,109,2373,276.0,810.0,17.27,0,formula,,,3,43,0,20,7,78
+PHYBench_72,Qwen14B,14.0,PHYBench,THERMODYNAMICS,0,formula,1,1076,25,1823,329.0,1024.0,22.14,0,formula,,,8,121,3,20,2,132
+PHYBench_603,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,0,1547,59,605,398.0,556.0,12.15,0,formula,,,4,14,2,7,9,37
+PHYBench_670,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,1,1504,60,1434,451.0,1024.0,22.25,0,formula,,,7,37,3,16,15,109
+PHYBench_140,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,0,372,24,834,147.0,178.0,3.94,0,formula,,,0,21,0,8,4,27
+PHYBench_653,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,2,1030,41,2291,294.0,501.0,10.86,0,formula,,,1,86,0,20,1,189
+PHYBench_719,Qwen14B,14.0,PHYBench,THERMODYNAMICS,0,formula,1,919,42,2013,313.0,988.0,21.47,0,formula,,,5,17,1,11,8,61
+PHYBench_211,Qwen14B,14.0,PHYBench,MODERN,0,formula,0,691,39,3330,264.0,674.0,14.67,0,formula,,,5,93,4,20,0,231
+PHYBench_139,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,0,506,69,1236,192.0,652.0,14.02,0,formula,,,3,42,1,11,0,88
+PHYBench_106,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,685,35,641,211.0,353.0,7.67,0,formula,,,1,26,0,3,8,38
+PHYBench_58,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,0,1656,37,3243,593.0,443.0,9.71,0,formula,,,43,160,6,20,0,173
+PHYBench_412,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,0,1549,302,1064,446.0,890.0,19.13,0,formula,,,6,86,1,6,1,105
+PHYBench_43,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,1,703,439,2096,249.0,1024.0,22.02,0,formula,,,11,105,1,11,0,179
+PHYBench_117,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,2,919,49,1872,301.0,702.0,15.17,0,formula,,,2,33,3,12,3,87
+PHYBench_42,Qwen14B,14.0,PHYBench,OPTICS,0,formula,2,428,60,1527,171.0,605.0,13.01,0,formula,,,2,65,3,16,0,100
+PHYBench_45,Qwen14B,14.0,PHYBench,THERMODYNAMICS,0,formula,2,1132,107,1701,427.0,577.0,12.68,0,formula,,,7,35,6,16,8,165
+PHYBench_37,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,3,1203,29,2151,373.0,375.0,8.08,0,formula,,,9,47,3,19,1,184
+PHYBench_654,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,1329,114,1869,358.0,526.0,11.34,0,formula,,,3,82,0,20,9,91
+PHYBench_244,Qwen14B,14.0,PHYBench,THERMODYNAMICS,0,formula,0,445,26,413,184.0,545.0,11.73,0,formula,,,4,15,2,5,2,26
+PHYBench_25,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,4,449,21,777,180.0,728.0,16.23,0,formula,,,5,29,1,9,4,68
+PHYBench_100,Qwen14B,14.0,PHYBench,MECHANICS,0,formula,1,966,37,4601,266.0,567.0,12.45,0,formula,,,0,207,0,26,2,276
+PHYBench_89,Qwen14B,14.0,PHYBench,ELECTRICITY,0,formula,2,2220,386,5621,587.0,483.0,10.67,0,formula,,,14,280,4,28,14,442
+OlympiadBench_802,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,651,8,476,233.0,598.0,13.17,0,formula,Competition,Mechanics,6,3,0,5,0,21
+OlympiadBench_803,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,733,18,508,307.0,728.0,15.68,0,formula,Competition,Modern Physics,14,14,1,7,2,46
+OlympiadBench_806,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,637,20,1315,222.0,414.0,9.14,1,formula,Competition,Mechanics,6,29,0,19,1,67
+OlympiadBench_807,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,724,4,561,265.0,522.0,11.55,0,numeric,Competition,Mechanics,10,15,0,10,0,32
+OlympiadBench_808,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,849,7,346,279.0,629.0,13.72,1,formula,Competition,Mechanics,10,14,5,4,0,36
+OlympiadBench_810,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,1168,4,606,400.0,660.0,14.37,0,numeric,Competition,Electromagnetism,11,15,8,4,2,48
+OlympiadBench_811,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,823,6,390,282.0,406.0,8.83,0,numeric,Competition,Thermodynamics,7,7,4,4,0,38
+OlympiadBench_812,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,812,2,1093,238.0,787.0,17.25,0,numeric,Competition,Electromagnetism,5,27,0,4,13,33
+OlympiadBench_813,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,604,5,618,239.0,787.0,17.18,0,numeric,Competition,Electromagnetism,5,26,5,7,7,40
+OlympiadBench_814,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,483,5,558,173.0,269.0,5.85,0,formula,Competition,Optics,2,2,0,0,1,1
+OlympiadBench_816,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,535,4,321,191.0,302.0,6.53,0,numeric,Competition,Optics,2,4,0,3,1,5
+OlympiadBench_817,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,604,3,829,235.0,1024.0,22.29,0,numeric,Competition,Modern Physics,9,47,3,10,1,57
+OlympiadBench_819,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,2,1323,5,423,548.0,531.0,11.43,0,numeric,Competition,Modern Physics,29,9,2,6,2,55
+OlympiadBench_821,Qwen14B,14.0,OlympiadBench,Physics,0,formula,2,254,6,597,128.0,1024.0,22.51,0,formula,Competition,Modern Physics,1,35,1,9,4,44
+OlympiadBench_823,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,2,993,1,500,354.0,552.0,12.05,1,numeric,Competition,Mechanics,7,8,1,1,0,25
+OlympiadBench_826,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,1531,7,1350,417.0,1024.0,22.4,0,numeric,Competition,Thermodynamics,13,32,0,7,6,43
+OlympiadBench_828,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,1335,4,1885,402.0,648.0,14.42,0,numeric,Competition,Thermodynamics,7,32,3,17,5,96
+OlympiadBench_835,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,2,524,6,1779,210.0,1024.0,22.42,0,numeric,Competition,Mechanics,7,51,0,13,5,82
+OlympiadBench_836,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,422,5,2469,176.0,573.0,12.44,0,numeric,Competition,Electromagnetism,3,162,0,9,4,107
+OlympiadBench_837,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,874,7,1071,292.0,523.0,11.49,0,numeric,Competition,Mechanics,10,30,3,10,0,93
+OlympiadBench_840,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,526,8,3107,188.0,442.0,9.53,0,formula,Competition,Electromagnetism,3,69,2,20,2,125
+OlympiadBench_842,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,729,5,3147,280.0,888.0,19.67,0,numeric,Competition,Mechanics,9,38,8,20,4,179
+OlympiadBench_844,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,212,1,571,114.0,1024.0,22.31,0,numeric,Competition,Electromagnetism,3,24,0,2,0,18
+OlympiadBench_847,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,637,20,621,237.0,792.0,17.54,0,formula,Competition,Electromagnetism,6,26,4,3,0,37
+OlympiadBench_849,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,1147,7,1261,383.0,704.0,15.01,0,formula,Competition,Thermodynamics,14,12,2,10,1,38
+OlympiadBench_851,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,480,4,2511,203.0,633.0,13.96,0,numeric,Competition,Modern Physics,1,15,1,3,2,91
+OlympiadBench_853,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,684,6,579,236.0,767.0,16.62,0,formula,Competition,Mechanics,4,24,2,5,2,32
+OlympiadBench_856,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,367,5,1875,190.0,510.0,11.15,0,numeric,Competition,Electromagnetism,5,36,4,7,1,81
+OlympiadBench_860,Qwen14B,14.0,OlympiadBench,Physics,0,formula,2,410,6,1324,174.0,545.0,12.07,0,formula,Competition,Mechanics,2,46,2,17,1,116
+OlympiadBench_861,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,418,21,1290,177.0,527.0,11.57,0,formula,Competition,Mechanics,1,45,0,15,0,68
+OlympiadBench_863,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,2,437,4,1050,178.0,479.0,10.42,0,numeric,Competition,Modern Physics,3,38,1,6,6,48
+OlympiadBench_865,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,602,6,1736,281.0,511.0,11.31,0,formula,Competition,Mechanics,15,37,2,9,2,123
+OlympiadBench_866,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,528,20,1964,238.0,773.0,16.7,0,formula,Competition,Mechanics,11,25,4,8,2,57
+OlympiadBench_868,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,638,7,2516,217.0,509.0,11.22,0,formula,Competition,Mechanics,3,20,0,8,0,60
+OlympiadBench_869,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,667,23,1422,259.0,1024.0,22.35,0,formula,Competition,Mechanics,10,10,5,3,4,27
+OlympiadBench_870,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,1423,2,2028,421.0,687.0,15.06,0,numeric,Competition,Mechanics,9,71,0,6,0,85
+OlympiadBench_871,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,566,21,2912,249.0,596.0,12.83,0,formula,Competition,Mechanics,13,108,1,20,0,225
+OlympiadBench_872,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,671,5,1901,285.0,692.0,15.21,0,numeric,Competition,Thermodynamics,9,12,0,0,0,65
+OlympiadBench_873,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,363,1,242,169.0,532.0,11.46,1,numeric,Competition,Mechanics,3,4,3,2,0,21
+OlympiadBench_876,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,824,2,328,297.0,757.0,16.2,0,numeric,Competition,Mechanics,10,8,2,7,5,26
+OlympiadBench_877,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,676,4,595,250.0,425.0,9.31,0,numeric,Competition,Mechanics,8,11,0,6,1,28
+OlympiadBench_878,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,319,28,1471,132.0,475.0,10.37,0,formula,Competition,Optics,1,39,1,12,0,101
+OlympiadBench_881,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,2525,2,631,849.0,1024.0,22.34,0,numeric,Competition,Thermodynamics,28,16,7,6,2,104
+OlympiadBench_883,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,977,7,442,316.0,447.0,9.98,0,formula,Competition,Electromagnetism,11,16,5,5,9,30
+OlympiadBench_884,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,397,21,660,175.0,551.0,12.01,0,formula,Competition,Thermodynamics,3,4,3,1,1,16
+OlympiadBench_885,Qwen14B,14.0,OlympiadBench,Physics,0,formula,2,1097,7,924,401.0,689.0,14.96,0,formula,Competition,Mechanics,19,15,1,8,5,53
+OlympiadBench_888,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,1135,6,1842,329.0,776.0,16.91,0,formula,Competition,Mechanics,12,73,1,20,0,111
+OlympiadBench_890,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,358,3,2637,175.0,461.0,10.0,0,numeric,Competition,Optics,4,43,2,8,0,44
+OlympiadBench_891,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,451,39,931,195.0,484.0,10.55,0,formula,Competition,Mechanics,6,36,5,11,2,84
+OlympiadBench_893,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,697,7,1170,264.0,647.0,13.85,0,formula,Competition,Mechanics,9,24,7,12,4,78
+OlympiadBench_894,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,527,8,2710,215.0,811.0,17.56,0,formula,Competition,Electromagnetism,6,46,4,11,2,111
+OlympiadBench_897,Qwen14B,14.0,OlympiadBench,Physics,0,formula,2,614,7,2413,230.0,1024.0,22.31,0,formula,Competition,Electromagnetism,8,64,4,17,1,144
+OlympiadBench_898,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,948,8,2921,365.0,1024.0,22.27,0,formula,Competition,Modern Physics,12,60,4,17,5,129
+OlympiadBench_899,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,2,1197,3,1124,466.0,577.0,12.52,0,numeric,Competition,Modern Physics,12,20,7,7,6,79
+OlympiadBench_900,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,617,6,3696,227.0,574.0,12.56,0,formula,Competition,Optics,6,86,0,20,0,128
+OlympiadBench_901,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,338,22,1827,164.0,429.0,9.42,0,formula,Competition,Electromagnetism,8,44,2,11,0,50
+OlympiadBench_902,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,650,13,1560,243.0,548.0,11.86,0,formula,Competition,Thermodynamics,4,7,4,14,3,138
+OlympiadBench_903,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,1250,1,400,347.0,668.0,14.42,1,numeric,Competition,Mechanics,5,17,3,6,0,23
+OlympiadBench_905,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,422,6,747,179.0,693.0,14.94,1,formula,Competition,Mechanics,4,14,2,11,0,45
+OlympiadBench_907,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,918,6,1173,320.0,1024.0,22.03,0,numeric,Competition,Modern Physics,12,39,7,9,0,93
+OlympiadBench_908,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,523,21,4324,228.0,407.0,8.94,0,formula,Competition,Thermodynamics,8,98,4,20,1,205
+OlympiadBench_909,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,655,2,2560,272.0,610.0,13.42,0,numeric,Competition,Mechanics,19,128,1,20,0,172
+OlympiadBench_910,Qwen14B,14.0,OlympiadBench,Physics,0,formula,3,900,21,1056,308.0,1024.0,21.97,0,formula,Competition,Mechanics,9,29,0,12,3,50
+OlympiadBench_911,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,855,3,938,261.0,553.0,12.06,0,numeric,Competition,Modern Physics,4,15,0,8,0,53
+OlympiadBench_912,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,293,6,2006,147.0,316.0,6.92,0,numeric,Competition,Mechanics,3,37,0,16,1,65
+OlympiadBench_915,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,473,6,1164,223.0,601.0,13.0,0,formula,Competition,Electromagnetism,17,76,0,9,1,75
+OlympiadBench_917,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,659,7,1226,233.0,536.0,11.65,0,formula,Competition,Mechanics,4,35,0,12,2,82
+OlympiadBench_918,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,484,25,5454,216.0,1024.0,22.11,0,formula,Competition,Electromagnetism,10,74,4,20,0,224
+OlympiadBench_919,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,570,7,1106,218.0,1024.0,22.3,0,formula,Competition,Modern Physics,6,33,3,11,7,46
+OlympiadBench_922,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,1338,6,685,395.0,1024.0,22.31,0,formula,Competition,Thermodynamics,8,22,0,6,8,39
+OlympiadBench_923,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,1039,90,1353,302.0,1024.0,22.06,0,formula,Competition,Electromagnetism,8,35,3,15,7,94
+OlympiadBench_926,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,515,3,909,221.0,614.0,13.28,0,numeric,Competition,Electromagnetism,8,30,2,8,2,52
+OlympiadBench_928,Qwen14B,14.0,OlympiadBench,Physics,0,formula,2,898,8,1700,294.0,968.0,21.0,0,formula,Competition,Electromagnetism,9,14,1,9,6,36
+OlympiadBench_929,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,595,22,2459,218.0,898.0,19.63,0,formula,Competition,Electromagnetism,6,78,0,10,3,98
+OlympiadBench_936,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,101,2,606,92.0,414.0,8.94,0,numeric,Competition,Optics,0,14,0,3,0,15
+OlympiadBench_939,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,181,18,332,116.0,501.0,10.82,0,formula,Competition,Mechanics,1,11,1,5,0,27
+OlympiadBench_940,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,378,61,367,175.0,562.0,12.2,1,formula,Competition,Mechanics,0,3,2,5,1,35
+OlympiadBench_941,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,475,19,317,208.0,259.0,5.72,0,formula,Competition,Mechanics,3,7,2,4,1,39
+OlympiadBench_942,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,329,32,213,169.0,234.0,5.17,1,formula,Competition,Mechanics,5,6,1,2,0,21
+OlympiadBench_944,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,818,103,695,290.0,400.0,8.66,0,formula,Competition,Modern Physics,15,32,2,5,1,80
+OlympiadBench_947,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,612,44,1410,202.0,395.0,8.66,1,formula,Competition,Electromagnetism,0,37,0,13,9,82
+OlympiadBench_949,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,67,93,136,83.0,542.0,11.78,0,formula,Competition,Electromagnetism,0,6,0,1,2,10
+OlympiadBench_954,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,47,15,793,82.0,185.0,3.97,0,formula,Competition,Mechanics,0,27,0,13,0,49
+OlympiadBench_955,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,81,9,1419,87.0,500.0,10.83,0,formula,Competition,Mechanics,0,32,0,14,0,81
+OlympiadBench_956,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,281,76,937,151.0,414.0,8.92,0,formula,Competition,Mechanics,0,34,1,12,1,72
+OlympiadBench_957,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,81,79,1024,97.0,264.0,5.73,0,formula,Competition,Mechanics,1,26,0,7,0,74
+OlympiadBench_972,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,65,89,504,81.0,764.0,16.71,0,formula,Competition,Electromagnetism,0,10,0,6,1,22
+OlympiadBench_973,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,928,106,538,381.0,895.0,19.38,1,formula,Competition,Electromagnetism,10,44,8,10,7,80
+OlympiadBench_974,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,70,157,969,82.0,887.0,19.16,0,formula,Competition,Electromagnetism,0,31,0,17,1,74
+OlympiadBench_982,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,541,45,452,230.0,620.0,13.24,1,formula,Competition,Electromagnetism,4,21,1,7,0,63
+OlympiadBench_984,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,77,228,942,88.0,670.0,14.66,0,formula,Competition,Mechanics,0,28,0,9,0,88
+OlympiadBench_985,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,53,34,112,90.0,363.0,7.78,0,formula,Competition,Mechanics,2,7,0,2,0,14
+OlympiadBench_986,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,191,109,144,133.0,420.0,9.04,0,formula,Competition,Mechanics,6,7,0,2,0,14
+OlympiadBench_987,Qwen14B,14.0,OlympiadBench,Physics,0,formula,2,282,173,438,153.0,469.0,10.17,0,formula,Competition,Mechanics,6,24,0,2,1,55
+OlympiadBench_988,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,191,120,434,162.0,904.0,19.66,0,formula,Competition,Mechanics,12,19,1,4,0,56
+OlympiadBench_989,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,77,12,623,89.0,225.0,4.95,0,formula,Competition,Mechanics,0,13,0,7,0,61
+OlympiadBench_1006,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,130,20,2192,110.0,184.0,3.99,0,formula,Competition,Mechanics,4,66,0,20,0,185
+OlympiadBench_1012,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,99,32,734,113.0,680.0,14.72,0,formula,Competition,Thermodynamics,2,13,0,9,0,56
+OlympiadBench_1013,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,188,6,284,161.0,561.0,12.11,0,numeric,Competition,Thermodynamics,10,13,3,5,0,28
+OlympiadBench_1014,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,1,295,5,1027,184.0,813.0,17.61,0,numeric,Competition,Thermodynamics,9,43,5,7,0,88
+OlympiadBench_1015,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,451,126,898,182.0,785.0,17.6,0,formula,Competition,Thermodynamics,4,46,1,3,0,73
+OlympiadBench_1016,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,109,6,62,114.0,164.0,3.64,0,formula,Competition,Thermodynamics,6,1,1,0,0,7
+OlympiadBench_1017,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,217,130,2201,130.0,547.0,11.9,0,formula,Competition,Thermodynamics,4,75,0,20,1,123
+OlympiadBench_1018,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,271,58,574,169.0,375.0,8.13,0,formula,Competition,Thermodynamics,10,44,1,2,1,67
+OlympiadBench_1050,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,161,35,376,113.0,264.0,5.81,1,formula,Competition,Modern Physics,1,6,0,5,1,11
+OlympiadBench_1051,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,81,37,456,100.0,318.0,6.94,1,formula,Competition,Modern Physics,4,15,1,7,0,24
+OlympiadBench_1052,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,341,38,268,140.0,539.0,11.95,0,formula,Competition,Modern Physics,4,8,0,4,4,18
+OlympiadBench_1053,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,283,95,313,142.0,511.0,11.18,1,formula,Competition,Modern Physics,2,6,0,3,2,14
+OlympiadBench_1054,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,227,70,219,120.0,458.0,9.86,0,formula,Competition,Modern Physics,1,7,0,4,4,14
+OlympiadBench_1060,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,142,21,215,105.0,675.0,14.64,0,formula,Competition,Modern Physics,1,10,0,3,0,20
+OlympiadBench_1061,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,246,120,750,148.0,875.0,18.75,0,formula,Competition,Modern Physics,1,30,0,8,0,74
+OlympiadBench_1062,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,250,134,204,148.0,786.0,16.76,0,formula,Competition,Modern Physics,1,5,0,2,1,25
+OlympiadBench_1063,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,312,194,906,195.0,631.0,13.65,0,formula,Competition,Modern Physics,1,21,2,4,0,85
+OlympiadBench_1064,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,83,101,153,95.0,439.0,9.5,0,formula,Competition,Modern Physics,1,4,0,2,0,14
+OlympiadBench_1065,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,285,17,747,173.0,639.0,13.81,0,formula,Competition,Modern Physics,3,20,2,7,0,64
+OlympiadBench_1066,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,231,31,735,147.0,393.0,8.58,0,formula,Competition,Modern Physics,6,34,0,11,0,47
+OlympiadBench_1067,Qwen14B,14.0,OlympiadBench,Physics,0,numeric,0,164,5,254,123.0,506.0,11.02,0,numeric,Competition,Modern Physics,2,14,1,4,0,22
+OlympiadBench_1068,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,194,55,498,122.0,225.0,4.89,1,formula,Competition,Modern Physics,1,24,0,7,0,49
+OlympiadBench_1069,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,228,20,187,122.0,787.0,17.13,1,formula,Competition,Modern Physics,1,6,0,3,0,17
+OlympiadBench_1070,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,306,20,403,161.0,491.0,10.69,0,formula,Competition,Modern Physics,6,24,1,3,0,38
+OlympiadBench_1071,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,119,38,286,115.0,368.0,8.04,0,formula,Competition,Modern Physics,3,17,0,6,0,31
+OlympiadBench_1072,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,440,89,697,185.0,255.0,5.93,0,formula,Competition,Modern Physics,1,16,0,6,4,42
+OlympiadBench_1073,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,272,74,995,160.0,830.0,18.11,0,formula,Competition,Modern Physics,4,28,1,7,0,52
+OlympiadBench_1097,Qwen14B,14.0,OlympiadBench,Physics,0,formula,4,595,26,2597,196.0,385.0,8.34,0,formula,Competition,Mechanics,0,44,0,17,2,57
+OlympiadBench_1098,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,399,7,1466,154.0,556.0,12.16,0,formula,Competition,Thermodynamics,2,27,1,12,3,40
+OlympiadBench_1099,Qwen14B,14.0,OlympiadBench,Physics,0,formula,1,550,6,1704,180.0,700.0,15.11,0,formula,Competition,Thermodynamics,2,32,1,11,2,68
+OlympiadBench_1101,Qwen14B,14.0,OlympiadBench,Physics,0,formula,0,77,15,291,90.0,219.0,4.68,0,formula,Competition,Thermodynamics,1,2,0,2,1,3
+PhysReason_cal_problem_00069,Qwen14B,14.0,PhysReason,physics_reasoning,0,numeric,2,750,8,1416,276.0,610.0,13.13,0,numeric,medium,,11,43,6,11,1,50
+PhysReason_cal_problem_00224,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,1,879,32,1231,294.0,779.0,16.97,0,formula,easy,,14,49,0,6,6,57
+PhysReason_cal_problem_00252,Qwen14B,14.0,PhysReason,physics_reasoning,0,numeric,0,611,34,784,237.0,365.0,7.93,0,numeric,knowledge,,6,26,4,10,2,40
+PhysReason_cal_problem_00272,Qwen14B,14.0,PhysReason,physics_reasoning,0,numeric,1,327,7,678,151.0,817.0,17.25,0,numeric,easy,,5,38,1,10,0,31
+PhysReason_cal_problem_00273,Qwen14B,14.0,PhysReason,physics_reasoning,0,numeric,0,200,14,582,127.0,242.0,5.19,0,numeric,knowledge,,3,33,1,13,1,35
+PhysReason_cal_problem_00340,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,1,409,58,1043,193.0,446.0,9.61,0,formula,medium,,9,46,1,20,5,62
+PhysReason_cal_problem_00346,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,1,424,74,1052,162.0,744.0,16.22,0,formula,medium,,1,28,0,12,2,43
+PhysReason_cal_problem_00365,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,186,25,415,107.0,270.0,5.88,1,formula,knowledge,,0,14,0,7,0,17
+PhysReason_cal_problem_00418,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,535,60,537,194.0,384.0,8.29,0,formula,knowledge,,3,14,3,4,0,16
+PhysReason_cal_problem_00419,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,149,40,554,100.0,202.0,4.45,0,formula,knowledge,,1,41,0,11,2,34
+PhysReason_cal_problem_00432,Qwen14B,14.0,PhysReason,physics_reasoning,0,numeric,0,376,15,610,177.0,605.0,13.26,0,numeric,easy,,8,30,4,7,3,34
+PhysReason_cal_problem_00575,Qwen14B,14.0,PhysReason,physics_reasoning,0,numeric,0,209,11,437,129.0,663.0,14.46,0,numeric,knowledge,,3,17,0,6,0,22
+PhysReason_cal_problem_00577,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,1,270,26,975,140.0,417.0,9.03,0,formula,knowledge,,7,32,1,9,0,43
+PhysReason_cal_problem_00665,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,2,240,81,850,122.0,280.0,6.04,0,formula,medium,,0,30,0,9,4,42
+PhysReason_cal_problem_00701,Qwen14B,14.0,PhysReason,physics_reasoning,0,numeric,0,158,3,404,103.0,366.0,7.91,0,numeric,knowledge,,1,9,0,2,3,7
+PhysReason_cal_problem_00736,Qwen14B,14.0,PhysReason,physics_reasoning,0,numeric,0,566,41,986,212.0,500.0,10.84,0,numeric,easy,,6,41,6,16,0,64
+PhysReason_cal_problem_00840,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,402,57,438,162.0,672.0,14.52,0,formula,knowledge,,3,16,0,4,0,18
+PhysReason_cal_problem_00906,Qwen14B,14.0,PhysReason,physics_reasoning,0,numeric,0,188,4,290,130.0,493.0,10.55,0,numeric,easy,,5,18,1,7,0,29
+PhysReason_cal_problem_00915,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,404,26,442,171.0,397.0,8.51,1,formula,knowledge,,5,31,1,8,0,31
+PhysReason_cal_problem_00945,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,1,302,11,501,147.0,418.0,9.15,1,formula,easy,,4,20,0,9,0,25
+PhysReason_cal_problem_01098,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,827,70,2507,302.0,1024.0,22.06,0,formula,difficult,,15,114,6,20,0,147
+PhysReason_cal_problem_01115,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,261,64,595,138.0,292.0,6.2,1,formula,knowledge,,5,28,1,10,3,29
+PhysReason_cal_problem_01184,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,682,31,1548,262.0,382.0,8.35,0,formula,medium,,8,59,5,17,1,77
+PhysReason_cal_problem_01211,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,454,33,722,189.0,317.0,6.84,0,formula,easy,,4,23,0,9,0,28
+PhysReason_cal_problem_01276,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,397,20,493,156.0,239.0,5.19,0,formula,knowledge,,3,28,0,8,0,28
+PhysReason_cal_problem_01375,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,234,189,1112,159.0,229.0,4.98,0,formula,easy,,5,28,3,13,0,45
+PhysReason_cal_problem_01390,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,2,312,98,866,145.0,346.0,7.48,0,formula,knowledge,,3,27,0,13,1,27
+PhysReason_cal_problem_01469,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,217,125,1100,132.0,335.0,7.25,0,formula,medium,,4,45,0,19,0,60
+PhysReason_cal_problem_01515,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,643,91,820,216.0,323.0,6.99,1,formula,knowledge,,7,13,0,6,0,24
+PhysReason_comp_problem_4,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,0,300,18,2959,146.0,537.0,11.65,0,formula,medium,,3,106,0,20,0,74
+PhysReason_comp_problem_95,Qwen14B,14.0,PhysReason,physics_reasoning,0,formula,3,1895,133,3308,904.0,1024.0,22.24,0,formula,difficult,,82,133,20,20,7,313
+PHYBench_495,DeepSeekV3,671.0,PHYBench,OPTICS,0,formula,0,2266,94,4588,469.0,589.0,5.92,0,formula,,,3,120,2,22,4,254
+PHYBench_600,DeepSeekV3,671.0,PHYBench,OPTICS,0,formula,0,731,24,551,231.0,585.0,4.99,0,formula,,,13,20,1,5,0,29
+PHYBench_285,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,0,593,26,1341,172.0,1024.0,7.96,0,formula,,,1,29,0,7,9,59
+PHYBench_321,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,1139,101,724,290.0,300.0,3.52,0,formula,,,2,32,2,7,10,74
+PHYBench_674,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,4,554,32,1822,172.0,1024.0,12.44,0,formula,,,1,102,0,20,3,150
+PHYBench_83,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,0,1130,42,2064,287.0,526.0,5.28,0,formula,,,9,127,5,16,1,202
+PHYBench_54,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,549,34,473,160.0,448.0,6.25,0,formula,,,1,23,0,5,1,20
+PHYBench_10,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,1,410,117,1085,156.0,838.0,6.46,0,formula,,,3,48,0,6,1,65
+PHYBench_33,DeepSeekV3,671.0,PHYBench,THERMODYNAMICS,0,formula,1,843,104,1409,233.0,689.0,7.52,0,formula,,,2,28,0,3,1,83
+PHYBench_41,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,469,51,352,156.0,441.0,3.81,1,formula,,,4,20,1,5,0,19
+PHYBench_453,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,1,2068,121,1091,474.0,620.0,5.5,0,formula,,,10,65,1,15,11,105
+PHYBench_281,DeepSeekV3,671.0,PHYBench,THERMODYNAMICS,0,formula,0,1063,48,1707,281.0,1024.0,9.94,1,formula,,,7,45,1,15,0,109
+PHYBench_95,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,953,131,3020,273.0,1024.0,8.85,0,formula,,,7,139,5,21,5,204
+PHYBench_101,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,5,1747,42,3871,442.0,1024.0,10.29,0,formula,,,6,154,4,20,7,329
+PHYBench_630,DeepSeekV3,671.0,PHYBench,THERMODYNAMICS,0,formula,1,1166,78,1147,337.0,1024.0,10.43,0,formula,,,17,59,0,13,8,114
+PHYBench_134,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,0,304,21,1419,131.0,529.0,5.84,1,formula,,,2,15,1,9,0,55
+PHYBench_650,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,2,767,70,1892,210.0,428.0,7.39,0,formula,,,1,55,0,11,2,106
+PHYBench_332,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,4,955,445,2997,256.0,1024.0,12.15,0,formula,,,2,82,0,17,9,323
+PHYBench_250,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,1,1077,304,2246,306.0,1024.0,9.53,0,formula,,,11,67,1,18,2,142
+PHYBench_409,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,1,1807,72,3453,437.0,478.0,6.17,0,formula,,,3,67,4,20,2,164
+PHYBench_133,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,0,191,21,1029,85.0,230.0,3.12,0,formula,,,0,13,0,11,1,50
+PHYBench_336,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,2,829,101,1447,199.0,953.0,8.16,0,formula,,,0,57,0,10,3,72
+PHYBench_88,DeepSeekV3,671.0,PHYBench,MODERN,0,formula,2,1639,149,2915,442.0,453.0,4.32,0,formula,,,12,62,0,20,4,244
+PHYBench_105,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,1,907,16,1294,274.0,594.0,5.75,0,formula,,,9,12,6,11,4,130
+PHYBench_617,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,2,941,51,2001,237.0,1024.0,11.87,0,formula,,,1,67,1,20,10,137
+PHYBench_702,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,0,1012,51,4686,273.0,1024.0,8.22,0,formula,,,5,163,0,20,4,296
+PHYBench_367,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,0,432,92,2458,163.0,899.0,7.45,1,formula,,,6,99,1,18,6,174
+PHYBench_497,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,1041,83,1423,266.0,1024.0,7.58,0,formula,,,4,78,0,11,20,103
+PHYBench_457,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,2,696,297,881,186.0,918.0,8.74,0,formula,,,0,37,0,6,1,65
+PHYBench_432,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,1,985,139,690,261.0,427.0,4.38,0,formula,,,2,45,0,8,7,63
+PHYBench_284,DeepSeekV3,671.0,PHYBench,OPTICS,0,formula,0,1221,107,1745,315.0,378.0,3.43,1,formula,,,12,73,1,8,0,124
+PHYBench_39,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,626,47,495,177.0,313.0,2.68,1,formula,,,4,10,0,3,5,16
+PHYBench_124,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,514,52,1797,163.0,661.0,5.53,1,formula,,,2,36,0,16,10,150
+PHYBench_55,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,0,731,70,1621,192.0,703.0,5.52,0,formula,,,1,27,0,11,8,52
+PHYBench_419,DeepSeekV3,671.0,PHYBench,OPTICS,0,formula,0,710,258,1026,222.0,394.0,4.79,0,formula,,,9,54,1,6,0,101
+PHYBench_458,DeepSeekV3,671.0,PHYBench,ADVANCED,0,formula,1,597,47,507,196.0,316.0,3.78,1,formula,,,1,21,1,5,0,48
+PHYBench_206,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,0,675,206,1318,220.0,540.0,4.52,1,formula,,,6,31,4,12,0,106
+PHYBench_204,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,0,658,81,769,184.0,1024.0,8.0,1,formula,,,2,40,2,5,6,56
+PHYBench_478,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,1,795,41,670,199.0,368.0,5.14,0,formula,,,2,18,0,4,8,33
+PHYBench_71,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,2,1173,105,5316,343.0,814.0,7.58,1,formula,,,7,47,2,27,6,257
+PHYBench_259,DeepSeekV3,671.0,PHYBench,MODERN,0,formula,0,743,55,3134,214.0,1024.0,7.28,0,formula,,,2,90,3,20,2,123
+PHYBench_766,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,2,367,73,3076,130.0,1024.0,8.38,0,formula,,,0,79,0,20,4,174
+PHYBench_716,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,2,1577,49,987,365.0,521.0,5.05,0,formula,,,2,43,0,8,10,47
+PHYBench_103,DeepSeekV3,671.0,PHYBench,THERMODYNAMICS,0,formula,1,744,30,1250,239.0,609.0,6.65,0,formula,,,12,23,1,9,0,47
+PHYBench_310,DeepSeekV3,671.0,PHYBench,MODERN,0,formula,3,550,151,510,162.0,1024.0,7.93,0,formula,,,3,33,0,3,3,45
+PHYBench_110,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,2,597,73,1420,195.0,1024.0,10.92,0,formula,,,10,27,0,14,3,83
+PHYBench_256,DeepSeekV3,671.0,PHYBench,MODERN,0,formula,3,906,34,2057,267.0,1024.0,11.77,0,formula,,,9,82,4,20,6,138
+PHYBench_112,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,2,563,71,5191,167.0,506.0,5.72,0,formula,,,4,140,1,24,5,346
+PHYBench_505,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,1370,108,818,344.0,842.0,8.46,1,formula,,,6,11,1,9,7,50
+PHYBench_331,DeepSeekV3,671.0,PHYBench,OPTICS,0,formula,0,1229,71,1503,275.0,232.0,3.19,0,formula,,,1,34,1,9,0,131
+PHYBench_498,DeepSeekV3,671.0,PHYBench,OPTICS,0,formula,0,1483,219,4675,348.0,1024.0,11.91,0,formula,,,4,164,2,20,0,433
+PHYBench_737,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,3,592,45,1500,172.0,969.0,7.96,0,formula,,,1,102,1,12,4,100
+PHYBench_636,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,3,725,74,2021,219.0,1024.0,12.17,0,formula,,,7,116,0,14,6,173
+PHYBench_420,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,982,40,2051,256.0,298.0,3.3,0,formula,,,2,67,1,19,2,84
+PHYBench_228,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,3,887,162,3088,235.0,1024.0,7.89,0,formula,,,7,99,0,16,9,150
+PHYBench_450,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,2,767,104,719,201.0,1024.0,9.38,0,formula,,,3,23,1,6,1,48
+PHYBench_708,DeepSeekV3,671.0,PHYBench,OPTICS,0,formula,0,1353,66,1571,334.0,556.0,6.7,0,formula,,,5,38,1,12,2,119
+PHYBench_649,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,3,915,96,1531,252.0,1024.0,11.9,0,formula,,,5,83,2,9,8,114
+PHYBench_688,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,3,547,39,3170,168.0,854.0,7.06,0,formula,,,3,179,1,20,4,194
+PHYBench_118,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,1,256,29,791,112.0,722.0,8.22,0,formula,,,1,24,1,7,0,25
+PHYBench_318,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,0,433,60,650,141.0,459.0,4.07,1,formula,,,2,21,1,9,2,54
+PHYBench_62,DeepSeekV3,671.0,PHYBench,ADVANCED,0,formula,1,1959,28,1287,606.0,1024.0,8.33,0,formula,,,31,34,10,8,0,192
+PHYBench_143,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,0,432,52,4134,134.0,180.0,2.3,0,formula,,,0,74,0,20,5,157
+PHYBench_401,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,3,702,69,2545,197.0,376.0,3.94,0,formula,,,3,61,0,20,4,133
+PHYBench_443,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,0,2090,105,1978,493.0,305.0,3.07,1,formula,,,15,94,5,20,6,161
+PHYBench_115,DeepSeekV3,671.0,PHYBench,ADVANCED,0,formula,1,1097,161,3972,297.0,732.0,6.73,0,formula,,,12,120,2,26,8,298
+PHYBench_493,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,2,990,92,2632,250.0,525.0,5.19,0,formula,,,2,202,0,16,1,217
+PHYBench_69,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,3,2905,102,4543,764.0,882.0,8.61,1,formula,,,21,129,5,20,13,398
+PHYBench_65,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,2,818,62,3674,206.0,600.0,7.3,0,formula,,,2,31,0,15,5,125
+PHYBench_131,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,0,680,26,918,216.0,240.0,3.38,1,formula,,,4,22,1,5,3,46
+PHYBench_709,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,879,45,1845,244.0,482.0,5.42,0,formula,,,0,68,0,15,0,130
+PHYBench_423,DeepSeekV3,671.0,PHYBench,THERMODYNAMICS,0,formula,1,643,105,3319,230.0,1024.0,9.44,0,formula,,,2,138,12,32,1,244
+PHYBench_36,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,2,914,62,3560,266.0,627.0,6.67,0,formula,,,6,171,3,18,2,218
+PHYBench_333,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,2,477,170,1333,164.0,1024.0,9.79,0,formula,,,3,54,0,13,1,108
+PHYBench_50,DeepSeekV3,671.0,PHYBench,THERMODYNAMICS,0,formula,1,820,182,3555,227.0,487.0,4.76,0,formula,,,5,64,0,20,10,158
+PHYBench_221,DeepSeekV3,671.0,PHYBench,MODERN,0,formula,3,853,403,1530,252.0,1024.0,9.21,0,formula,,,7,72,1,17,8,115
+PHYBench_120,DeepSeekV3,671.0,PHYBench,THERMODYNAMICS,0,formula,1,445,54,875,143.0,1024.0,8.99,0,formula,,,2,15,0,6,1,44
+PHYBench_121,DeepSeekV3,671.0,PHYBench,MODERN,0,formula,0,620,177,2348,171.0,1024.0,10.17,0,formula,,,2,120,0,16,0,170
+PHYBench_648,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,3,933,109,2373,245.0,1024.0,10.72,0,formula,,,3,43,0,20,7,78
+PHYBench_72,DeepSeekV3,671.0,PHYBench,THERMODYNAMICS,0,formula,1,1076,25,1823,292.0,1024.0,9.11,0,formula,,,8,121,3,20,2,132
+PHYBench_603,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,0,1547,59,605,353.0,329.0,2.94,1,formula,,,4,14,2,7,9,37
+PHYBench_670,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,1,1504,60,1434,383.0,763.0,5.86,1,formula,,,7,37,3,16,15,109
+PHYBench_140,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,0,372,24,834,121.0,1024.0,12.62,1,formula,,,0,21,0,8,4,27
+PHYBench_653,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,2,1030,41,2291,262.0,692.0,8.39,0,formula,,,1,86,0,20,1,189
+PHYBench_719,DeepSeekV3,671.0,PHYBench,THERMODYNAMICS,0,formula,1,919,42,2013,272.0,1024.0,7.07,1,formula,,,5,17,1,11,8,61
+PHYBench_211,DeepSeekV3,671.0,PHYBench,MODERN,0,formula,0,691,39,3330,236.0,957.0,8.63,0,formula,,,5,93,4,20,0,231
+PHYBench_139,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,0,506,69,1236,161.0,269.0,3.2,0,formula,,,3,42,1,11,0,88
+PHYBench_106,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,685,35,641,189.0,904.0,9.03,0,formula,,,1,26,0,3,8,38
+PHYBench_58,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,0,1656,37,3243,535.0,1024.0,8.31,0,formula,,,43,160,6,20,0,173
+PHYBench_412,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,0,1549,302,1064,390.0,1024.0,9.12,0,formula,,,6,86,1,6,1,105
+PHYBench_43,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,1,703,439,2096,211.0,1024.0,10.34,0,formula,,,11,105,1,11,0,179
+PHYBench_117,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,2,919,49,1872,264.0,644.0,7.22,0,formula,,,2,33,3,12,3,87
+PHYBench_42,DeepSeekV3,671.0,PHYBench,OPTICS,0,formula,2,428,60,1527,138.0,859.0,7.11,0,formula,,,2,65,3,16,0,100
+PHYBench_45,DeepSeekV3,671.0,PHYBench,THERMODYNAMICS,0,formula,2,1132,107,1701,375.0,1024.0,8.46,0,formula,,,7,35,6,16,8,165
+PHYBench_37,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,3,1203,29,2151,332.0,1024.0,11.17,0,formula,,,9,47,3,19,1,184
+PHYBench_654,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,1329,114,1869,336.0,1024.0,10.76,0,formula,,,3,82,0,20,9,91
+PHYBench_244,DeepSeekV3,671.0,PHYBench,THERMODYNAMICS,0,formula,0,445,26,413,149.0,1024.0,8.02,0,formula,,,4,15,2,5,2,26
+PHYBench_25,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,4,449,21,777,148.0,1024.0,10.13,0,formula,,,5,29,1,9,4,68
+PHYBench_100,DeepSeekV3,671.0,PHYBench,MECHANICS,0,formula,1,966,37,4601,241.0,1024.0,10.42,0,formula,,,0,207,0,26,2,276
+PHYBench_89,DeepSeekV3,671.0,PHYBench,ELECTRICITY,0,formula,2,2220,386,5621,538.0,471.0,7.29,0,formula,,,14,280,4,28,14,442
+OlympiadBench_802,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,651,8,476,196.0,290.0,2.81,1,formula,Competition,Mechanics,6,3,0,5,0,21
+OlympiadBench_803,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,733,18,508,257.0,637.0,4.74,0,formula,Competition,Modern Physics,14,14,1,7,2,46
+OlympiadBench_806,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,637,20,1315,191.0,276.0,2.89,0,formula,Competition,Mechanics,6,29,0,19,1,67
+OlympiadBench_807,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,724,4,561,224.0,494.0,4.12,0,numeric,Competition,Mechanics,10,15,0,10,0,32
+OlympiadBench_808,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,849,7,346,246.0,506.0,5.0,1,formula,Competition,Mechanics,10,14,5,4,0,36
+OlympiadBench_810,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,1168,4,606,354.0,414.0,3.84,1,numeric,Competition,Electromagnetism,11,15,8,4,2,48
+OlympiadBench_811,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,823,6,390,240.0,471.0,4.87,1,numeric,Competition,Thermodynamics,7,7,4,4,0,38
+OlympiadBench_812,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,812,2,1093,207.0,976.0,8.47,1,numeric,Competition,Electromagnetism,5,27,0,4,13,33
+OlympiadBench_813,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,604,5,618,205.0,1024.0,8.81,0,numeric,Competition,Electromagnetism,5,26,5,7,7,40
+OlympiadBench_814,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,483,5,558,148.0,151.0,3.24,1,formula,Competition,Optics,2,2,0,0,1,1
+OlympiadBench_816,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,535,4,321,165.0,126.0,2.07,0,numeric,Competition,Optics,2,4,0,3,1,5
+OlympiadBench_817,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,604,3,829,194.0,750.0,6.21,1,numeric,Competition,Modern Physics,9,47,3,10,1,57
+OlympiadBench_819,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,2,1323,5,423,463.0,203.0,1.92,1,numeric,Competition,Modern Physics,29,9,2,6,2,55
+OlympiadBench_821,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,2,254,6,597,103.0,465.0,4.43,1,formula,Competition,Modern Physics,1,35,1,9,4,44
+OlympiadBench_823,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,2,993,1,500,304.0,1024.0,9.02,0,numeric,Competition,Mechanics,7,8,1,1,0,25
+OlympiadBench_826,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,1531,7,1350,383.0,926.0,7.77,0,numeric,Competition,Thermodynamics,13,32,0,7,6,43
+OlympiadBench_828,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,1335,4,1885,367.0,498.0,5.56,0,numeric,Competition,Thermodynamics,7,32,3,17,5,96
+OlympiadBench_835,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,2,524,6,1779,173.0,1024.0,8.97,0,numeric,Competition,Mechanics,7,51,0,13,5,82
+OlympiadBench_836,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,422,5,2469,145.0,1024.0,9.67,0,numeric,Competition,Electromagnetism,3,162,0,9,4,107
+OlympiadBench_837,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,874,7,1071,258.0,692.0,7.71,0,numeric,Competition,Mechanics,10,30,3,10,0,93
+OlympiadBench_840,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,526,8,3107,158.0,782.0,10.63,1,formula,Competition,Electromagnetism,3,69,2,20,2,125
+OlympiadBench_842,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,729,5,3147,235.0,453.0,4.13,0,numeric,Competition,Mechanics,9,38,8,20,4,179
+OlympiadBench_844,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,212,1,571,88.0,394.0,4.82,0,numeric,Competition,Electromagnetism,3,24,0,2,0,18
+OlympiadBench_847,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,637,20,621,199.0,1024.0,7.64,0,formula,Competition,Electromagnetism,6,26,4,3,0,37
+OlympiadBench_849,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,1147,7,1261,326.0,1024.0,9.76,0,formula,Competition,Thermodynamics,14,12,2,10,1,38
+OlympiadBench_851,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,480,4,2511,169.0,434.0,4.59,1,numeric,Competition,Modern Physics,1,15,1,3,2,91
+OlympiadBench_853,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,684,6,579,209.0,328.0,3.86,0,formula,Competition,Mechanics,4,24,2,5,2,32
+OlympiadBench_856,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,367,5,1875,155.0,1024.0,11.13,0,numeric,Competition,Electromagnetism,5,36,4,7,1,81
+OlympiadBench_860,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,2,410,6,1324,147.0,1024.0,8.56,0,formula,Competition,Mechanics,2,46,2,17,1,116
+OlympiadBench_861,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,418,21,1290,150.0,451.0,5.83,0,formula,Competition,Mechanics,1,45,0,15,0,68
+OlympiadBench_863,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,2,437,4,1050,148.0,453.0,4.09,0,numeric,Competition,Modern Physics,3,38,1,6,6,48
+OlympiadBench_865,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,602,6,1736,224.0,834.0,7.59,0,formula,Competition,Mechanics,15,37,2,9,2,123
+OlympiadBench_866,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,528,20,1964,190.0,769.0,6.79,0,formula,Competition,Mechanics,11,25,4,8,2,57
+OlympiadBench_868,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,638,7,2516,185.0,441.0,5.07,0,formula,Competition,Mechanics,3,20,0,8,0,60
+OlympiadBench_869,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,667,23,1422,222.0,608.0,5.45,1,formula,Competition,Mechanics,10,10,5,3,4,27
+OlympiadBench_870,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,1423,2,2028,375.0,943.0,10.2,0,numeric,Competition,Mechanics,9,71,0,6,0,85
+OlympiadBench_871,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,566,21,2912,213.0,1024.0,9.5,0,formula,Competition,Mechanics,13,108,1,20,0,225
+OlympiadBench_872,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,671,5,1901,248.0,356.0,3.61,1,numeric,Competition,Thermodynamics,9,12,0,0,0,65
+OlympiadBench_873,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,363,1,242,137.0,159.0,1.91,1,numeric,Competition,Mechanics,3,4,3,2,0,21
+OlympiadBench_876,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,824,2,328,259.0,382.0,4.06,0,numeric,Competition,Mechanics,10,8,2,7,5,26
+OlympiadBench_877,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,676,4,595,215.0,256.0,2.86,0,numeric,Competition,Mechanics,8,11,0,6,1,28
+OlympiadBench_878,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,319,28,1471,105.0,271.0,3.25,0,formula,Competition,Optics,1,39,1,12,0,101
+OlympiadBench_881,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,2525,2,631,744.0,825.0,6.18,0,numeric,Competition,Thermodynamics,28,16,7,6,2,104
+OlympiadBench_883,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,977,7,442,277.0,1024.0,9.09,0,formula,Competition,Electromagnetism,11,16,5,5,9,30
+OlympiadBench_884,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,397,21,660,145.0,349.0,3.93,1,formula,Competition,Thermodynamics,3,4,3,1,1,16
+OlympiadBench_885,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,2,1097,7,924,329.0,685.0,6.98,0,formula,Competition,Mechanics,19,15,1,8,5,53
+OlympiadBench_888,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,1135,6,1842,296.0,547.0,6.13,0,formula,Competition,Mechanics,12,73,1,20,0,111
+OlympiadBench_890,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,358,3,2637,143.0,470.0,6.27,0,numeric,Competition,Optics,4,43,2,8,0,44
+OlympiadBench_891,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,451,39,931,162.0,636.0,6.26,0,formula,Competition,Mechanics,6,36,5,11,2,84
+OlympiadBench_893,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,697,7,1170,224.0,845.0,10.72,0,formula,Competition,Mechanics,9,24,7,12,4,78
+OlympiadBench_894,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,527,8,2710,174.0,1024.0,8.79,0,formula,Competition,Electromagnetism,6,46,4,11,2,111
+OlympiadBench_897,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,2,614,7,2413,199.0,644.0,6.64,0,formula,Competition,Electromagnetism,8,64,4,17,1,144
+OlympiadBench_898,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,948,8,2921,291.0,672.0,5.82,1,formula,Competition,Modern Physics,12,60,4,17,5,129
+OlympiadBench_899,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,2,1197,3,1124,423.0,1024.0,10.47,0,numeric,Competition,Modern Physics,12,20,7,7,6,79
+OlympiadBench_900,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,617,6,3696,194.0,1024.0,10.82,0,formula,Competition,Optics,6,86,0,20,0,128
+OlympiadBench_901,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,338,22,1827,134.0,310.0,4.16,0,formula,Competition,Electromagnetism,8,44,2,11,0,50
+OlympiadBench_902,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,650,13,1560,207.0,1024.0,8.65,0,formula,Competition,Thermodynamics,4,7,4,14,3,138
+OlympiadBench_903,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,1250,1,400,315.0,550.0,5.29,1,numeric,Competition,Mechanics,5,17,3,6,0,23
+OlympiadBench_905,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,422,6,747,149.0,382.0,3.59,1,formula,Competition,Mechanics,4,14,2,11,0,45
+OlympiadBench_907,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,918,6,1173,275.0,1024.0,8.42,0,numeric,Competition,Modern Physics,12,39,7,9,0,93
+OlympiadBench_908,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,523,21,4324,184.0,279.0,3.19,0,formula,Competition,Thermodynamics,8,98,4,20,1,205
+OlympiadBench_909,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,655,2,2560,238.0,1024.0,8.3,0,numeric,Competition,Mechanics,19,128,1,20,0,172
+OlympiadBench_910,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,3,900,21,1056,262.0,1024.0,9.37,0,formula,Competition,Mechanics,9,29,0,12,3,50
+OlympiadBench_911,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,855,3,938,226.0,1024.0,11.32,0,numeric,Competition,Modern Physics,4,15,0,8,0,53
+OlympiadBench_912,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,293,6,2006,115.0,1024.0,9.49,0,numeric,Competition,Mechanics,3,37,0,16,1,65
+OlympiadBench_915,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,473,6,1164,179.0,337.0,5.4,0,formula,Competition,Electromagnetism,17,76,0,9,1,75
+OlympiadBench_917,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,659,7,1226,198.0,1024.0,10.72,0,formula,Competition,Mechanics,4,35,0,12,2,82
+OlympiadBench_918,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,484,25,5454,177.0,1024.0,11.32,0,formula,Competition,Electromagnetism,10,74,4,20,0,224
+OlympiadBench_919,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,570,7,1106,185.0,1024.0,7.72,0,formula,Competition,Modern Physics,6,33,3,11,7,46
+OlympiadBench_922,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,1338,6,685,348.0,1024.0,12.94,0,formula,Competition,Thermodynamics,8,22,0,6,8,39
+OlympiadBench_923,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,1039,90,1353,261.0,939.0,8.19,0,formula,Competition,Electromagnetism,8,35,3,15,7,94
+OlympiadBench_926,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,515,3,909,186.0,990.0,8.94,0,numeric,Competition,Electromagnetism,8,30,2,8,2,52
+OlympiadBench_928,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,2,898,8,1700,251.0,485.0,4.39,0,formula,Competition,Electromagnetism,9,14,1,9,6,36
+OlympiadBench_929,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,595,22,2459,182.0,579.0,5.69,0,formula,Competition,Electromagnetism,6,78,0,10,3,98
+OlympiadBench_936,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,101,2,606,67.0,152.0,1.76,0,numeric,Competition,Optics,0,14,0,3,0,15
+OlympiadBench_939,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,181,18,332,90.0,227.0,2.05,0,formula,Competition,Mechanics,1,11,1,5,0,27
+OlympiadBench_940,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,378,61,367,138.0,311.0,3.64,0,formula,Competition,Mechanics,0,3,2,5,1,35
+OlympiadBench_941,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,475,19,317,177.0,190.0,1.94,1,formula,Competition,Mechanics,3,7,2,4,1,39
+OlympiadBench_942,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,329,32,213,131.0,275.0,2.53,1,formula,Competition,Mechanics,5,6,1,2,0,21
+OlympiadBench_944,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,818,103,695,249.0,304.0,2.67,1,formula,Competition,Modern Physics,15,32,2,5,1,80
+OlympiadBench_947,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,612,44,1410,175.0,139.0,1.83,1,formula,Competition,Electromagnetism,0,37,0,13,9,82
+OlympiadBench_949,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,67,93,136,58.0,241.0,3.22,0,formula,Competition,Electromagnetism,0,6,0,1,2,10
+OlympiadBench_954,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,47,15,793,56.0,130.0,1.54,0,formula,Competition,Mechanics,0,27,0,13,0,49
+OlympiadBench_955,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,81,9,1419,61.0,667.0,4.79,0,formula,Competition,Mechanics,0,32,0,14,0,81
+OlympiadBench_956,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,281,76,937,116.0,349.0,4.37,0,formula,Competition,Mechanics,0,34,1,12,1,72
+OlympiadBench_957,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,81,79,1024,70.0,386.0,5.06,0,formula,Competition,Mechanics,1,26,0,7,0,74
+OlympiadBench_972,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,65,89,504,56.0,303.0,3.59,0,formula,Competition,Electromagnetism,0,10,0,6,1,22
+OlympiadBench_973,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,928,106,538,326.0,920.0,8.73,1,formula,Competition,Electromagnetism,10,44,8,10,7,80
+OlympiadBench_974,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,70,157,969,57.0,397.0,3.7,0,formula,Competition,Electromagnetism,0,31,0,17,1,74
+OlympiadBench_982,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,541,45,452,181.0,211.0,2.5,1,formula,Competition,Electromagnetism,4,21,1,7,0,63
+OlympiadBench_984,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,77,228,942,63.0,148.0,2.26,0,formula,Competition,Mechanics,0,28,0,9,0,88
+OlympiadBench_985,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,53,34,112,65.0,194.0,2.32,0,formula,Competition,Mechanics,2,7,0,2,0,14
+OlympiadBench_986,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,191,109,144,108.0,180.0,1.82,0,formula,Competition,Mechanics,6,7,0,2,0,14
+OlympiadBench_987,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,2,282,173,438,120.0,652.0,6.46,1,formula,Competition,Mechanics,6,24,0,2,1,55
+OlympiadBench_988,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,191,120,434,124.0,365.0,3.33,0,formula,Competition,Mechanics,12,19,1,4,0,56
+OlympiadBench_989,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,77,12,623,64.0,242.0,3.4,0,formula,Competition,Mechanics,0,13,0,7,0,61
+OlympiadBench_1006,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,130,20,2192,81.0,355.0,3.88,0,formula,Competition,Mechanics,4,66,0,20,0,185
+OlympiadBench_1012,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,99,32,734,86.0,242.0,3.29,0,formula,Competition,Thermodynamics,2,13,0,9,0,56
+OlympiadBench_1013,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,188,6,284,124.0,291.0,2.69,0,numeric,Competition,Thermodynamics,10,13,3,5,0,28
+OlympiadBench_1014,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,1,295,5,1027,144.0,677.0,8.8,0,numeric,Competition,Thermodynamics,9,43,5,7,0,88
+OlympiadBench_1015,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,451,126,898,156.0,675.0,7.82,0,formula,Competition,Thermodynamics,4,46,1,3,0,73
+OlympiadBench_1016,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,109,6,62,85.0,420.0,4.61,0,formula,Competition,Thermodynamics,6,1,1,0,0,7
+OlympiadBench_1017,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,217,130,2201,103.0,1024.0,9.79,0,formula,Competition,Thermodynamics,4,75,0,20,1,123
+OlympiadBench_1018,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,271,58,574,135.0,1024.0,9.62,0,formula,Competition,Thermodynamics,10,44,1,2,1,67
+OlympiadBench_1050,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,161,35,376,85.0,115.0,1.37,1,formula,Competition,Modern Physics,1,6,0,5,1,11
+OlympiadBench_1051,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,81,37,456,74.0,248.0,3.3,0,formula,Competition,Modern Physics,4,15,1,7,0,24
+OlympiadBench_1052,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,341,38,268,114.0,148.0,1.77,0,formula,Competition,Modern Physics,4,8,0,4,4,18
+OlympiadBench_1053,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,283,95,313,113.0,165.0,2.52,0,formula,Competition,Modern Physics,2,6,0,3,2,14
+OlympiadBench_1054,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,227,70,219,94.0,270.0,2.88,0,formula,Competition,Modern Physics,1,7,0,4,4,14
+OlympiadBench_1060,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,142,21,215,79.0,438.0,3.72,0,formula,Competition,Modern Physics,1,10,0,3,0,20
+OlympiadBench_1061,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,246,120,750,113.0,627.0,5.33,0,formula,Competition,Modern Physics,1,30,0,8,0,74
+OlympiadBench_1062,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,250,134,204,113.0,497.0,5.75,0,formula,Competition,Modern Physics,1,5,0,2,1,25
+OlympiadBench_1063,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,312,194,906,144.0,512.0,3.87,0,formula,Competition,Modern Physics,1,21,2,4,0,85
+OlympiadBench_1064,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,83,101,153,67.0,264.0,3.4,0,formula,Competition,Modern Physics,1,4,0,2,0,14
+OlympiadBench_1065,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,285,17,747,130.0,200.0,3.21,0,formula,Competition,Modern Physics,3,20,2,7,0,64
+OlympiadBench_1066,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,231,31,735,116.0,323.0,3.98,0,formula,Competition,Modern Physics,6,34,0,11,0,47
+OlympiadBench_1067,DeepSeekV3,671.0,OlympiadBench,Physics,0,numeric,0,164,5,254,91.0,141.0,2.49,0,numeric,Competition,Modern Physics,2,14,1,4,0,22
+OlympiadBench_1068,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,194,55,498,93.0,421.0,3.82,1,formula,Competition,Modern Physics,1,24,0,7,0,49
+OlympiadBench_1069,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,228,20,187,93.0,448.0,4.37,0,formula,Competition,Modern Physics,1,6,0,3,0,17
+OlympiadBench_1070,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,306,20,403,126.0,401.0,3.88,1,formula,Competition,Modern Physics,6,24,1,3,0,38
+OlympiadBench_1071,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,119,38,286,84.0,444.0,4.89,0,formula,Competition,Modern Physics,3,17,0,6,0,31
+OlympiadBench_1072,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,440,89,697,152.0,337.0,3.64,1,formula,Competition,Modern Physics,1,16,0,6,4,42
+OlympiadBench_1073,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,272,74,995,128.0,655.0,5.42,0,formula,Competition,Modern Physics,4,28,1,7,0,52
+OlympiadBench_1097,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,4,595,26,2597,170.0,1024.0,10.91,0,formula,Competition,Mechanics,0,44,0,17,2,57
+OlympiadBench_1098,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,399,7,1466,127.0,1024.0,9.24,0,formula,Competition,Thermodynamics,2,27,1,12,3,40
+OlympiadBench_1099,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,1,550,6,1704,152.0,766.0,8.59,0,formula,Competition,Thermodynamics,2,32,1,11,2,68
+OlympiadBench_1101,DeepSeekV3,671.0,OlympiadBench,Physics,0,formula,0,77,15,291,64.0,207.0,2.8,0,formula,Competition,Thermodynamics,1,2,0,2,1,3
+PhysReason_cal_problem_00069,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,numeric,2,750,8,1416,231.0,825.0,7.49,0,numeric,medium,,11,43,6,11,1,50
+PhysReason_cal_problem_00224,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,1,879,32,1231,247.0,536.0,4.57,0,formula,easy,,14,49,0,6,6,57
+PhysReason_cal_problem_00252,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,numeric,0,611,34,784,196.0,235.0,2.52,0,numeric,knowledge,,6,26,4,10,2,40
+PhysReason_cal_problem_00272,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,numeric,1,327,7,678,116.0,466.0,4.17,0,numeric,easy,,5,38,1,10,0,31
+PhysReason_cal_problem_00273,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,numeric,0,200,14,582,91.0,124.0,1.34,0,numeric,knowledge,,3,33,1,13,1,35
+PhysReason_cal_problem_00340,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,1,409,58,1043,156.0,362.0,3.71,0,formula,medium,,9,46,1,20,5,62
+PhysReason_cal_problem_00346,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,1,424,74,1052,135.0,507.0,6.81,0,formula,medium,,1,28,0,12,2,43
+PhysReason_cal_problem_00365,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,186,25,415,82.0,112.0,1.71,1,formula,knowledge,,0,14,0,7,0,17
+PhysReason_cal_problem_00418,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,535,60,537,157.0,248.0,2.68,0,formula,knowledge,,3,14,3,4,0,16
+PhysReason_cal_problem_00419,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,149,40,554,72.0,144.0,1.63,0,formula,knowledge,,1,41,0,11,2,34
+PhysReason_cal_problem_00432,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,numeric,0,376,15,610,141.0,268.0,2.42,0,numeric,easy,,8,30,4,7,3,34
+PhysReason_cal_problem_00575,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,numeric,0,209,11,437,93.0,474.0,4.99,0,numeric,knowledge,,3,17,0,6,0,22
+PhysReason_cal_problem_00577,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,1,270,26,975,111.0,383.0,3.75,0,formula,knowledge,,7,32,1,9,0,43
+PhysReason_cal_problem_00665,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,2,240,81,850,96.0,92.0,1.42,0,formula,medium,,0,30,0,9,4,42
+PhysReason_cal_problem_00701,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,numeric,0,158,3,404,77.0,369.0,5.98,0,numeric,knowledge,,1,9,0,2,3,7
+PhysReason_cal_problem_00736,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,numeric,0,566,41,986,172.0,334.0,3.44,0,numeric,easy,,6,41,6,16,0,64
+PhysReason_cal_problem_00840,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,402,57,438,134.0,262.0,2.71,1,formula,knowledge,,3,16,0,4,0,18
+PhysReason_cal_problem_00906,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,numeric,0,188,4,290,97.0,287.0,2.74,1,numeric,easy,,5,18,1,7,0,29
+PhysReason_cal_problem_00915,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,404,26,442,141.0,185.0,1.95,1,formula,knowledge,,5,31,1,8,0,31
+PhysReason_cal_problem_00945,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,1,302,11,501,108.0,300.0,3.17,0,formula,easy,,4,20,0,9,0,25
+PhysReason_cal_problem_01098,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,827,70,2507,255.0,1024.0,8.83,0,formula,difficult,,15,114,6,20,0,147
+PhysReason_cal_problem_01115,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,261,64,595,107.0,251.0,2.4,0,formula,knowledge,,5,28,1,10,3,29
+PhysReason_cal_problem_01184,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,682,31,1548,222.0,1024.0,10.98,0,formula,medium,,8,59,5,17,1,77
+PhysReason_cal_problem_01211,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,454,33,722,150.0,129.0,1.54,0,formula,easy,,4,23,0,9,0,28
+PhysReason_cal_problem_01276,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,397,20,493,125.0,131.0,1.63,0,formula,knowledge,,3,28,0,8,0,28
+PhysReason_cal_problem_01375,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,234,189,1112,118.0,243.0,2.55,0,formula,easy,,5,28,3,13,0,45
+PhysReason_cal_problem_01390,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,2,312,98,866,114.0,154.0,1.74,0,formula,knowledge,,3,27,0,13,1,27
+PhysReason_cal_problem_01469,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,217,125,1100,101.0,273.0,2.71,0,formula,medium,,4,45,0,19,0,60
+PhysReason_cal_problem_01515,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,643,91,820,185.0,169.0,1.9,1,formula,knowledge,,7,13,0,6,0,24
+PhysReason_comp_problem_4,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,0,300,18,2959,115.0,661.0,5.84,0,formula,medium,,3,106,0,20,0,74
+PhysReason_comp_problem_95,DeepSeekV3,671.0,PhysReason,physics_reasoning,0,formula,3,1895,133,3308,768.0,789.0,6.47,0,formula,difficult,,82,133,20,20,7,313
+PHYBench_495,KimiK2,1000.0,PHYBench,OPTICS,0,formula,0,2266,94,4588,494.0,1024.0,61.97,0,formula,,,3,120,2,22,4,254
+PHYBench_600,KimiK2,1000.0,PHYBench,OPTICS,0,formula,0,731,24,551,235.0,1024.0,56.76,0,formula,,,13,20,1,5,0,29
+PHYBench_285,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,0,593,26,1341,177.0,1024.0,58.08,0,formula,,,1,29,0,7,9,59
+PHYBench_321,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,1139,101,724,307.0,1024.0,55.49,0,formula,,,2,32,2,7,10,74
+PHYBench_674,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,4,554,32,1822,176.0,1024.0,53.91,0,formula,,,1,102,0,20,3,150
+PHYBench_83,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,0,1130,42,2064,306.0,1024.0,56.04,0,formula,,,9,127,5,16,1,202
+PHYBench_54,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,549,34,473,165.0,1024.0,54.19,0,formula,,,1,23,0,5,1,20
+PHYBench_10,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,1,410,117,1085,160.0,1024.0,54.34,0,formula,,,3,48,0,6,1,65
+PHYBench_33,KimiK2,1000.0,PHYBench,THERMODYNAMICS,0,formula,1,843,104,1409,239.0,1024.0,55.25,0,formula,,,2,28,0,3,1,83
+PHYBench_41,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,469,51,352,158.0,757.0,40.21,1,formula,,,4,20,1,5,0,19
+PHYBench_453,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,1,2068,121,1091,499.0,1024.0,54.05,0,formula,,,10,65,1,15,11,105
+PHYBench_281,KimiK2,1000.0,PHYBench,THERMODYNAMICS,0,formula,0,1063,48,1707,287.0,1024.0,53.5,0,formula,,,7,45,1,15,0,109
+PHYBench_95,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,953,131,3020,277.0,1024.0,54.7,0,formula,,,7,139,5,21,5,204
+PHYBench_101,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,5,1747,42,3871,450.0,1024.0,59.58,0,formula,,,6,154,4,20,7,329
+PHYBench_630,KimiK2,1000.0,PHYBench,THERMODYNAMICS,0,formula,1,1166,78,1147,346.0,1024.0,72.33,0,formula,,,17,59,0,13,8,114
+PHYBench_134,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,0,304,21,1419,136.0,1024.0,78.2,0,formula,,,2,15,1,9,0,55
+PHYBench_650,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,2,767,70,1892,221.0,1024.0,75.44,0,formula,,,1,55,0,11,2,106
+PHYBench_332,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,4,955,445,2997,261.0,1024.0,77.44,0,formula,,,2,82,0,17,9,323
+PHYBench_250,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,1,1077,304,2246,316.0,1024.0,76.29,0,formula,,,11,67,1,18,2,142
+PHYBench_409,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,1,1807,72,3453,446.0,1024.0,66.39,0,formula,,,3,67,4,20,2,164
+PHYBench_133,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,0,191,21,1029,90.0,114.0,7.76,0,formula,,,0,13,0,11,1,50
+PHYBench_336,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,2,829,101,1447,210.0,1024.0,59.53,0,formula,,,0,57,0,10,3,72
+PHYBench_88,KimiK2,1000.0,PHYBench,MODERN,0,formula,2,1639,149,2915,450.0,1024.0,64.61,0,formula,,,12,62,0,20,4,244
+PHYBench_105,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,1,907,16,1294,294.0,1024.0,58.87,0,formula,,,9,12,6,11,4,130
+PHYBench_617,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,2,941,51,2001,245.0,1024.0,72.63,0,formula,,,1,67,1,20,10,137
+PHYBench_702,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,0,1012,51,4686,282.0,1024.0,75.8,0,formula,,,5,163,0,20,4,296
+PHYBench_367,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,0,432,92,2458,170.0,1024.0,59.81,0,formula,,,6,99,1,18,6,174
+PHYBench_497,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,1041,83,1423,277.0,1024.0,57.35,0,formula,,,4,78,0,11,20,103
+PHYBench_457,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,2,696,297,881,190.0,1024.0,72.79,0,formula,,,0,37,0,6,1,65
+PHYBench_432,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,1,985,139,690,268.0,1024.0,67.3,0,formula,,,2,45,0,8,7,63
+PHYBench_284,KimiK2,1000.0,PHYBench,OPTICS,0,formula,0,1221,107,1745,329.0,1024.0,61.83,1,formula,,,12,73,1,8,0,124
+PHYBench_39,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,626,47,495,183.0,770.0,54.32,1,formula,,,4,10,0,3,5,16
+PHYBench_124,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,514,52,1797,167.0,1024.0,86.86,0,formula,,,2,36,0,16,10,150
+PHYBench_55,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,0,731,70,1621,203.0,1024.0,82.6,1,formula,,,1,27,0,11,8,52
+PHYBench_419,KimiK2,1000.0,PHYBench,OPTICS,0,formula,0,710,258,1026,233.0,1024.0,84.33,0,formula,,,9,54,1,6,0,101
+PHYBench_458,KimiK2,1000.0,PHYBench,ADVANCED,0,formula,1,597,47,507,205.0,677.0,55.94,1,formula,,,1,21,1,5,0,48
+PHYBench_206,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,0,675,206,1318,228.0,1024.0,87.75,0,formula,,,6,31,4,12,0,106
+PHYBench_204,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,0,658,81,769,194.0,1024.0,76.88,0,formula,,,2,40,2,5,6,56
+PHYBench_478,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,1,795,41,670,217.0,1024.0,76.47,0,formula,,,2,18,0,4,8,33
+PHYBench_71,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,2,1173,105,5316,361.0,1024.0,71.39,0,formula,,,7,47,2,27,6,257
+PHYBench_259,KimiK2,1000.0,PHYBench,MODERN,0,formula,0,743,55,3134,229.0,1024.0,58.34,0,formula,,,2,90,3,20,2,123
+PHYBench_766,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,2,367,73,3076,134.0,1024.0,59.22,0,formula,,,0,79,0,20,4,174
+PHYBench_716,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,2,1577,49,987,373.0,1024.0,65.0,0,formula,,,2,43,0,8,10,47
+PHYBench_103,KimiK2,1000.0,PHYBench,THERMODYNAMICS,0,formula,1,744,30,1250,246.0,1024.0,68.06,0,formula,,,12,23,1,9,0,47
+PHYBench_310,KimiK2,1000.0,PHYBench,MODERN,0,formula,3,550,151,510,172.0,717.0,45.45,1,formula,,,3,33,0,3,3,45
+PHYBench_110,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,2,597,73,1420,199.0,1024.0,50.27,0,formula,,,10,27,0,14,3,83
+PHYBench_256,KimiK2,1000.0,PHYBench,MODERN,0,formula,3,906,34,2057,277.0,1024.0,61.23,0,formula,,,9,82,4,20,6,138
+PHYBench_112,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,2,563,71,5191,178.0,1024.0,61.49,0,formula,,,4,140,1,24,5,346
+PHYBench_505,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,1370,108,818,354.0,1024.0,62.86,0,formula,,,6,11,1,9,7,50
+PHYBench_331,KimiK2,1000.0,PHYBench,OPTICS,0,formula,0,1229,71,1503,285.0,1024.0,59.67,0,formula,,,1,34,1,9,0,131
+PHYBench_498,KimiK2,1000.0,PHYBench,OPTICS,0,formula,0,1483,219,4675,373.0,1024.0,65.84,0,formula,,,4,164,2,20,0,433
+PHYBench_737,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,3,592,45,1500,178.0,1024.0,79.61,0,formula,,,1,102,1,12,4,100
+PHYBench_636,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,3,725,74,2021,226.0,1024.0,98.65,0,formula,,,7,116,0,14,6,173
+PHYBench_420,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,982,40,2051,264.0,1024.0,71.6,0,formula,,,2,67,1,19,2,84
+PHYBench_228,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,3,887,162,3088,243.0,1024.0,77.0,0,formula,,,7,99,0,16,9,150
+PHYBench_450,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,2,767,104,719,210.0,1024.0,76.35,0,formula,,,3,23,1,6,1,48
+PHYBench_708,KimiK2,1000.0,PHYBench,OPTICS,0,formula,0,1353,66,1571,341.0,1024.0,79.07,0,formula,,,5,38,1,12,2,119
+PHYBench_649,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,3,915,96,1531,261.0,1024.0,56.14,0,formula,,,5,83,2,9,8,114
+PHYBench_688,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,3,547,39,3170,174.0,1024.0,86.95,0,formula,,,3,179,1,20,4,194
+PHYBench_118,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,1,256,29,791,116.0,1024.0,85.6,0,formula,,,1,24,1,7,0,25
+PHYBench_318,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,0,433,60,650,147.0,832.0,67.99,1,formula,,,2,21,1,9,2,54
+PHYBench_62,KimiK2,1000.0,PHYBench,ADVANCED,0,formula,1,1959,28,1287,637.0,1024.0,81.56,0,formula,,,31,34,10,8,0,192
+PHYBench_143,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,0,432,52,4134,138.0,1024.0,48.31,0,formula,,,0,74,0,20,5,157
+PHYBench_401,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,3,702,69,2545,205.0,1024.0,59.35,0,formula,,,3,61,0,20,4,133
+PHYBench_443,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,0,2090,105,1978,527.0,1024.0,47.49,0,formula,,,15,94,5,20,6,161
+PHYBench_115,KimiK2,1000.0,PHYBench,ADVANCED,0,formula,1,1097,161,3972,310.0,1024.0,62.49,0,formula,,,12,120,2,26,8,298
+PHYBench_493,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,2,990,92,2632,261.0,1024.0,57.88,0,formula,,,2,202,0,16,1,217
+PHYBench_69,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,3,2905,102,4543,778.0,1024.0,56.5,0,formula,,,21,129,5,20,13,398
+PHYBench_65,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,2,818,62,3674,215.0,1024.0,54.45,0,formula,,,2,31,0,15,5,125
+PHYBench_131,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,0,680,26,918,235.0,1005.0,53.68,0,formula,,,4,22,1,5,3,46
+PHYBench_709,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,879,45,1845,251.0,1024.0,54.31,0,formula,,,0,68,0,15,0,130
+PHYBench_423,KimiK2,1000.0,PHYBench,THERMODYNAMICS,0,formula,1,643,105,3319,239.0,1024.0,46.73,0,formula,,,2,138,12,32,1,244
+PHYBench_36,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,2,914,62,3560,267.0,1024.0,57.88,0,formula,,,6,171,3,18,2,218
+PHYBench_333,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,2,477,170,1333,172.0,1024.0,45.5,0,formula,,,3,54,0,13,1,108
+PHYBench_50,KimiK2,1000.0,PHYBench,THERMODYNAMICS,0,formula,1,820,182,3555,235.0,1024.0,54.85,0,formula,,,5,64,0,20,10,158
+PHYBench_221,KimiK2,1000.0,PHYBench,MODERN,0,formula,3,853,403,1530,263.0,1024.0,53.21,0,formula,,,7,72,1,17,8,115
+PHYBench_120,KimiK2,1000.0,PHYBench,THERMODYNAMICS,0,formula,1,445,54,875,148.0,1024.0,54.09,0,formula,,,2,15,0,6,1,44
+PHYBench_121,KimiK2,1000.0,PHYBench,MODERN,0,formula,0,620,177,2348,178.0,1024.0,43.96,0,formula,,,2,120,0,16,0,170
+PHYBench_648,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,3,933,109,2373,253.0,1024.0,53.86,0,formula,,,3,43,0,20,7,78
+PHYBench_72,KimiK2,1000.0,PHYBench,THERMODYNAMICS,0,formula,1,1076,25,1823,306.0,1024.0,45.4,0,formula,,,8,121,3,20,2,132
+PHYBench_603,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,0,1547,59,605,371.0,1024.0,53.98,0,formula,,,4,14,2,7,9,37
+PHYBench_670,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,1,1504,60,1434,421.0,1024.0,55.79,0,formula,,,7,37,3,16,15,109
+PHYBench_140,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,0,372,24,834,125.0,1024.0,53.5,0,formula,,,0,21,0,8,4,27
+PHYBench_653,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,2,1030,41,2291,271.0,1024.0,56.26,0,formula,,,1,86,0,20,1,189
+PHYBench_719,KimiK2,1000.0,PHYBench,THERMODYNAMICS,0,formula,1,919,42,2013,284.0,1024.0,49.36,0,formula,,,5,17,1,11,8,61
+PHYBench_211,KimiK2,1000.0,PHYBench,MODERN,0,formula,0,691,39,3330,240.0,1024.0,40.52,0,formula,,,5,93,4,20,0,231
+PHYBench_139,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,0,506,69,1236,169.0,1024.0,44.43,0,formula,,,3,42,1,11,0,88
+PHYBench_106,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,685,35,641,190.0,1024.0,53.91,0,formula,,,1,26,0,3,8,38
+PHYBench_58,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,0,1656,37,3243,543.0,1024.0,55.96,0,formula,,,43,160,6,20,0,173
+PHYBench_412,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,0,1549,302,1064,415.0,1024.0,56.65,0,formula,,,6,86,1,6,1,105
+PHYBench_43,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,1,703,439,2096,220.0,1024.0,55.36,0,formula,,,11,105,1,11,0,179
+PHYBench_117,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,2,919,49,1872,269.0,1024.0,52.7,0,formula,,,2,33,3,12,3,87
+PHYBench_42,KimiK2,1000.0,PHYBench,OPTICS,0,formula,2,428,60,1527,149.0,1024.0,50.84,0,formula,,,2,65,3,16,0,100
+PHYBench_45,KimiK2,1000.0,PHYBench,THERMODYNAMICS,0,formula,2,1132,107,1701,394.0,1024.0,41.85,0,formula,,,7,35,6,16,8,165
+PHYBench_37,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,3,1203,29,2151,340.0,1024.0,49.51,0,formula,,,9,47,3,19,1,184
+PHYBench_654,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,1329,114,1869,352.0,1024.0,49.68,0,formula,,,3,82,0,20,9,91
+PHYBench_244,KimiK2,1000.0,PHYBench,THERMODYNAMICS,0,formula,0,445,26,413,156.0,1024.0,50.92,0,formula,,,4,15,2,5,2,26
+PHYBench_25,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,4,449,21,777,156.0,1024.0,44.96,0,formula,,,5,29,1,9,4,68
+PHYBench_100,KimiK2,1000.0,PHYBench,MECHANICS,0,formula,1,966,37,4601,245.0,1024.0,54.97,0,formula,,,0,207,0,26,2,276
+PHYBench_89,KimiK2,1000.0,PHYBench,ELECTRICITY,0,formula,2,2220,386,5621,561.0,1024.0,53.57,0,formula,,,14,280,4,28,14,442
+OlympiadBench_802,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,651,8,476,208.0,547.0,30.2,0,formula,Competition,Mechanics,6,3,0,5,0,21
+OlympiadBench_803,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,733,18,508,270.0,993.0,53.47,0,formula,Competition,Modern Physics,14,14,1,7,2,46
+OlympiadBench_806,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,637,20,1315,200.0,577.0,25.47,1,formula,Competition,Mechanics,6,29,0,19,1,67
+OlympiadBench_807,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,724,4,561,236.0,1024.0,54.57,0,numeric,Competition,Mechanics,10,15,0,10,0,32
+OlympiadBench_808,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,849,7,346,256.0,1024.0,53.32,0,formula,Competition,Mechanics,10,14,5,4,0,36
+OlympiadBench_810,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,1168,4,606,367.0,1024.0,49.91,1,numeric,Competition,Electromagnetism,11,15,8,4,2,48
+OlympiadBench_811,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,823,6,390,253.0,306.0,15.15,1,numeric,Competition,Thermodynamics,7,7,4,4,0,38
+OlympiadBench_812,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,812,2,1093,215.0,1024.0,40.01,0,numeric,Competition,Electromagnetism,5,27,0,4,13,33
+OlympiadBench_813,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,604,5,618,212.0,1024.0,46.4,0,numeric,Competition,Electromagnetism,5,26,5,7,7,40
+OlympiadBench_814,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,483,5,558,151.0,837.0,41.56,0,formula,Competition,Optics,2,2,0,0,1,1
+OlympiadBench_816,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,535,4,321,169.0,121.0,5.85,0,numeric,Competition,Optics,2,4,0,3,1,5
+OlympiadBench_817,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,604,3,829,203.0,1024.0,48.65,0,numeric,Competition,Modern Physics,9,47,3,10,1,57
+OlympiadBench_819,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,2,1323,5,423,475.0,422.0,22.14,1,numeric,Competition,Modern Physics,29,9,2,6,2,55
+OlympiadBench_821,KimiK2,1000.0,OlympiadBench,Physics,0,formula,2,254,6,597,110.0,1024.0,41.27,0,formula,Competition,Modern Physics,1,35,1,9,4,44
+OlympiadBench_823,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,2,993,1,500,322.0,1024.0,47.87,0,numeric,Competition,Mechanics,7,8,1,1,0,25
+OlympiadBench_826,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,1531,7,1350,390.0,1024.0,47.69,0,numeric,Competition,Thermodynamics,13,32,0,7,6,43
+OlympiadBench_828,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,1335,4,1885,374.0,1024.0,41.91,0,numeric,Competition,Thermodynamics,7,32,3,17,5,96
+OlympiadBench_835,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,2,524,6,1779,183.0,1024.0,47.39,0,numeric,Competition,Mechanics,7,51,0,13,5,82
+OlympiadBench_836,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,422,5,2469,154.0,1024.0,48.03,0,numeric,Competition,Electromagnetism,3,162,0,9,4,107
+OlympiadBench_837,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,874,7,1071,264.0,1024.0,48.91,0,numeric,Competition,Mechanics,10,30,3,10,0,93
+OlympiadBench_840,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,526,8,3107,165.0,284.0,14.9,0,formula,Competition,Electromagnetism,3,69,2,20,2,125
+OlympiadBench_842,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,729,5,3147,246.0,1024.0,51.61,0,numeric,Competition,Mechanics,9,38,8,20,4,179
+OlympiadBench_844,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,212,1,571,93.0,1024.0,46.16,0,numeric,Competition,Electromagnetism,3,24,0,2,0,18
+OlympiadBench_847,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,637,20,621,211.0,1024.0,51.92,0,formula,Competition,Electromagnetism,6,26,4,3,0,37
+OlympiadBench_849,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,1147,7,1261,344.0,1024.0,52.87,0,formula,Competition,Thermodynamics,14,12,2,10,1,38
+OlympiadBench_851,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,480,4,2511,175.0,960.0,51.36,1,numeric,Competition,Modern Physics,1,15,1,3,2,91
+OlympiadBench_853,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,684,6,579,214.0,353.0,20.07,0,formula,Competition,Mechanics,4,24,2,5,2,32
+OlympiadBench_856,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,367,5,1875,161.0,1024.0,45.46,0,numeric,Competition,Electromagnetism,5,36,4,7,1,81
+OlympiadBench_860,KimiK2,1000.0,OlympiadBench,Physics,0,formula,2,410,6,1324,154.0,1024.0,62.18,0,formula,Competition,Mechanics,2,46,2,17,1,116
+OlympiadBench_861,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,418,21,1290,153.0,1024.0,65.0,0,formula,Competition,Mechanics,1,45,0,15,0,68
+OlympiadBench_863,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,2,437,4,1050,158.0,1024.0,77.36,0,numeric,Competition,Modern Physics,3,38,1,6,6,48
+OlympiadBench_865,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,602,6,1736,233.0,1024.0,97.51,0,formula,Competition,Mechanics,15,37,2,9,2,123
+OlympiadBench_866,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,528,20,1964,206.0,1024.0,116.89,0,formula,Competition,Mechanics,11,25,4,8,2,57
+OlympiadBench_868,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,638,7,2516,193.0,1024.0,77.93,0,formula,Competition,Mechanics,3,20,0,8,0,60
+OlympiadBench_869,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,667,23,1422,231.0,1024.0,54.07,0,formula,Competition,Mechanics,10,10,5,3,4,27
+OlympiadBench_870,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,1423,2,2028,390.0,1024.0,50.64,0,numeric,Competition,Mechanics,9,71,0,6,0,85
+OlympiadBench_871,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,566,21,2912,220.0,1024.0,87.39,0,formula,Competition,Mechanics,13,108,1,20,0,225
+OlympiadBench_872,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,671,5,1901,252.0,1024.0,55.86,0,numeric,Competition,Thermodynamics,9,12,0,0,0,65
+OlympiadBench_873,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,363,1,242,142.0,518.0,43.68,1,numeric,Competition,Mechanics,3,4,3,2,0,21
+OlympiadBench_876,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,824,2,328,264.0,1024.0,87.65,0,numeric,Competition,Mechanics,10,8,2,7,5,26
+OlympiadBench_877,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,676,4,595,224.0,215.0,16.09,0,numeric,Competition,Mechanics,8,11,0,6,1,28
+OlympiadBench_878,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,319,28,1471,110.0,1024.0,81.44,0,formula,Competition,Optics,1,39,1,12,0,101
+OlympiadBench_881,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,2525,2,631,764.0,1024.0,87.98,0,numeric,Competition,Thermodynamics,28,16,7,6,2,104
+OlympiadBench_883,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,977,7,442,287.0,1024.0,88.31,0,formula,Competition,Electromagnetism,11,16,5,5,9,30
+OlympiadBench_884,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,397,21,660,150.0,1024.0,86.33,0,formula,Competition,Thermodynamics,3,4,3,1,1,16
+OlympiadBench_885,KimiK2,1000.0,OlympiadBench,Physics,0,formula,2,1097,7,924,339.0,1024.0,59.62,0,formula,Competition,Mechanics,19,15,1,8,5,53
+OlympiadBench_888,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,1135,6,1842,302.0,1024.0,89.83,0,formula,Competition,Mechanics,12,73,1,20,0,111
+OlympiadBench_890,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,358,3,2637,150.0,1024.0,84.89,0,numeric,Competition,Optics,4,43,2,8,0,44
+OlympiadBench_891,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,451,39,931,173.0,1024.0,89.09,0,formula,Competition,Mechanics,6,36,5,11,2,84
+OlympiadBench_893,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,697,7,1170,237.0,1024.0,85.92,0,formula,Competition,Mechanics,9,24,7,12,4,78
+OlympiadBench_894,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,527,8,2710,187.0,1024.0,57.63,0,formula,Competition,Electromagnetism,6,46,4,11,2,111
+OlympiadBench_897,KimiK2,1000.0,OlympiadBench,Physics,0,formula,2,614,7,2413,205.0,1024.0,94.29,0,formula,Competition,Electromagnetism,8,64,4,17,1,144
+OlympiadBench_898,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,948,8,2921,307.0,595.0,45.66,0,formula,Competition,Modern Physics,12,60,4,17,5,129
+OlympiadBench_899,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,2,1197,3,1124,436.0,1024.0,82.65,0,numeric,Competition,Modern Physics,12,20,7,7,6,79
+OlympiadBench_900,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,617,6,3696,199.0,1024.0,79.04,0,formula,Competition,Optics,6,86,0,20,0,128
+OlympiadBench_901,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,338,22,1827,142.0,1024.0,65.04,0,formula,Competition,Electromagnetism,8,44,2,11,0,50
+OlympiadBench_902,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,650,13,1560,212.0,1024.0,60.11,0,formula,Competition,Thermodynamics,4,7,4,14,3,138
+OlympiadBench_903,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,1250,1,400,323.0,710.0,42.41,1,numeric,Competition,Mechanics,5,17,3,6,0,23
+OlympiadBench_905,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,422,6,747,156.0,1024.0,56.7,0,formula,Competition,Mechanics,4,14,2,11,0,45
+OlympiadBench_907,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,918,6,1173,285.0,1024.0,55.95,0,numeric,Competition,Modern Physics,12,39,7,9,0,93
+OlympiadBench_908,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,523,21,4324,192.0,469.0,25.96,0,formula,Competition,Thermodynamics,8,98,4,20,1,205
+OlympiadBench_909,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,655,2,2560,244.0,1024.0,53.2,0,numeric,Competition,Mechanics,19,128,1,20,0,172
+OlympiadBench_910,KimiK2,1000.0,OlympiadBench,Physics,0,formula,3,900,21,1056,269.0,1024.0,53.95,0,formula,Competition,Mechanics,9,29,0,12,3,50
+OlympiadBench_911,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,855,3,938,234.0,1024.0,53.51,0,numeric,Competition,Modern Physics,4,15,0,8,0,53
+OlympiadBench_912,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,293,6,2006,124.0,1024.0,52.46,0,numeric,Competition,Mechanics,3,37,0,16,1,65
+OlympiadBench_915,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,473,6,1164,189.0,1024.0,52.92,0,formula,Competition,Electromagnetism,17,76,0,9,1,75
+OlympiadBench_917,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,659,7,1226,205.0,1024.0,52.73,0,formula,Competition,Mechanics,4,35,0,12,2,82
+OlympiadBench_918,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,484,25,5454,188.0,1024.0,52.06,0,formula,Competition,Electromagnetism,10,74,4,20,0,224
+OlympiadBench_919,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,570,7,1106,196.0,1024.0,56.66,0,formula,Competition,Modern Physics,6,33,3,11,7,46
+OlympiadBench_922,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,1338,6,685,368.0,1024.0,54.68,0,formula,Competition,Thermodynamics,8,22,0,6,8,39
+OlympiadBench_923,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,1039,90,1353,278.0,1024.0,52.15,0,formula,Competition,Electromagnetism,8,35,3,15,7,94
+OlympiadBench_926,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,515,3,909,191.0,1024.0,51.54,0,numeric,Competition,Electromagnetism,8,30,2,8,2,52
+OlympiadBench_928,KimiK2,1000.0,OlympiadBench,Physics,0,formula,2,898,8,1700,264.0,738.0,38.62,0,formula,Competition,Electromagnetism,9,14,1,9,6,36
+OlympiadBench_929,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,595,22,2459,191.0,1024.0,55.33,0,formula,Competition,Electromagnetism,6,78,0,10,3,98
+OlympiadBench_936,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,101,2,606,71.0,498.0,25.37,0,numeric,Competition,Optics,0,14,0,3,0,15
+OlympiadBench_939,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,181,18,332,95.0,820.0,42.61,0,formula,Competition,Mechanics,1,11,1,5,0,27
+OlympiadBench_940,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,378,61,367,142.0,645.0,33.56,0,formula,Competition,Mechanics,0,3,2,5,1,35
+OlympiadBench_941,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,475,19,317,181.0,428.0,22.1,1,formula,Competition,Mechanics,3,7,2,4,1,39
+OlympiadBench_942,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,329,32,213,146.0,217.0,12.12,1,formula,Competition,Mechanics,5,6,1,2,0,21
+OlympiadBench_944,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,818,103,695,260.0,1024.0,53.42,1,formula,Competition,Modern Physics,15,32,2,5,1,80
+OlympiadBench_947,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,612,44,1410,181.0,520.0,27.83,1,formula,Competition,Electromagnetism,0,37,0,13,9,82
+OlympiadBench_949,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,67,93,136,62.0,273.0,14.73,0,formula,Competition,Electromagnetism,0,6,0,1,2,10
+OlympiadBench_954,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,47,15,793,61.0,124.0,7.59,0,formula,Competition,Mechanics,0,27,0,13,0,49
+OlympiadBench_955,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,81,9,1419,66.0,994.0,51.79,0,formula,Competition,Mechanics,0,32,0,14,0,81
+OlympiadBench_956,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,281,76,937,122.0,1024.0,52.0,0,formula,Competition,Mechanics,0,34,1,12,1,72
+OlympiadBench_957,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,81,79,1024,75.0,1024.0,52.24,0,formula,Competition,Mechanics,1,26,0,7,0,74
+OlympiadBench_972,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,65,89,504,60.0,1024.0,51.67,0,formula,Competition,Electromagnetism,0,10,0,6,1,22
+OlympiadBench_973,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,928,106,538,338.0,1024.0,51.85,0,formula,Competition,Electromagnetism,10,44,8,10,7,80
+OlympiadBench_974,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,70,157,969,61.0,598.0,31.02,0,formula,Competition,Electromagnetism,0,31,0,17,1,74
+OlympiadBench_982,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,541,45,452,204.0,427.0,21.91,1,formula,Competition,Electromagnetism,4,21,1,7,0,63
+OlympiadBench_984,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,77,228,942,67.0,856.0,44.02,0,formula,Competition,Mechanics,0,28,0,9,0,88
+OlympiadBench_985,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,53,34,112,68.0,209.0,11.57,0,formula,Competition,Mechanics,2,7,0,2,0,14
+OlympiadBench_986,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,191,109,144,112.0,571.0,24.37,0,formula,Competition,Mechanics,6,7,0,2,0,14
+OlympiadBench_987,KimiK2,1000.0,OlympiadBench,Physics,0,formula,2,282,173,438,125.0,1024.0,51.86,1,formula,Competition,Mechanics,6,24,0,2,1,55
+OlympiadBench_988,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,191,120,434,132.0,880.0,45.31,0,formula,Competition,Mechanics,12,19,1,4,0,56
+OlympiadBench_989,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,77,12,623,68.0,98.0,6.25,0,formula,Competition,Mechanics,0,13,0,7,0,61
+OlympiadBench_1006,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,130,20,2192,85.0,866.0,45.45,0,formula,Competition,Mechanics,4,66,0,20,0,185
+OlympiadBench_1012,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,99,32,734,89.0,1024.0,53.86,0,formula,Competition,Thermodynamics,2,13,0,9,0,56
+OlympiadBench_1013,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,188,6,284,131.0,708.0,38.03,0,numeric,Competition,Thermodynamics,10,13,3,5,0,28
+OlympiadBench_1014,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,1,295,5,1027,153.0,1024.0,55.09,0,numeric,Competition,Thermodynamics,9,43,5,7,0,88
+OlympiadBench_1015,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,451,126,898,162.0,1024.0,53.35,0,formula,Competition,Thermodynamics,4,46,1,3,0,73
+OlympiadBench_1016,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,109,6,62,91.0,392.0,21.23,0,formula,Competition,Thermodynamics,6,1,1,0,0,7
+OlympiadBench_1017,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,217,130,2201,107.0,1024.0,54.85,0,formula,Competition,Thermodynamics,4,75,0,20,1,123
+OlympiadBench_1018,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,271,58,574,142.0,1024.0,55.01,0,formula,Competition,Thermodynamics,10,44,1,2,1,67
+OlympiadBench_1050,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,161,35,376,90.0,239.0,13.51,1,formula,Competition,Modern Physics,1,6,0,5,1,11
+OlympiadBench_1051,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,81,37,456,78.0,343.0,18.7,1,formula,Competition,Modern Physics,4,15,1,7,0,24
+OlympiadBench_1052,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,341,38,268,119.0,485.0,21.6,0,formula,Competition,Modern Physics,4,8,0,4,4,18
+OlympiadBench_1053,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,283,95,313,117.0,486.0,22.65,0,formula,Competition,Modern Physics,2,6,0,3,2,14
+OlympiadBench_1054,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,227,70,219,99.0,748.0,41.15,0,formula,Competition,Modern Physics,1,7,0,4,4,14
+OlympiadBench_1060,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,142,21,215,83.0,473.0,23.92,1,formula,Competition,Modern Physics,1,10,0,3,0,20
+OlympiadBench_1061,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,246,120,750,116.0,1024.0,51.83,0,formula,Competition,Modern Physics,1,30,0,8,0,74
+OlympiadBench_1062,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,250,134,204,119.0,1024.0,52.01,0,formula,Competition,Modern Physics,1,5,0,2,1,25
+OlympiadBench_1063,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,312,194,906,155.0,1024.0,53.41,0,formula,Competition,Modern Physics,1,21,2,4,0,85
+OlympiadBench_1064,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,83,101,153,72.0,522.0,26.74,0,formula,Competition,Modern Physics,1,4,0,2,0,14
+OlympiadBench_1065,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,285,17,747,142.0,1024.0,47.15,0,formula,Competition,Modern Physics,3,20,2,7,0,64
+OlympiadBench_1066,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,231,31,735,121.0,408.0,21.96,0,formula,Competition,Modern Physics,6,34,0,11,0,47
+OlympiadBench_1067,KimiK2,1000.0,OlympiadBench,Physics,0,numeric,0,164,5,254,98.0,198.0,11.34,0,numeric,Competition,Modern Physics,2,14,1,4,0,22
+OlympiadBench_1068,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,194,55,498,96.0,244.0,13.59,1,formula,Competition,Modern Physics,1,24,0,7,0,49
+OlympiadBench_1069,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,228,20,187,99.0,352.0,19.09,0,formula,Competition,Modern Physics,1,6,0,3,0,17
+OlympiadBench_1070,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,306,20,403,137.0,527.0,24.21,0,formula,Competition,Modern Physics,6,24,1,3,0,38
+OlympiadBench_1071,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,119,38,286,88.0,550.0,29.72,0,formula,Competition,Modern Physics,3,17,0,6,0,31
+OlympiadBench_1072,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,440,89,697,162.0,1017.0,53.86,1,formula,Competition,Modern Physics,1,16,0,6,4,42
+OlympiadBench_1073,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,272,74,995,135.0,1024.0,53.58,0,formula,Competition,Modern Physics,4,28,1,7,0,52
+OlympiadBench_1097,KimiK2,1000.0,OlympiadBench,Physics,0,formula,4,595,26,2597,174.0,1024.0,54.12,0,formula,Competition,Mechanics,0,44,0,17,2,57
+OlympiadBench_1098,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,399,7,1466,132.0,769.0,39.58,0,formula,Competition,Thermodynamics,2,27,1,12,3,40
+OlympiadBench_1099,KimiK2,1000.0,OlympiadBench,Physics,0,formula,1,550,6,1704,158.0,1024.0,52.65,0,formula,Competition,Thermodynamics,2,32,1,11,2,68
+OlympiadBench_1101,KimiK2,1000.0,OlympiadBench,Physics,0,formula,0,77,15,291,68.0,345.0,18.78,0,formula,Competition,Thermodynamics,1,2,0,2,1,3
+PhysReason_cal_problem_00069,KimiK2,1000.0,PhysReason,physics_reasoning,0,numeric,2,750,8,1416,245.0,1024.0,48.03,0,numeric,medium,,11,43,6,11,1,50
+PhysReason_cal_problem_00224,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,1,879,32,1231,261.0,1024.0,57.32,0,formula,easy,,14,49,0,6,6,57
+PhysReason_cal_problem_00252,KimiK2,1000.0,PhysReason,physics_reasoning,0,numeric,0,611,34,784,212.0,299.0,19.23,0,numeric,knowledge,,6,26,4,10,2,40
+PhysReason_cal_problem_00272,KimiK2,1000.0,PhysReason,physics_reasoning,0,numeric,1,327,7,678,122.0,641.0,68.97,0,numeric,easy,,5,38,1,10,0,31
+PhysReason_cal_problem_00273,KimiK2,1000.0,PhysReason,physics_reasoning,0,numeric,0,200,14,582,100.0,174.0,12.46,0,numeric,knowledge,,3,33,1,13,1,35
+PhysReason_cal_problem_00340,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,1,409,58,1043,164.0,438.0,57.08,1,formula,medium,,9,46,1,20,5,62
+PhysReason_cal_problem_00346,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,1,424,74,1052,139.0,356.0,40.92,1,formula,medium,,1,28,0,12,2,43
+PhysReason_cal_problem_00365,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,186,25,415,86.0,117.0,8.98,1,formula,knowledge,,0,14,0,7,0,17
+PhysReason_cal_problem_00418,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,535,60,537,167.0,266.0,15.75,0,formula,knowledge,,3,14,3,4,0,16
+PhysReason_cal_problem_00419,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,149,40,554,77.0,97.0,6.57,1,formula,knowledge,,1,41,0,11,2,34
+PhysReason_cal_problem_00432,KimiK2,1000.0,PhysReason,physics_reasoning,0,numeric,0,376,15,610,151.0,404.0,23.67,1,numeric,easy,,8,30,4,7,3,34
+PhysReason_cal_problem_00575,KimiK2,1000.0,PhysReason,physics_reasoning,0,numeric,0,209,11,437,102.0,299.0,14.25,1,numeric,knowledge,,3,17,0,6,0,22
+PhysReason_cal_problem_00577,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,1,270,26,975,114.0,490.0,23.53,0,formula,knowledge,,7,32,1,9,0,43
+PhysReason_cal_problem_00665,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,2,240,81,850,101.0,87.0,6.7,0,formula,medium,,0,30,0,9,4,42
+PhysReason_cal_problem_00701,KimiK2,1000.0,PhysReason,physics_reasoning,0,numeric,0,158,3,404,81.0,331.0,16.14,0,numeric,knowledge,,1,9,0,2,3,7
+PhysReason_cal_problem_00736,KimiK2,1000.0,PhysReason,physics_reasoning,0,numeric,0,566,41,986,183.0,287.0,20.11,0,numeric,easy,,6,41,6,16,0,64
+PhysReason_cal_problem_00840,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,402,57,438,139.0,174.0,12.65,1,formula,knowledge,,3,16,0,4,0,18
+PhysReason_cal_problem_00906,KimiK2,1000.0,PhysReason,physics_reasoning,0,numeric,0,188,4,290,101.0,244.0,17.18,1,numeric,easy,,5,18,1,7,0,29
+PhysReason_cal_problem_00915,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,404,26,442,145.0,269.0,17.77,1,formula,knowledge,,5,31,1,8,0,31
+PhysReason_cal_problem_00945,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,1,302,11,501,117.0,1024.0,49.25,0,formula,easy,,4,20,0,9,0,25
+PhysReason_cal_problem_01098,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,827,70,2507,269.0,1024.0,76.68,0,formula,difficult,,15,114,6,20,0,147
+PhysReason_cal_problem_01115,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,261,64,595,113.0,153.0,13.29,1,formula,knowledge,,5,28,1,10,3,29
+PhysReason_cal_problem_01184,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,682,31,1548,225.0,1024.0,82.62,0,formula,medium,,8,59,5,17,1,77
+PhysReason_cal_problem_01211,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,454,33,722,158.0,235.0,17.66,0,formula,easy,,4,23,0,9,0,28
+PhysReason_cal_problem_01276,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,397,20,493,131.0,153.0,12.31,0,formula,knowledge,,3,28,0,8,0,28
+PhysReason_cal_problem_01375,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,234,189,1112,129.0,94.0,6.15,1,formula,easy,,5,28,3,13,0,45
+PhysReason_cal_problem_01390,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,2,312,98,866,120.0,244.0,14.59,0,formula,knowledge,,3,27,0,13,1,27
+PhysReason_cal_problem_01469,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,217,125,1100,107.0,276.0,23.48,0,formula,medium,,4,45,0,19,0,60
+PhysReason_cal_problem_01515,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,643,91,820,188.0,299.0,23.78,1,formula,knowledge,,7,13,0,6,0,24
+PhysReason_comp_problem_4,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,0,300,18,2959,122.0,1024.0,73.08,0,formula,medium,,3,106,0,20,0,74
+PhysReason_comp_problem_95,KimiK2,1000.0,PhysReason,physics_reasoning,0,formula,3,1895,133,3308,788.0,1024.0,74.98,0,formula,difficult,,82,133,20,20,7,313
+PHYBench_495,Qwen7B-Ollama,7.0,PHYBench,OPTICS,0,formula,0,2266,94,4588,529.0,679.0,35.03,0,formula,,,3,120,2,22,4,254
+PHYBench_600,Qwen7B-Ollama,7.0,PHYBench,OPTICS,0,formula,0,731,24,551,258.0,821.0,17.1,0,formula,,,13,20,1,5,0,29
+PHYBench_285,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,0,593,26,1341,198.0,332.0,8.7,0,formula,,,1,29,0,7,9,59
+PHYBench_321,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,1139,101,724,335.0,881.0,18.23,0,formula,,,2,32,2,7,10,74
+PHYBench_674,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,4,554,32,1822,198.0,626.0,14.27,0,formula,,,1,102,0,20,3,150
+PHYBench_83,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,0,1130,42,2064,329.0,283.0,8.29,0,formula,,,9,127,5,16,1,202
+PHYBench_54,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,549,34,473,186.0,492.0,11.7,0,formula,,,1,23,0,5,1,20
+PHYBench_10,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,1,410,117,1085,185.0,666.0,13.9,0,formula,,,3,48,0,6,1,65
+PHYBench_33,Qwen7B-Ollama,7.0,PHYBench,THERMODYNAMICS,0,formula,1,843,104,1409,262.0,500.0,11.61,0,formula,,,2,28,0,3,1,83
+PHYBench_41,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,469,51,352,183.0,981.0,20.24,1,formula,,,4,20,1,5,0,19
+PHYBench_453,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,1,2068,121,1091,533.0,1024.0,22.9,0,formula,,,10,65,1,15,11,105
+PHYBench_281,Qwen7B-Ollama,7.0,PHYBench,THERMODYNAMICS,0,formula,0,1063,48,1707,315.0,543.0,12.51,0,formula,,,7,45,1,15,0,109
+PHYBench_95,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,953,131,3020,307.0,1001.0,20.87,0,formula,,,7,139,5,21,5,204
+PHYBench_101,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,5,1747,42,3871,472.0,865.0,17.05,0,formula,,,6,154,4,20,7,329
+PHYBench_630,Qwen7B-Ollama,7.0,PHYBench,THERMODYNAMICS,0,formula,1,1166,78,1147,370.0,765.0,15.69,0,formula,,,17,59,0,13,8,114
+PHYBench_134,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,0,304,21,1419,158.0,470.0,10.52,0,formula,,,2,15,1,9,0,55
+PHYBench_650,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,2,767,70,1892,243.0,536.0,11.75,0,formula,,,1,55,0,11,2,106
+PHYBench_332,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,4,955,445,2997,287.0,999.0,19.45,0,formula,,,2,82,0,17,9,323
+PHYBench_250,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,1,1077,304,2246,343.0,455.0,10.91,0,formula,,,11,67,1,18,2,142
+PHYBench_409,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,1,1807,72,3453,485.0,342.0,8.99,0,formula,,,3,67,4,20,2,164
+PHYBench_133,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,0,191,21,1029,112.0,235.0,7.31,0,formula,,,0,13,0,11,1,50
+PHYBench_336,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,2,829,101,1447,231.0,687.0,15.17,0,formula,,,0,57,0,10,3,72
+PHYBench_88,Qwen7B-Ollama,7.0,PHYBench,MODERN,0,formula,2,1639,149,2915,475.0,696.0,15.15,0,formula,,,12,62,0,20,4,244
+PHYBench_105,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,1,907,16,1294,356.0,925.0,18.71,0,formula,,,9,12,6,11,4,130
+PHYBench_617,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,2,941,51,2001,267.0,563.0,12.39,0,formula,,,1,67,1,20,10,137
+PHYBench_702,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,0,1012,51,4686,311.0,818.0,16.7,0,formula,,,5,163,0,20,4,296
+PHYBench_367,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,0,432,92,2458,192.0,545.0,12.29,0,formula,,,6,99,1,18,6,174
+PHYBench_497,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,1041,83,1423,303.0,522.0,11.6,0,formula,,,4,78,0,11,20,103
+PHYBench_457,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,2,696,297,881,212.0,692.0,14.54,0,formula,,,0,37,0,6,1,65
+PHYBench_432,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,1,985,139,690,293.0,1024.0,20.23,0,formula,,,2,45,0,8,7,63
+PHYBench_284,Qwen7B-Ollama,7.0,PHYBench,OPTICS,0,formula,0,1221,107,1745,357.0,466.0,10.25,0,formula,,,12,73,1,8,0,124
+PHYBench_39,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,626,47,495,205.0,955.0,18.89,0,formula,,,4,10,0,3,5,16
+PHYBench_124,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,514,52,1797,190.0,612.0,14.1,0,formula,,,2,36,0,16,10,150
+PHYBench_55,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,0,731,70,1621,227.0,669.0,14.8,0,formula,,,1,27,0,11,8,52
+PHYBench_419,Qwen7B-Ollama,7.0,PHYBench,OPTICS,0,formula,0,710,258,1026,254.0,490.0,11.65,0,formula,,,9,54,1,6,0,101
+PHYBench_458,Qwen7B-Ollama,7.0,PHYBench,ADVANCED,0,formula,1,597,47,507,242.0,762.0,15.49,0,formula,,,1,21,1,5,0,48
+PHYBench_206,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,0,675,206,1318,251.0,906.0,19.32,0,formula,,,6,31,4,12,0,106
+PHYBench_204,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,0,658,81,769,217.0,687.0,16.2,0,formula,,,2,40,2,5,6,56
+PHYBench_478,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,1,795,41,670,241.0,576.0,12.95,0,formula,,,2,18,0,4,8,33
+PHYBench_71,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,2,1173,105,5316,394.0,500.0,11.23,0,formula,,,7,47,2,27,6,257
+PHYBench_259,Qwen7B-Ollama,7.0,PHYBench,MODERN,0,formula,0,743,55,3134,250.0,1024.0,20.95,0,formula,,,2,90,3,20,2,123
+PHYBench_766,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,2,367,73,3076,155.0,473.0,11.08,0,formula,,,0,79,0,20,4,174
+PHYBench_716,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,2,1577,49,987,395.0,425.0,10.34,0,formula,,,2,43,0,8,10,47
+PHYBench_103,Qwen7B-Ollama,7.0,PHYBench,THERMODYNAMICS,0,formula,1,744,30,1250,271.0,616.0,12.78,0,formula,,,12,23,1,9,0,47
+PHYBench_310,Qwen7B-Ollama,7.0,PHYBench,MODERN,0,formula,3,550,151,510,196.0,562.0,12.26,0,formula,,,3,33,0,3,3,45
+PHYBench_110,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,2,597,73,1420,221.0,789.0,15.88,0,formula,,,10,27,0,14,3,83
+PHYBench_256,Qwen7B-Ollama,7.0,PHYBench,MODERN,0,formula,3,906,34,2057,310.0,486.0,11.12,0,formula,,,9,82,4,20,6,138
+PHYBench_112,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,2,563,71,5191,204.0,507.0,11.48,0,formula,,,4,140,1,24,5,346
+PHYBench_505,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,1370,108,818,379.0,689.0,14.12,0,formula,,,6,11,1,9,7,50
+PHYBench_331,Qwen7B-Ollama,7.0,PHYBench,OPTICS,0,formula,0,1229,71,1503,308.0,582.0,12.63,0,formula,,,1,34,1,9,0,131
+PHYBench_498,Qwen7B-Ollama,7.0,PHYBench,OPTICS,0,formula,0,1483,219,4675,396.0,644.0,14.04,0,formula,,,4,164,2,20,0,433
+PHYBench_737,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,3,592,45,1500,208.0,1024.0,21.08,0,formula,,,1,102,1,12,4,100
+PHYBench_636,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,3,725,74,2021,249.0,878.0,18.68,0,formula,,,7,116,0,14,6,173
+PHYBench_420,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,982,40,2051,286.0,541.0,12.21,0,formula,,,2,67,1,19,2,84
+PHYBench_228,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,3,887,162,3088,268.0,737.0,15.82,0,formula,,,7,99,0,16,9,150
+PHYBench_450,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,2,767,104,719,234.0,513.0,11.92,0,formula,,,3,23,1,6,1,48
+PHYBench_708,Qwen7B-Ollama,7.0,PHYBench,OPTICS,0,formula,0,1353,66,1571,367.0,595.0,12.97,0,formula,,,5,38,1,12,2,119
+PHYBench_649,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,3,915,96,1531,284.0,525.0,12.67,0,formula,,,5,83,2,9,8,114
+PHYBench_688,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,3,547,39,3170,198.0,1024.0,21.07,0,formula,,,3,179,1,20,4,194
+PHYBench_118,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,1,256,29,791,140.0,111.0,5.1,0,formula,,,1,24,1,7,0,25
+PHYBench_318,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,0,433,60,650,172.0,529.0,12.41,0,formula,,,2,21,1,9,2,54
+PHYBench_62,Qwen7B-Ollama,7.0,PHYBench,ADVANCED,0,formula,1,1959,28,1287,704.0,1024.0,20.84,0,formula,,,31,34,10,8,0,192
+PHYBench_143,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,0,432,52,4134,159.0,536.0,12.52,0,formula,,,0,74,0,20,5,157
+PHYBench_401,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,3,702,69,2545,225.0,627.0,13.58,0,formula,,,3,61,0,20,4,133
+PHYBench_443,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,0,2090,105,1978,568.0,570.0,12.81,0,formula,,,15,94,5,20,6,161
+PHYBench_115,Qwen7B-Ollama,7.0,PHYBench,ADVANCED,0,formula,1,1097,161,3972,343.0,1024.0,21.97,0,formula,,,12,120,2,26,8,298
+PHYBench_493,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,2,990,92,2632,283.0,1024.0,21.16,0,formula,,,2,202,0,16,1,217
+PHYBench_69,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,3,2905,102,4543,834.0,946.0,21.25,0,formula,,,21,129,5,20,13,398
+PHYBench_65,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,2,818,62,3674,237.0,399.0,9.88,0,formula,,,2,31,0,15,5,125
+PHYBench_131,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,0,680,26,918,263.0,516.0,12.18,0,formula,,,4,22,1,5,3,46
+PHYBench_709,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,879,45,1845,272.0,502.0,12.2,0,formula,,,0,68,0,15,0,130
+PHYBench_423,Qwen7B-Ollama,7.0,PHYBench,THERMODYNAMICS,0,formula,1,643,105,3319,270.0,285.0,7.98,0,formula,,,2,138,12,32,1,244
+PHYBench_36,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,2,914,62,3560,305.0,1004.0,20.46,0,formula,,,6,171,3,18,2,218
+PHYBench_333,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,2,477,170,1333,195.0,711.0,14.65,0,formula,,,3,54,0,13,1,108
+PHYBench_50,Qwen7B-Ollama,7.0,PHYBench,THERMODYNAMICS,0,formula,1,820,182,3555,256.0,513.0,12.0,0,formula,,,5,64,0,20,10,158
+PHYBench_221,Qwen7B-Ollama,7.0,PHYBench,MODERN,0,formula,3,853,403,1530,289.0,736.0,16.22,0,formula,,,7,72,1,17,8,115
+PHYBench_120,Qwen7B-Ollama,7.0,PHYBench,THERMODYNAMICS,0,formula,1,445,54,875,169.0,895.0,18.97,0,formula,,,2,15,0,6,1,44
+PHYBench_121,Qwen7B-Ollama,7.0,PHYBench,MODERN,0,formula,0,620,177,2348,201.0,1024.0,21.33,0,formula,,,2,120,0,16,0,170
+PHYBench_648,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,3,933,109,2373,276.0,597.0,13.4,0,formula,,,3,43,0,20,7,78
+PHYBench_72,Qwen7B-Ollama,7.0,PHYBench,THERMODYNAMICS,0,formula,1,1076,25,1823,329.0,872.0,18.1,1,formula,,,8,121,3,20,2,132
+PHYBench_603,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,0,1547,59,605,398.0,776.0,16.52,0,formula,,,4,14,2,7,9,37
+PHYBench_670,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,1,1504,60,1434,451.0,1024.0,20.47,0,formula,,,7,37,3,16,15,109
+PHYBench_140,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,0,372,24,834,147.0,464.0,10.58,0,formula,,,0,21,0,8,4,27
+PHYBench_653,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,2,1030,41,2291,294.0,437.0,10.06,0,formula,,,1,86,0,20,1,189
+PHYBench_719,Qwen7B-Ollama,7.0,PHYBench,THERMODYNAMICS,0,formula,1,919,42,2013,313.0,1024.0,19.87,0,formula,,,5,17,1,11,8,61
+PHYBench_211,Qwen7B-Ollama,7.0,PHYBench,MODERN,0,formula,0,691,39,3330,264.0,728.0,14.77,0,formula,,,5,93,4,20,0,231
+PHYBench_139,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,0,506,69,1236,192.0,675.0,14.11,0,formula,,,3,42,1,11,0,88
+PHYBench_106,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,685,35,641,211.0,669.0,13.66,0,formula,,,1,26,0,3,8,38
+PHYBench_58,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,0,1656,37,3243,593.0,534.0,12.39,0,formula,,,43,160,6,20,0,173
+PHYBench_412,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,0,1549,302,1064,446.0,784.0,15.99,0,formula,,,6,86,1,6,1,105
+PHYBench_43,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,1,703,439,2096,249.0,634.0,13.05,0,formula,,,11,105,1,11,0,179
+PHYBench_117,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,2,919,49,1872,301.0,812.0,15.59,0,formula,,,2,33,3,12,3,87
+PHYBench_42,Qwen7B-Ollama,7.0,PHYBench,OPTICS,0,formula,2,428,60,1527,171.0,394.0,8.64,0,formula,,,2,65,3,16,0,100
+PHYBench_45,Qwen7B-Ollama,7.0,PHYBench,THERMODYNAMICS,0,formula,2,1132,107,1701,427.0,948.0,18.56,0,formula,,,7,35,6,16,8,165
+PHYBench_37,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,3,1203,29,2151,373.0,738.0,17.24,0,formula,,,9,47,3,19,1,184
+PHYBench_654,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,1329,114,1869,358.0,540.0,12.69,0,formula,,,3,82,0,20,9,91
+PHYBench_244,Qwen7B-Ollama,7.0,PHYBench,THERMODYNAMICS,0,formula,0,445,26,413,184.0,606.0,12.65,0,formula,,,4,15,2,5,2,26
+PHYBench_25,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,4,449,21,777,180.0,960.0,18.85,0,formula,,,5,29,1,9,4,68
+PHYBench_100,Qwen7B-Ollama,7.0,PHYBench,MECHANICS,0,formula,1,966,37,4601,266.0,481.0,11.11,0,formula,,,0,207,0,26,2,276
+PHYBench_89,Qwen7B-Ollama,7.0,PHYBench,ELECTRICITY,0,formula,2,2220,386,5621,587.0,600.0,13.06,0,formula,,,14,280,4,28,14,442
+OlympiadBench_802,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,651,8,476,233.0,517.0,11.07,0,formula,Competition,Mechanics,6,3,0,5,0,21
+OlympiadBench_803,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,733,18,508,307.0,1024.0,20.62,0,formula,Competition,Modern Physics,14,14,1,7,2,46
+OlympiadBench_806,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,637,20,1315,222.0,427.0,10.73,0,formula,Competition,Mechanics,6,29,0,19,1,67
+OlympiadBench_807,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,724,4,561,265.0,407.0,9.69,0,numeric,Competition,Mechanics,10,15,0,10,0,32
+OlympiadBench_808,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,849,7,346,279.0,564.0,12.09,1,formula,Competition,Mechanics,10,14,5,4,0,36
+OlympiadBench_810,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,1168,4,606,400.0,564.0,12.04,0,numeric,Competition,Electromagnetism,11,15,8,4,2,48
+OlympiadBench_811,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,823,6,390,282.0,623.0,12.72,0,numeric,Competition,Thermodynamics,7,7,4,4,0,38
+OlympiadBench_812,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,812,2,1093,238.0,700.0,14.16,0,numeric,Competition,Electromagnetism,5,27,0,4,13,33
+OlympiadBench_813,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,604,5,618,239.0,1024.0,19.92,0,numeric,Competition,Electromagnetism,5,26,5,7,7,40
+OlympiadBench_814,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,483,5,558,173.0,310.0,8.43,0,formula,Competition,Optics,2,2,0,0,1,1
+OlympiadBench_816,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,535,4,321,191.0,475.0,11.0,0,numeric,Competition,Optics,2,4,0,3,1,5
+OlympiadBench_817,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,604,3,829,235.0,1024.0,19.84,0,numeric,Competition,Modern Physics,9,47,3,10,1,57
+OlympiadBench_819,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,2,1323,5,423,548.0,383.0,9.28,0,numeric,Competition,Modern Physics,29,9,2,6,2,55
+OlympiadBench_821,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,2,254,6,597,128.0,1024.0,20.21,0,formula,Competition,Modern Physics,1,35,1,9,4,44
+OlympiadBench_823,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,2,993,1,500,354.0,565.0,11.99,1,numeric,Competition,Mechanics,7,8,1,1,0,25
+OlympiadBench_826,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,1531,7,1350,417.0,945.0,18.61,0,numeric,Competition,Thermodynamics,13,32,0,7,6,43
+OlympiadBench_828,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,1335,4,1885,402.0,965.0,19.24,0,numeric,Competition,Thermodynamics,7,32,3,17,5,96
+OlympiadBench_835,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,2,524,6,1779,210.0,1024.0,19.5,0,numeric,Competition,Mechanics,7,51,0,13,5,82
+OlympiadBench_836,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,422,5,2469,176.0,384.0,8.91,0,numeric,Competition,Electromagnetism,3,162,0,9,4,107
+OlympiadBench_837,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,874,7,1071,292.0,1024.0,19.64,0,numeric,Competition,Mechanics,10,30,3,10,0,93
+OlympiadBench_840,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,526,8,3107,188.0,575.0,12.5,0,formula,Competition,Electromagnetism,3,69,2,20,2,125
+OlympiadBench_842,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,729,5,3147,280.0,605.0,12.86,0,numeric,Competition,Mechanics,9,38,8,20,4,179
+OlympiadBench_844,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,212,1,571,114.0,1024.0,18.93,0,numeric,Competition,Electromagnetism,3,24,0,2,0,18
+OlympiadBench_847,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,637,20,621,237.0,817.0,15.55,0,formula,Competition,Electromagnetism,6,26,4,3,0,37
+OlympiadBench_849,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,1147,7,1261,383.0,807.0,15.79,0,formula,Competition,Thermodynamics,14,12,2,10,1,38
+OlympiadBench_851,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,480,4,2511,203.0,701.0,13.76,0,numeric,Competition,Modern Physics,1,15,1,3,2,91
+OlympiadBench_853,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,684,6,579,236.0,570.0,12.12,0,formula,Competition,Mechanics,4,24,2,5,2,32
+OlympiadBench_856,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,367,5,1875,190.0,494.0,10.6,0,numeric,Competition,Electromagnetism,5,36,4,7,1,81
+OlympiadBench_860,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,2,410,6,1324,174.0,477.0,10.1,0,formula,Competition,Mechanics,2,46,2,17,1,116
+OlympiadBench_861,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,418,21,1290,177.0,532.0,11.1,0,formula,Competition,Mechanics,1,45,0,15,0,68
+OlympiadBench_863,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,2,437,4,1050,178.0,523.0,11.01,0,numeric,Competition,Modern Physics,3,38,1,6,6,48
+OlympiadBench_865,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,602,6,1736,281.0,859.0,16.19,0,formula,Competition,Mechanics,15,37,2,9,2,123
+OlympiadBench_866,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,528,20,1964,238.0,475.0,10.48,0,formula,Competition,Mechanics,11,25,4,8,2,57
+OlympiadBench_868,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,638,7,2516,217.0,369.0,8.41,0,formula,Competition,Mechanics,3,20,0,8,0,60
+OlympiadBench_869,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,667,23,1422,259.0,1024.0,18.85,0,formula,Competition,Mechanics,10,10,5,3,4,27
+OlympiadBench_870,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,1423,2,2028,421.0,760.0,15.28,0,numeric,Competition,Mechanics,9,71,0,6,0,85
+OlympiadBench_871,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,566,21,2912,249.0,656.0,12.93,0,formula,Competition,Mechanics,13,108,1,20,0,225
+OlympiadBench_872,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,671,5,1901,285.0,590.0,12.34,0,numeric,Competition,Thermodynamics,9,12,0,0,0,65
+OlympiadBench_873,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,363,1,242,169.0,640.0,12.81,1,numeric,Competition,Mechanics,3,4,3,2,0,21
+OlympiadBench_876,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,824,2,328,297.0,1024.0,18.89,0,numeric,Competition,Mechanics,10,8,2,7,5,26
+OlympiadBench_877,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,676,4,595,250.0,550.0,11.56,0,numeric,Competition,Mechanics,8,11,0,6,1,28
+OlympiadBench_878,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,319,28,1471,132.0,494.0,10.54,0,formula,Competition,Optics,1,39,1,12,0,101
+OlympiadBench_881,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,2525,2,631,849.0,1024.0,19.3,0,numeric,Competition,Thermodynamics,28,16,7,6,2,104
+OlympiadBench_883,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,977,7,442,316.0,792.0,15.91,0,formula,Competition,Electromagnetism,11,16,5,5,9,30
+OlympiadBench_884,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,397,21,660,175.0,420.0,9.42,1,formula,Competition,Thermodynamics,3,4,3,1,1,16
+OlympiadBench_885,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,2,1097,7,924,401.0,900.0,17.06,0,formula,Competition,Mechanics,19,15,1,8,5,53
+OlympiadBench_888,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,1135,6,1842,329.0,494.0,10.99,0,formula,Competition,Mechanics,12,73,1,20,0,111
+OlympiadBench_890,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,358,3,2637,175.0,445.0,9.47,0,numeric,Competition,Optics,4,43,2,8,0,44
+OlympiadBench_891,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,451,39,931,195.0,1024.0,19.21,0,formula,Competition,Mechanics,6,36,5,11,2,84
+OlympiadBench_893,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,697,7,1170,264.0,458.0,10.21,0,formula,Competition,Mechanics,9,24,7,12,4,78
+OlympiadBench_894,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,527,8,2710,215.0,881.0,16.74,0,formula,Competition,Electromagnetism,6,46,4,11,2,111
+OlympiadBench_897,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,2,614,7,2413,230.0,1024.0,18.78,0,formula,Competition,Electromagnetism,8,64,4,17,1,144
+OlympiadBench_898,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,948,8,2921,365.0,1024.0,19.14,0,formula,Competition,Modern Physics,12,60,4,17,5,129
+OlympiadBench_899,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,2,1197,3,1124,466.0,739.0,14.56,0,numeric,Competition,Modern Physics,12,20,7,7,6,79
+OlympiadBench_900,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,617,6,3696,227.0,569.0,11.78,0,formula,Competition,Optics,6,86,0,20,0,128
+OlympiadBench_901,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,338,22,1827,164.0,437.0,9.29,0,formula,Competition,Electromagnetism,8,44,2,11,0,50
+OlympiadBench_902,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,650,13,1560,243.0,491.0,10.42,0,formula,Competition,Thermodynamics,4,7,4,14,3,138
+OlympiadBench_903,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,1250,1,400,347.0,585.0,11.94,0,numeric,Competition,Mechanics,5,17,3,6,0,23
+OlympiadBench_905,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,422,6,747,179.0,783.0,14.61,1,formula,Competition,Mechanics,4,14,2,11,0,45
+OlympiadBench_907,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,918,6,1173,320.0,702.0,13.92,0,numeric,Competition,Modern Physics,12,39,7,9,0,93
+OlympiadBench_908,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,523,21,4324,228.0,585.0,11.71,0,formula,Competition,Thermodynamics,8,98,4,20,1,205
+OlympiadBench_909,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,655,2,2560,272.0,681.0,13.4,0,numeric,Competition,Mechanics,19,128,1,20,0,172
+OlympiadBench_910,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,3,900,21,1056,308.0,750.0,14.49,0,formula,Competition,Mechanics,9,29,0,12,3,50
+OlympiadBench_911,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,855,3,938,261.0,578.0,11.71,0,numeric,Competition,Modern Physics,4,15,0,8,0,53
+OlympiadBench_912,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,293,6,2006,147.0,738.0,14.45,0,numeric,Competition,Mechanics,3,37,0,16,1,65
+OlympiadBench_915,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,473,6,1164,223.0,815.0,15.55,0,formula,Competition,Electromagnetism,17,76,0,9,1,75
+OlympiadBench_917,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,659,7,1226,233.0,276.0,6.87,0,formula,Competition,Mechanics,4,35,0,12,2,82
+OlympiadBench_918,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,484,25,5454,216.0,946.0,17.69,0,formula,Competition,Electromagnetism,10,74,4,20,0,224
+OlympiadBench_919,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,570,7,1106,218.0,793.0,15.24,0,formula,Competition,Modern Physics,6,33,3,11,7,46
+OlympiadBench_922,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,1338,6,685,395.0,1024.0,18.9,0,formula,Competition,Thermodynamics,8,22,0,6,8,39
+OlympiadBench_923,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,1039,90,1353,302.0,878.0,16.84,0,formula,Competition,Electromagnetism,8,35,3,15,7,94
+OlympiadBench_926,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,515,3,909,221.0,874.0,16.44,0,numeric,Competition,Electromagnetism,8,30,2,8,2,52
+OlympiadBench_928,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,2,898,8,1700,294.0,743.0,14.35,0,formula,Competition,Electromagnetism,9,14,1,9,6,36
+OlympiadBench_929,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,595,22,2459,218.0,796.0,15.02,0,formula,Competition,Electromagnetism,6,78,0,10,3,98
+OlympiadBench_936,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,101,2,606,92.0,194.0,6.15,0,numeric,Competition,Optics,0,14,0,3,0,15
+OlympiadBench_939,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,181,18,332,116.0,402.0,9.05,0,formula,Competition,Mechanics,1,11,1,5,0,27
+OlympiadBench_940,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,378,61,367,175.0,424.0,9.32,0,formula,Competition,Mechanics,0,3,2,5,1,35
+OlympiadBench_941,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,475,19,317,208.0,468.0,9.88,0,formula,Competition,Mechanics,3,7,2,4,1,39
+OlympiadBench_942,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,329,32,213,169.0,478.0,10.18,1,formula,Competition,Mechanics,5,6,1,2,0,21
+OlympiadBench_944,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,818,103,695,290.0,622.0,12.29,0,formula,Competition,Modern Physics,15,32,2,5,1,80
+OlympiadBench_947,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,612,44,1410,202.0,415.0,9.75,0,formula,Competition,Electromagnetism,0,37,0,13,9,82
+OlympiadBench_949,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,67,93,136,83.0,609.0,12.58,0,formula,Competition,Electromagnetism,0,6,0,1,2,10
+OlympiadBench_954,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,47,15,793,82.0,265.0,6.66,0,formula,Competition,Mechanics,0,27,0,13,0,49
+OlympiadBench_955,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,81,9,1419,87.0,339.0,7.84,0,formula,Competition,Mechanics,0,32,0,14,0,81
+OlympiadBench_956,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,281,76,937,151.0,527.0,10.77,0,formula,Competition,Mechanics,0,34,1,12,1,72
+OlympiadBench_957,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,81,79,1024,97.0,288.0,7.09,0,formula,Competition,Mechanics,1,26,0,7,0,74
+OlympiadBench_972,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,65,89,504,81.0,504.0,10.49,0,formula,Competition,Electromagnetism,0,10,0,6,1,22
+OlympiadBench_973,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,928,106,538,381.0,823.0,15.51,0,formula,Competition,Electromagnetism,10,44,8,10,7,80
+OlympiadBench_974,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,70,157,969,82.0,873.0,16.57,0,formula,Competition,Electromagnetism,0,31,0,17,1,74
+OlympiadBench_982,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,541,45,452,230.0,486.0,10.7,0,formula,Competition,Electromagnetism,4,21,1,7,0,63
+OlympiadBench_984,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,77,228,942,88.0,853.0,15.95,0,formula,Competition,Mechanics,0,28,0,9,0,88
+OlympiadBench_985,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,53,34,112,90.0,442.0,9.39,0,formula,Competition,Mechanics,2,7,0,2,0,14
+OlympiadBench_986,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,191,109,144,133.0,459.0,9.62,0,formula,Competition,Mechanics,6,7,0,2,0,14
+OlympiadBench_987,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,2,282,173,438,153.0,332.0,8.13,0,formula,Competition,Mechanics,6,24,0,2,1,55
+OlympiadBench_988,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,191,120,434,162.0,760.0,14.88,0,formula,Competition,Mechanics,12,19,1,4,0,56
+OlympiadBench_989,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,77,12,623,89.0,291.0,7.18,0,formula,Competition,Mechanics,0,13,0,7,0,61
+OlympiadBench_1006,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,130,20,2192,110.0,362.0,8.13,0,formula,Competition,Mechanics,4,66,0,20,0,185
+OlympiadBench_1012,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,99,32,734,113.0,596.0,12.16,0,formula,Competition,Thermodynamics,2,13,0,9,0,56
+OlympiadBench_1013,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,188,6,284,161.0,361.0,8.69,0,numeric,Competition,Thermodynamics,10,13,3,5,0,28
+OlympiadBench_1014,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,1,295,5,1027,184.0,841.0,16.07,0,numeric,Competition,Thermodynamics,9,43,5,7,0,88
+OlympiadBench_1015,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,451,126,898,182.0,557.0,11.85,0,formula,Competition,Thermodynamics,4,46,1,3,0,73
+OlympiadBench_1016,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,109,6,62,114.0,171.0,5.5,0,formula,Competition,Thermodynamics,6,1,1,0,0,7
+OlympiadBench_1017,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,217,130,2201,130.0,624.0,12.69,0,formula,Competition,Thermodynamics,4,75,0,20,1,123
+OlympiadBench_1018,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,271,58,574,169.0,758.0,14.76,0,formula,Competition,Thermodynamics,10,44,1,2,1,67
+OlympiadBench_1050,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,161,35,376,113.0,246.0,6.61,1,formula,Competition,Modern Physics,1,6,0,5,1,11
+OlympiadBench_1051,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,81,37,456,100.0,234.0,6.53,0,formula,Competition,Modern Physics,4,15,1,7,0,24
+OlympiadBench_1052,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,341,38,268,140.0,751.0,14.54,0,formula,Competition,Modern Physics,4,8,0,4,4,18
+OlympiadBench_1053,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,283,95,313,142.0,477.0,10.1,1,formula,Competition,Modern Physics,2,6,0,3,2,14
+OlympiadBench_1054,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,227,70,219,120.0,789.0,15.18,0,formula,Competition,Modern Physics,1,7,0,4,4,14
+OlympiadBench_1060,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,142,21,215,105.0,881.0,16.86,0,formula,Competition,Modern Physics,1,10,0,3,0,20
+OlympiadBench_1061,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,246,120,750,148.0,1014.0,19.07,0,formula,Competition,Modern Physics,1,30,0,8,0,74
+OlympiadBench_1062,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,250,134,204,148.0,487.0,10.14,0,formula,Competition,Modern Physics,1,5,0,2,1,25
+OlympiadBench_1063,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,312,194,906,195.0,988.0,18.24,0,formula,Competition,Modern Physics,1,21,2,4,0,85
+OlympiadBench_1064,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,83,101,153,95.0,245.0,6.35,0,formula,Competition,Modern Physics,1,4,0,2,0,14
+OlympiadBench_1065,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,285,17,747,173.0,471.0,10.38,0,formula,Competition,Modern Physics,3,20,2,7,0,64
+OlympiadBench_1066,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,231,31,735,147.0,898.0,17.17,0,formula,Competition,Modern Physics,6,34,0,11,0,47
+OlympiadBench_1067,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,numeric,0,164,5,254,123.0,745.0,14.15,0,numeric,Competition,Modern Physics,2,14,1,4,0,22
+OlympiadBench_1068,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,194,55,498,122.0,199.0,6.19,1,formula,Competition,Modern Physics,1,24,0,7,0,49
+OlympiadBench_1069,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,228,20,187,122.0,800.0,15.39,0,formula,Competition,Modern Physics,1,6,0,3,0,17
+OlympiadBench_1070,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,306,20,403,161.0,598.0,12.05,0,formula,Competition,Modern Physics,6,24,1,3,0,38
+OlympiadBench_1071,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,119,38,286,115.0,308.0,7.37,0,formula,Competition,Modern Physics,3,17,0,6,0,31
+OlympiadBench_1072,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,440,89,697,185.0,313.0,7.66,0,formula,Competition,Modern Physics,1,16,0,6,4,42
+OlympiadBench_1073,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,272,74,995,160.0,688.0,13.59,0,formula,Competition,Modern Physics,4,28,1,7,0,52
+OlympiadBench_1097,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,4,595,26,2597,196.0,478.0,10.59,0,formula,Competition,Mechanics,0,44,0,17,2,57
+OlympiadBench_1098,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,399,7,1466,154.0,516.0,11.23,0,formula,Competition,Thermodynamics,2,27,1,12,3,40
+OlympiadBench_1099,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,1,550,6,1704,180.0,580.0,12.15,0,formula,Competition,Thermodynamics,2,32,1,11,2,68
+OlympiadBench_1101,Qwen7B-Ollama,7.0,OlympiadBench,Physics,0,formula,0,77,15,291,90.0,161.0,5.31,0,formula,Competition,Thermodynamics,1,2,0,2,1,3
+PhysReason_cal_problem_00069,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,numeric,2,750,8,1416,276.0,853.0,16.1,0,numeric,medium,,11,43,6,11,1,50
+PhysReason_cal_problem_00224,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,1,879,32,1231,294.0,829.0,15.76,0,formula,easy,,14,49,0,6,6,57
+PhysReason_cal_problem_00252,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,numeric,0,611,34,784,237.0,960.0,17.76,1,numeric,knowledge,,6,26,4,10,2,40
+PhysReason_cal_problem_00272,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,numeric,1,327,7,678,151.0,863.0,16.54,0,numeric,easy,,5,38,1,10,0,31
+PhysReason_cal_problem_00273,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,numeric,0,200,14,582,127.0,243.0,6.4,0,numeric,knowledge,,3,33,1,13,1,35
+PhysReason_cal_problem_00340,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,1,409,58,1043,193.0,545.0,11.04,0,formula,medium,,9,46,1,20,5,62
+PhysReason_cal_problem_00346,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,1,424,74,1052,162.0,560.0,11.8,0,formula,medium,,1,28,0,12,2,43
+PhysReason_cal_problem_00365,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,186,25,415,107.0,356.0,8.03,1,formula,knowledge,,0,14,0,7,0,17
+PhysReason_cal_problem_00418,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,535,60,537,194.0,357.0,8.68,0,formula,knowledge,,3,14,3,4,0,16
+PhysReason_cal_problem_00419,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,149,40,554,100.0,240.0,6.63,1,formula,knowledge,,1,41,0,11,2,34
+PhysReason_cal_problem_00432,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,numeric,0,376,15,610,177.0,798.0,15.73,0,numeric,easy,,8,30,4,7,3,34
+PhysReason_cal_problem_00575,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,numeric,0,209,11,437,129.0,358.0,8.54,0,numeric,knowledge,,3,17,0,6,0,22
+PhysReason_cal_problem_00577,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,1,270,26,975,140.0,193.0,5.96,0,formula,knowledge,,7,32,1,9,0,43
+PhysReason_cal_problem_00665,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,2,240,81,850,122.0,361.0,8.51,0,formula,medium,,0,30,0,9,4,42
+PhysReason_cal_problem_00701,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,numeric,0,158,3,404,103.0,406.0,8.9,0,numeric,knowledge,,1,9,0,2,3,7
+PhysReason_cal_problem_00736,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,numeric,0,566,41,986,212.0,793.0,15.52,0,numeric,easy,,6,41,6,16,0,64
+PhysReason_cal_problem_00840,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,402,57,438,162.0,300.0,7.48,0,formula,knowledge,,3,16,0,4,0,18
+PhysReason_cal_problem_00906,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,numeric,0,188,4,290,130.0,302.0,7.54,0,numeric,easy,,5,18,1,7,0,29
+PhysReason_cal_problem_00915,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,404,26,442,171.0,310.0,7.5,1,formula,knowledge,,5,31,1,8,0,31
+PhysReason_cal_problem_00945,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,1,302,11,501,147.0,632.0,12.82,0,formula,easy,,4,20,0,9,0,25
+PhysReason_cal_problem_01098,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,827,70,2507,302.0,1024.0,18.76,0,formula,difficult,,15,114,6,20,0,147
+PhysReason_cal_problem_01115,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,261,64,595,138.0,554.0,11.07,0,formula,knowledge,,5,28,1,10,3,29
+PhysReason_cal_problem_01184,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,682,31,1548,262.0,592.0,11.71,0,formula,medium,,8,59,5,17,1,77
+PhysReason_cal_problem_01211,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,454,33,722,189.0,311.0,6.99,0,formula,easy,,4,23,0,9,0,28
+PhysReason_cal_problem_01276,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,397,20,493,156.0,255.0,6.53,0,formula,knowledge,,3,28,0,8,0,28
+PhysReason_cal_problem_01375,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,234,189,1112,159.0,363.0,8.1,0,formula,easy,,5,28,3,13,0,45
+PhysReason_cal_problem_01390,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,2,312,98,866,145.0,420.0,8.85,0,formula,knowledge,,3,27,0,13,1,27
+PhysReason_cal_problem_01469,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,217,125,1100,132.0,142.0,4.41,0,formula,medium,,4,45,0,19,0,60
+PhysReason_cal_problem_01515,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,643,91,820,216.0,550.0,10.41,0,formula,knowledge,,7,13,0,6,0,24
+PhysReason_comp_problem_4,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,0,300,18,2959,146.0,651.0,11.75,0,formula,medium,,3,106,0,20,0,74
+PhysReason_comp_problem_95,Qwen7B-Ollama,7.0,PhysReason,physics_reasoning,0,formula,3,1895,133,3308,904.0,668.0,12.26,0,formula,difficult,,82,133,20,20,7,313

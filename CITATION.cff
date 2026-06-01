@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated manuscript and this repository."
+title: "Conservation-constraint load predicts failure in large language model physics reasoning"
+authors:
+  - family-names: Ren
+    given-names: Lijian
+    orcid: "https://orcid.org/0000-0003-1629-4368"
+repository-code: "https://github.com/Johnsonlijian/llm-physics-conservation-bound"
+date-released: "2026-06-01"
+license: MIT
+keywords:
+  - large language models
+  - physics reasoning
+  - conservation laws
+  - reproducibility
+  - benchmark evaluation

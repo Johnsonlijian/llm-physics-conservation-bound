@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Local/editor state
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets and local credentials
+.env
+*.key
+*.pem
+secrets/
+credentials/
+tokens/
+
+# Raw third-party data and private/generated run logs are intentionally excluded.
+data/
+logs/
+backup/
+rounds/
+manuscript/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Large local rerun outputs
+outputs/
+tmp/
+scratch/
