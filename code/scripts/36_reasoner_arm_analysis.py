@@ -104,7 +104,7 @@ def main():
     ds = sorted(per)
     ax.plot(ds, [per[d][1] for d in ds], "-s", ms=7, lw=2.8, color="#d1495b", zorder=5,
             label=f"DeepSeek-reasoner ({overall:.2f})", markeredgecolor="white", markeredgewidth=0.8)
-    ax.set_xlabel("conservation dimension $d_c$")
+    ax.set_xlabel("conservation-constraint load $d_c$")
     ax.set_ylabel("judged accuracy")
     ax.set_xticks(range(0, 6))
     ax.set_title(f"Strong-solver arm has real dynamic range and still declines with $d_c$\n"

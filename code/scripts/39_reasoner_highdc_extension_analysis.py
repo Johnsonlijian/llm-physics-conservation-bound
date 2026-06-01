@@ -1,11 +1,11 @@
-"""Analyse the DeepSeek-reasoner arm on the +100 high-d_c extension and pool the right tail.
+﻿"""Analyse the DeepSeek-reasoner arm on the +100 high-d_c extension and pool the right tail.
 
-(1) §4.8 extension table, apples-to-apples: reasoner added as a 4th solver next to DeepSeek /
+(1) 搂4.8 extension table, apples-to-apples: reasoner added as a 4th solver next to DeepSeek /
     Kimi-K2 / Qwen-14B, same extension d_c labels (from highdc_multimodel_items).
 (2) Pooled reasoner right tail: pilot258 reasoner (254) + extension reasoner (100) per d_c, with
     a univariate OR. The two halves use DIFFERENT d_c label sources (pilot = 4-family LLM
     consensus; extension = single-rater DeepSeek prelabel), so the pooled curve is reported as a
-    coverage/robustness extension, not a single clean panel — this caveat is printed and figured.
+    coverage/robustness extension, not a single clean panel 鈥?this caveat is printed and figured.
 
 Figure F18 (2 panels): (a) extension 4-solver per-d_c; (b) pooled reasoner per-d_c, right tail.
 Report: evaluation/reasoner_highdc_extension_20260529.md
@@ -136,10 +136,10 @@ def main():
     axA.legend(fontsize=8, loc="upper right")
 
     # panel B: reasoner d_c slope BY LABEL SOURCE (honest contrast, not a pool):
-    # the negative slope is recovered under the clean 4-family consensus d_c (pilot258) but
+    # the negative slope is recovered under the clean 4-family Consensus conservation-constraint load d_c (pilot258) but
     # NOT under the noisier single-rater extension prelabel d_c.
     for lab, pd, c, mk in [
-        (f"pilot258, 4-family consensus $d_c$  (n={len(reas_pilot)}, OR {or_p:.2f})", pd_pilot, "#5b8e7d", "o"),
+        (f"pilot258, 4-family Consensus conservation-constraint load \$d_c\$  (n={len(reas_pilot)}, OR {or_p:.2f})", pd_pilot, "#5b8e7d", "o"),
         (f"+100 ext, single-rater $d_c$  (n={len(reas_ext)}, OR {or_x:.2f})", pd_ext, "#e07a5f", "^")]:
         ds = sorted(pd)
         axB.plot(ds, [pd[d][1] for d in ds], "-", marker=mk, ms=6.5, lw=2.4, color=c, alpha=0.92, label=lab)
@@ -149,17 +149,17 @@ def main():
     axB.set_xlabel("$d_c$")
     axB.set_ylabel("reasoner judged accuracy")
     axB.set_title("(b) the negative slope needs clean labels:\n"
-                  "recovered under consensus $d_c$, flat under single-rater extension $d_c$", fontsize=10)
+                  "recovered under Consensus conservation-constraint load \$d_c\$, flat under single-rater extension $d_c$", fontsize=10)
     axB.legend(fontsize=7.5, loc="lower left", title="reasoner, by $d_c$ label source")
     fig.tight_layout(); OUT_FIG.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUT_FIG); fig.savefig(OUT_FIG.with_suffix(".pdf"))
 
     # ---- report ----
     md = ["# DeepSeek-reasoner on the +100 high-d_c extension (right-tail reinforcement)\n\n"]
-    md.append("Reasoner arm added to the §4.8 extension using the identical solve/judge route "
+    md.append("Reasoner arm added to the 搂4.8 extension using the identical solve/judge route "
               "(deepseek-reasoner@16384 -> deepseek-chat judge) and the same extension DeepSeek-prelabel "
               "d_c as the other three solvers.\n\n")
-    md.append("## §4.8 extension, overall accuracy (4 solvers)\n\n| solver | valid n | accuracy |\n|---|---:|---:|\n")
+    md.append("## 搂4.8 extension, overall accuracy (4 solvers)\n\n| solver | valid n | accuracy |\n|---|---:|---:|\n")
     for m in ["DeepSeek", "Kimi-K2", "Qwen-14B", "DeepSeek-reasoner"]:
         if ext_tbl.get(m):
             md.append(f"| {NICE.get(m, m)} | {ext_tbl[m][0][0]} | {ext_tbl[m][0][1]:.3f} |\n")
@@ -171,24 +171,24 @@ def main():
         pd = ext_tbl[m][1]
         cells = []
         for d in range(0, 5):
-            cells.append(f"{pd[d][1]:.2f} (n={pd[d][0]})" if d in pd else "—")
+            cells.append(f"{pd[d][1]:.2f} (n={pd[d][0]})" if d in pd else "NA")
         md.append(f"| {NICE.get(m, m)} | " + " | ".join(cells) + " |\n")
     md.append("\n## Reasoner d_c slope by label source (the honest result)\n\n")
     md.append("The extension was intended to reinforce the high-d_c right tail. It did not, and the "
               "reason is informative: the negative constraint-penalty slope is recovered on the strong "
-              "solver under the **4-family consensus d_c** (pilot258) but **not** under the noisier "
+              "solver under the **4-family Consensus conservation-constraint load d_c** (pilot258) but **not** under the noisier "
               "**single-rater extension d_c**.\n\n")
-    md.append(f"- pilot258 reasoner (consensus d_c): n={len(reas_pilot)}, univariate OR/$+1 d_c$ = **{or_p:.3f}** (p={p_p:.2g}) — clean negative slope\n")
-    md.append(f"- extension reasoner (single-rater d_c): n={len(reas_ext)}, univariate OR/$+1 d_c$ = **{or_x:.3f}** (p={p_x:.2g}) — flat/slightly positive\n")
+    md.append(f"- pilot258 reasoner (Consensus conservation-constraint load d_c): n={len(reas_pilot)}, univariate OR/$+1 d_c$ = **{or_p:.3f}** (p={p_p:.2g}) 鈥?clean negative slope\n")
+    md.append(f"- extension reasoner (single-rater d_c): n={len(reas_ext)}, univariate OR/$+1 d_c$ = **{or_x:.3f}** (p={p_x:.2g}) 鈥?flat/slightly positive\n")
     md.append(f"- naive pool (different label sources, reported only for completeness, NOT a headline): "
-              f"n={len(pooled)}, OR {or_a:.3f} (β={b_a:.3f}, p={p_a:.2g})\n\n")
+              f"n={len(pooled)}, OR {or_a:.3f} (尾={b_a:.3f}, p={p_a:.2g})\n\n")
     md.append("| d_c | pilot n | pilot acc | ext n | ext acc | pooled n | pooled acc |\n|---:|---:|---:|---:|---:|---:|---:|\n")
 
     def cell_n(t):
         return str(t[0]) if t else "0"
 
     def cell_a(t):
-        return f"{t[1]:.2f}" if t else "—"
+        return f"{t[1]:.2f}" if t else "NA"
     for d in sorted(set(pd_pilot) | set(pd_ext)):
         pp = pd_pilot.get(d); xx = pd_ext.get(d); oo = pd_pool.get(d)
         md.append(f"| {d} | {cell_n(pp)} | {cell_a(pp)} | {cell_n(xx)} | {cell_a(xx)} | "
@@ -209,3 +209,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+

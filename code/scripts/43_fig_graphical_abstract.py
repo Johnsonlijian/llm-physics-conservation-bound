@@ -45,7 +45,7 @@ def main():
     ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 100); ax.set_ylim(0, 100); ax.axis("off")
 
     # title
-    ax.text(50, 95, "Conservation dimension $d_c$: a controllable structural difficulty axis for LLM physics reasoning",
+    ax.text(50, 95, "Conservation-constraint load $d_c$: a structural difficulty axis for LLM physics reasoning",
             ha="center", va="center", fontsize=14.5, fontweight="bold", color=INK)
     ax.text(50, 89.3, "each independent conservation law multiplies the odds of a correct answer by $\\mathrm{OR}\\approx0.69$ — a constraint-penalty law that needs no information-theoretic machinery",
             ha="center", va="center", fontsize=9.5, color="#555", style="italic")

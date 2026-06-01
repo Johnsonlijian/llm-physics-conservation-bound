@@ -160,7 +160,7 @@ def main():
     ax.plot(xg, beta_dc * xg, "--", color="#d1495b", lw=2.0, zorder=3,
             label=f"constraint-penalty prediction\n(linear, slope $\\beta={beta_dc:.2f}$)")
     ax.axhline(0, color="#1b1b1b", lw=0.9, ls=":")
-    ax.set_xlabel("conservation dimension $d_c$")
+    ax.set_xlabel(r"conservation-constraint load $d_c$")
     ax.set_ylabel("log-odds penalty vs $d_c=0$ (controlled, M3)")
     ax.set_title("Log-odds fall on a straight line in $d_c$\n"
                  "(the constraint-penalty law's core prediction)", fontsize=11)

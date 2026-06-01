@@ -25,7 +25,7 @@ Offline-only analysis using existing pilot258 judged outputs. No model/API calls
 - Main spec: `M3_topic_controls`.
 - d_c beta = -0.3753; odds ratio per +1 d_c = 0.687.
 - Cluster bootstrap 95% CI for beta by item = [-0.8731, -0.0696] (B=200).
-- Interpretation: negative beta means higher conservation dimension predicts lower judged correctness after local controls.
+- Interpretation: negative beta means higher conservation-constraint load predicts lower judged correctness after local controls.
 
 ## Controlled marginal accuracy
 

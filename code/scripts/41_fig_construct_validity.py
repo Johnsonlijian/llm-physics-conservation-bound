@@ -1,4 +1,4 @@
-"""Figure 2 (hero composite): three independent channels validate d_c.
+﻿"""Figure 2 (hero composite): three independent channels validate d_c.
 
 Four-panel NCS-grade construct-validity display item, all panels from
 evaluation/rule_based_dc_floor_items_20260529.csv (+ the documented three-way
@@ -74,7 +74,7 @@ def draw_network(ax):
     ax.set_xlim(0, 10); ax.set_ylim(0, 10); ax.axis("off")
     ax.set_title("Three independent channels measure the same $d_c$", pad=8)
     nodes = {
-        "regex": (2.0, 2.4, C_REGEX, "zero-LLM regex\n(deterministic,\nno inference)"),
+        "regex": (2.45, 2.4, C_REGEX, "zero-LLM\nregex\n(no inference)"),
         "human": (5.0, 8.0, C_HUMAN, "human\n(PhysReason\nauthors)"),
         "llm":   (8.0, 2.4, C_LLM, "LLM raters\n(4 families)"),
     }
@@ -92,7 +92,7 @@ def draw_network(ax):
         ax.text(mx, my - 0.62, n, fontsize=6.6, color="#777", ha="center", va="center", zorder=4)
     for key, (x, y, c, lab) in nodes.items():
         ax.add_patch(Circle((x, y), 0.92, facecolor=c, edgecolor="white", lw=2.0, zorder=3, alpha=0.92))
-        ax.text(x, y, lab, fontsize=7.2, color="white", ha="center", va="center", zorder=5, fontweight="bold")
+        ax.text(x, y, lab, fontsize=6.8, color="white", ha="center", va="center", zorder=5, fontweight="bold")
     ax.text(5.0, 0.5, "pairwise agreement of a rule system, human labels, and LLMs\n"
                       "$\\Rightarrow$ $d_c$ is an objective item property, not an LLM artefact",
             fontsize=7.8, color=INK, ha="center", va="center", style="italic")
@@ -109,7 +109,7 @@ def draw_substitution(ax):
     *source* swapped from LLM-consensus to the deterministic zero-LLM regex."""
     by = {(r["source"], r["spec"]): r for r in read_csv_any(COEF)}
     specs = ["M0_dc_only", "M1_item_controls", "M2_model_controls", "M3_topic_controls"]
-    series = [("llm_consensus_dc", "LLM-consensus $d_c$", C_HUMAN),
+    series = [("llm_consensus_dc", "LLM-Consensus conservation-constraint load \$d_c\$", C_HUMAN),
               ("regex_dc", "zero-LLM regex $d_c$", C_REGEX)]
     for si, (src, lab, col) in enumerate(series):
         off = 0.17 if si == 0 else -0.17
@@ -146,8 +146,8 @@ def draw_substitution(ax):
     ax.set_title("Swap in a zero-LLM $d_c$: the effect persists", pad=8)
     ax.legend(loc="lower left", fontsize=7.6, handletextpad=0.4)
     ax.grid(axis="y", alpha=0)
-    ax.text(0.5, -0.235, "identical estimator, controls and items — only the $d_c$ source changes;\n"
-            "regex M3 is negative in 94.8% of 9000 item bootstraps (§4.6)",
+    ax.text(0.5, -0.235, "identical estimator, controls and items 鈥?only the $d_c$ source changes;\n"
+            "regex M3 is negative in 94.8% of 9000 item bootstraps (搂4.6)",
             transform=ax.transAxes, ha="center", va="top", fontsize=6.7, color="#777", style="italic")
 
 
@@ -219,3 +219,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+

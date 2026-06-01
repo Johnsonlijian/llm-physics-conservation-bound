@@ -1,4 +1,4 @@
-# T5 Corollary - Chain-of-Thought Gain And Conservation Dimension
+﻿# T5 Corollary - Chain-of-Thought Gain And Conservation-constraint load
 
 Status: W2 draft.
 
@@ -80,6 +80,7 @@ The claim is supported only if:
 
 If CoT gains do not follow the `1/d_c` pattern, downgrade C5 to:
 
-> CoT gains are bounded and heterogeneous; conservation dimension explains part
+> CoT gains are bounded and heterogeneous; Conservation-constraint load explains part
 > of the heterogeneity but is not a universal law.
+
 

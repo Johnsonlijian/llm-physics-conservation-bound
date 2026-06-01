@@ -136,7 +136,7 @@ def draw_law(ax):
                 xy=(2, 1 / (1 + np.exp(-(th0 + th1 * 2)))), xytext=(2.55, 0.235),
                 fontsize=9, color=WARM,
                 arrowprops=dict(arrowstyle="-|>", color=WARM, lw=1.1))
-    ax.set_xlabel("conservation dimension $d_c$")
+    ax.set_xlabel(r"conservation-constraint load $d_c$")
     ax.set_ylabel("judged accuracy")
     ax.set_xticks(range(0, 6))
     ax.set_ylim(-0.01, 0.31)

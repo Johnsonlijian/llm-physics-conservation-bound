@@ -1,4 +1,4 @@
-"""Benchmark-author d_c anchor from PhysReason step-level theorem annotations.
+﻿"""Benchmark-author d_c anchor from PhysReason step-level theorem annotations.
 
 PhysReason (zhibei1204) ships human-authored `physical_theorem` labels per solution
 step (steps_analysis[*].physical_theorem) plus a top-level Theorem list. These are
@@ -7,7 +7,7 @@ We map each theorem string to a conservation-law family, count the distinct
 conservation families a problem's official solution invokes, and call that the
 **benchmark-native conservation-family count** d_c^bench in [0,6].
 
-We then compare d_c^bench to our LLM-consensus d_c on every PhysReason item that
+We then compare d_c^bench to our LLM-Consensus conservation-constraint load d_c on every PhysReason item that
 appears in pilot258 or the high-d_c +100 extension. This is an *external construct-
 validity anchor* that does not require us to run any human annotation: it reuses
 ground-truth annotations that already exist in the benchmark.
@@ -238,7 +238,7 @@ def main():
     pear = pearson(llm_dc, bench_dc)
     spear = pearson(rankdata(llm_dc), rankdata(bench_dc))
 
-    print(f"[agreement] exact={exact:.3f}  within±1={within1:.3f}  mean(llm-bench)={mean_diff:+.3f}  MAE={mae:.3f}")
+    print(f"[agreement] exact={exact:.3f}  within卤1={within1:.3f}  mean(llm-bench)={mean_diff:+.3f}  MAE={mae:.3f}")
     print(f"[corr] Pearson={pear:.3f}  Spearman={spear:.3f}")
 
     # Per-family presence agreement where LLM family labels exist
@@ -273,9 +273,9 @@ def main():
         lim = max(llm_dc.max(), bench_dc.max()) + 0.5
         ax.plot([-0.5, lim], [-0.5, lim], "k--", alpha=0.5, label="identity")
         ax.set_xlabel(r"Benchmark-native $d_c^{\rm bench}$ (PhysReason author theorem count)")
-        ax.set_ylabel(r"LLM-consensus $d_c$")
+        ax.set_ylabel(r"LLM-Consensus conservation-constraint load \$d_c\$")
         ax.set_title(f"PhysReason theorem anchor (n={len(rows)})\n"
-                     f"Spearman ρ={spear:.2f}, within±1={within1:.0%}, mean(LLM−bench)={mean_diff:+.2f}")
+                     f"Spearman 蟻={spear:.2f}, within卤1={within1:.0%}, mean(LLM鈭抌ench)={mean_diff:+.2f}")
         ax.legend(loc="upper left", fontsize=9)
         ax.grid(True, alpha=0.3)
         args.out_fig.parent.mkdir(parents=True, exist_ok=True)
@@ -295,7 +295,7 @@ def main():
         "angular momentum, energy, charge, mass, entropy; Newton's laws, Ohm's law, ",
         "kinematics, gas laws, geometry, and algebra map to *no* conservation family), ",
         "count the distinct conservation families the official solution invokes, and call ",
-        "that the benchmark-native $d_c^{\\rm bench}$. We compare it to our LLM-consensus $d_c$.\n\n",
+        "that the benchmark-native $d_c^{\\rm bench}$. We compare it to our LLM-Consensus conservation-constraint load \$d_c\$.\n\n",
         f"- Matched PhysReason items (LLM $d_c$ + benchmark theorems): **{len(rows)}**\n",
         f"- Mapping is conservative (family-presence, 0/1 per family) so $d_c^{{\\rm bench}}$ is a ",
         "lower-resolution count than our scalar-component protocol; it is a *lower bound* on ",
@@ -303,25 +303,25 @@ def main():
         "## Total-count agreement (LLM $d_c$ vs $d_c^{\\rm bench}$)\n\n",
         "| metric | value |\n|---|---:|\n",
         f"| exact match | {exact:.3f} |\n",
-        f"| within ±1 | {within1:.3f} |\n",
-        f"| mean(LLM − bench) | {mean_diff:+.3f} |\n",
+        f"| within 卤1 | {within1:.3f} |\n",
+        f"| mean(LLM 鈭?bench) | {mean_diff:+.3f} |\n",
         f"| MAE | {mae:.3f} |\n",
         f"| Pearson r | {pear:.3f} |\n",
-        f"| Spearman ρ | {spear:.3f} |\n\n",
+        f"| Spearman 蟻 | {spear:.3f} |\n\n",
     ]
     if fam_kappa:
-        md.append("## Per-family presence agreement (Cohen κ)\n\n")
-        md.append("| family | Cohen κ | LLM-positive n | bench-positive n | n |\n|---|---:|---:|---:|---:|\n")
+        md.append("## Per-family presence agreement (Cohen 魏)\n\n")
+        md.append("| family | Cohen 魏 | LLM-positive n | bench-positive n | n |\n|---|---:|---:|---:|---:|\n")
         for fam, (k, na, nb, n) in fam_kappa.items():
             md.append(f"| {fam} | {k:.3f} | {na} | {nb} | {n} |\n")
         md.append("\n")
     md += [
         "## Reading\n\n",
-        f"The LLM-consensus $d_c$ correlates with the benchmark-author conservation-family ",
-        f"count at Spearman ρ = {spear:.2f} (within±1 = {within1:.0%}). ",
+        f"The LLM-Consensus conservation-constraint load \$d_c\$ correlates with the benchmark-author conservation-family ",
+        f"count at Spearman 蟻 = {spear:.2f} (within卤1 = {within1:.0%}). ",
         "Because $d_c^{\\rm bench}$ counts family *presence* while the LLM protocol counts ",
         "scalar *components*, the LLM tends to score slightly higher on multi-component ",
-        f"problems (mean LLM − bench = {mean_diff:+.2f}). The positive, ordered relationship ",
+        f"problems (mean LLM 鈭?bench = {mean_diff:+.2f}). The positive, ordered relationship ",
         "against an independent, human-authored benchmark annotation supports the construct ",
         "validity of $d_c$ without requiring us to collect new human labels. A full human-",
         "physicist gold pass on the blinded 96-item packet remains the planned final gate.\n",
@@ -333,3 +333,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+

@@ -1,13 +1,13 @@
-"""W6 robustness under a ZERO-LLM d_c label (kills the 'LLM-labelling artefact' objection).
+﻿"""W6 robustness under a ZERO-LLM d_c label (kills the 'LLM-labelling artefact' objection).
 
 The headline W6 result (d_c is a negative predictor of judged correctness after
-topic/source/model/token/length controls; OR = 0.687) uses an LLM-consensus d_c.
+topic/source/model/token/length controls; OR = 0.687) uses an LLM-Consensus conservation-constraint load d_c.
 A reviewer can object that the negative effect is an artefact of LLM *labelling*.
 
 This script re-runs the *identical* M3 ridge logistic on the *identical* 1032-obs
 panel, changing only the SOURCE of the d_c variable: from LLM-consensus to a fully
 deterministic regex extractor (the same rule table as script 31, `rule_qs` mode on
-question + official solution). Same estimator, same controls, same items — only the
+question + official solution). Same estimator, same controls, same items 鈥?only the
 d_c column is swapped. If the negative coefficient survives, the constraint-penalty
 effect is not an artefact of LLM labelling.
 
@@ -77,7 +77,7 @@ def main():
         text = (r.get("question", "") or "") + " " + (r.get("solution_text", "") or "")
         regex_dc[iid] = len(m31.rule_families(text))
 
-    # 2) load the existing 1032-obs panel (has llm-consensus d_c + all controls + is_correct)
+    # 2) load the existing 1032-obs panel (has llm-Consensus conservation-constraint load d_c + all controls + is_correct)
     panel = read_csv(PANEL)
     for row in panel:
         row["d_c"] = int(float(row["d_c"]))  # llm-consensus baseline
@@ -205,38 +205,38 @@ def main():
         return f"[{d['lo']:.3f}, {d['hi']:.3f}]"
     md = []
     md.append("# W6 Robustness Under a Zero-LLM (Regex) d_c Label\n\n")
-    md.append("The headline W6 result uses an LLM-consensus d_c, inviting the objection that "
+    md.append("The headline W6 result uses an LLM-Consensus conservation-constraint load d_c, inviting the objection that "
               "the negative d_c effect is an artefact of LLM *labelling*. Here we re-run the "
               "**identical** M3 ridge logistic on the **identical** 1032-observation panel, "
               "swapping only the *source* of the d_c variable from LLM-consensus to a fully "
               "deterministic regex extractor (`rule_qs` mode of `code/scripts/31_rule_based_dc_floor.py`, "
               "applied to question + official solution). Same estimator (`code/scripts/07_*`), "
-              "same controls (topic/source/model/answer-type/token/length FE), same items — only "
+              "same controls (topic/source/model/answer-type/token/length FE), same items 鈥?only "
               "the d_c column changes.\n\n")
-    md.append(f"## Regex vs LLM-consensus d_c agreement on pilot258 (n = {agree['n_items']} items)\n\n")
+    md.append(f"## Regex vs LLM-Consensus conservation-constraint load d_c agreement on pilot258 (n = {agree['n_items']} items)\n\n")
     md.append("| metric | value |\n|---|---:|\n")
-    md.append(f"| Spearman ρ | {agree['spearman']:.3f} |\n")
-    md.append(f"| within ±1 | {agree['within1']:.3f} |\n")
+    md.append(f"| Spearman 蟻 | {agree['spearman']:.3f} |\n")
+    md.append(f"| within 卤1 | {agree['within1']:.3f} |\n")
     md.append(f"| exact | {agree['exact']:.3f} |\n")
     md.append(f"| mean LLM d_c | {agree['mean_llm']:.3f} |\n")
     md.append(f"| mean regex d_c | {agree['mean_regex']:.3f} |\n")
-    md.append(f"| lower-bound (regex ≤ LLM) | {agree['lower_bound_frac']:.3f} |\n\n")
+    md.append(f"| lower-bound (regex 鈮?LLM) | {agree['lower_bound_frac']:.3f} |\n\n")
     md.append(f"Regex d_c distribution over items: {dict(sorted(rdist.items()))}. "
               "As designed, the keyword floor is sparser and lower than the LLM-consensus label "
               "(mean 0.30 vs 0.89), so it is a deliberately **conservative, attenuated** test.\n\n")
-    md.append("## Control ladder: LLM-consensus d_c vs regex d_c (same panel, same estimator)\n\n")
-    md.append("| d_c source | spec | β(d_c) | OR per +1 | AUC |\n")
+    md.append("## Control ladder: LLM-Consensus conservation-constraint load d_c vs regex d_c (same panel, same estimator)\n\n")
+    md.append("| d_c source | spec | 尾(d_c) | OR per +1 | AUC |\n")
     md.append("|---|---|---:|---:|---:|\n")
     for r in res_base + res_regex:
         md.append(f"| {'LLM-consensus' if r['source']=='llm_consensus_dc' else 'regex (zero-LLM)'} "
                   f"| {r['spec'].replace('_topic_controls','/M3').replace('_model_controls','/M2').replace('_item_controls','/M1').replace('_dc_only','/M0')} "
                   f"| {r['dc_beta']:.4f} | {r['dc_or']:.3f} | {r['auc']:.3f} |\n")
-    md.append(f"\n## Stable item-cluster bootstrap on the M3 d_c coefficient (B = {B}/seed × {len(SEEDS)} seeds = {bb['n']} resamples)\n\n")
+    md.append(f"\n## Stable item-cluster bootstrap on the M3 d_c coefficient (B = {B}/seed 脳 {len(SEEDS)} seeds = {bb['n']} resamples)\n\n")
     md.append("We use a large, multi-seed item-cluster bootstrap because at B=200 the 97.5th "
               "percentile sits near zero and is seed-sensitive. We therefore report the pooled "
-              "interval over three seeds and the **fraction of resamples with β < 0**, a "
+              "interval over three seeds and the **fraction of resamples with 尾 < 0**, a "
               "boundary-robust summary that does not hinge on a single percentile estimate.\n\n")
-    md.append("| d_c source | β (point) | OR | stable 95% CI | frac(β<0) | per-seed 95% CIs |\n")
+    md.append("| d_c source | 尾 (point) | OR | stable 95% CI | frac(尾<0) | per-seed 95% CIs |\n")
     md.append("|---|---:|---:|---:|---:|---|\n")
     for label, pt in [("llm_consensus_dc", bm), ("regex_dc", rm)]:
         d = boot[label]
@@ -245,20 +245,20 @@ def main():
                   f"| {pt['dc_beta']:.3f} | {pt['dc_or']:.3f} | {ci(d)} | {d['frac_neg']:.3f} | {ps} |\n")
     md.append("\n## Reading\n\n")
     bfn, rfn = bb["frac_neg"], rb["frac_neg"]
-    md.append(f"Under the main M3 specification the LLM-consensus d_c gives β = {bm['dc_beta']:.3f} "
-              f"(OR = {bm['dc_or']:.3f}); the **zero-LLM regex** d_c gives β = {rm['dc_beta']:.3f} "
-              f"(OR = {rm['dc_or']:.3f}) — same sign, slightly larger magnitude. The negative "
+    md.append(f"Under the main M3 specification the LLM-Consensus conservation-constraint load d_c gives 尾 = {bm['dc_beta']:.3f} "
+              f"(OR = {bm['dc_or']:.3f}); the **zero-LLM regex** d_c gives 尾 = {rm['dc_beta']:.3f} "
+              f"(OR = {rm['dc_or']:.3f}) 鈥?same sign, slightly larger magnitude. The negative "
               f"constraint-penalty effect therefore **persists when d_c is computed with no model "
               f"inference of any kind**, despite the regex being a deliberately sparse keyword floor "
-              f"(item-level ρ = {agree['spearman']:.2f} with the LLM label, mean 0.30 vs 0.89), which "
+              f"(item-level 蟻 = {agree['spearman']:.2f} with the LLM label, mean 0.30 vs 0.89), which "
               f"attenuates the test. The stable bootstrap shows the LLM-d_c coefficient is negative in "
               f"{bfn:.0%} of item resamples and the regex-d_c coefficient in {rfn:.0%}; the pooled 95% CI "
-              f"is {ci(bb)} (LLM) and {ci(rb)} (regex). The upper tail sits near zero — so the honest "
+              f"is {ci(bb)} (LLM) and {ci(rb)} (regex). The upper tail sits near zero 鈥?so the honest "
               f"statement is **directional**: both label sources, including one with zero LLM "
               f"involvement, place the bulk of the bootstrap mass below zero, which is evidence that "
-              f"the negative d_c–accuracy association is a property of the items rather than an "
+              f"the negative d_c鈥揳ccuracy association is a property of the items rather than an "
               f"artefact of the LLM labelling pipeline. It is not, at pilot258 size, a clean "
-              f"two-sided-significant effect, consistent with the §4.4 proxy-sensitivity caveat.\n")
+              f"two-sided-significant effect, consistent with the 搂4.4 proxy-sensitivity caveat.\n")
     OUT_MD.write_text("".join(md), encoding="utf-8")
     print(f"[wrote] {OUT_MD}")
     print(f"[wrote] {OUT_COEF}")
@@ -267,3 +267,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

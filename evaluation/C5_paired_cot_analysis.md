@@ -6,7 +6,7 @@ Paired pilot using existing DeepSeek solves and the same DeepSeek judge for dire
 
 - Direct judged: `data\results\solve_pilot258_deepseek_direct_judged_by_deepseek.csv`
 - CoT-allowed judged: `data\results\solve_pilot258_deepseek_cot_judged_by_deepseek.csv`
-- Consensus d_c: `data\annotations\pilot258_v4a_qwen14b_merged.csv`
+- Consensus conservation-constraint load d_c: `data\annotations\pilot258_v4a_qwen14b_merged.csv`
 - Valid paired items: 249; excluded judge-error/unparseable items: 9
 
 ## Overall paired result

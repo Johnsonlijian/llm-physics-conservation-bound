@@ -1,4 +1,4 @@
-# T1 Main Bound - Working Derivation v0.1
+﻿# T1 Main Bound - Working Derivation v0.1
 
 Status: W2 draft. This is a defensible working theorem, not yet a final
 journal theorem. It separates algebraic consequences from assumptions that
@@ -6,7 +6,7 @@ must be justified or empirically stress-tested in W3-W6.
 
 ## Claim
 
-For a conservation-reasoning task with conservation dimension `d_c`, effective
+For a conservation-reasoning task with Conservation-constraint load `d_c`, effective
 context length `L_c`, effective inference-token budget `B_t`, and pretraining
 physics-sample share `rho_p`, we use the following capacity-limited working
 upper envelope for model accuracy:
@@ -66,7 +66,7 @@ important modeling assumption. It must be checked through residuals against
 difficulty measures.
 
 **A4 Saturating success response.** Accuracy follows a saturating response to
-effective information per conservation dimension:
+effective information per Conservation-constraint load:
 
 ```tex
 A \le 1-\exp(-I_{\mathrm{eff}}/d_c).
@@ -103,7 +103,7 @@ Substituting `z` gives the working envelope
 
 The envelope is intentionally minimal: it enforces saturation, monotonicity in
 physics coverage, inference budget, and context, and monotonic decrease in
-conservation dimension.
+Conservation-constraint load.
 
 ## Algebraic Properties To Audit
 
@@ -142,4 +142,5 @@ robustness across model families.
 | Defining `rho_p` from public corpus metadata | high | keep as measured/estimated covariate with interval |
 | Treating conservation constraints as dimension-normalized independent load | high | add residual and ablation tests against alternative difficulty metrics |
 | Architecture-independence | medium | test separate `kappa` per model family and compare AIC/BIC |
+
 

@@ -1,4 +1,4 @@
-"""Rule-based deterministic conservation-law floor extractor (ZERO LLM).
+﻿"""Rule-based deterministic conservation-law floor extractor (ZERO LLM).
 
 A second, fully independent d_c-validity leg. A transparent, auditable regex
 extractor maps physics text to conservation-law families using only explicit
@@ -6,7 +6,7 @@ lexical signals (collision -> momentum, "conservation of energy" -> energy,
 "angular momentum" -> angular_momentum, etc.). It involves no model inference of
 any kind, so it cannot share an LLM prior. We then ask: does this dumb extractor
 recover the same conservation structure as (a) the PhysReason benchmark authors'
-human `physical_theorem` labels and (b) our LLM-consensus d_c?
+human `physical_theorem` labels and (b) our LLM-Consensus conservation-constraint load d_c?
 
 Because the extractor only fires on explicit keywords it is a CONSERVATIVE LOWER
 BOUND on d_c. We run it in two modes:
@@ -299,8 +299,8 @@ def main():
     md = []
     md.append("# Rule-Based Deterministic d_c Floor (Zero-LLM Construct-Validity Leg)\n\n")
     md.append("A transparent regex extractor maps physics text to conservation-law "
-              "families using only explicit lexical signals (e.g. *collision* → momentum, "
-              "*conservation of energy* → energy, *angular momentum* → angular momentum). "
+              "families using only explicit lexical signals (e.g. *collision* 鈫?momentum, "
+              "*conservation of energy* 鈫?energy, *angular momentum* 鈫?angular momentum). "
               "It performs **no model inference** and therefore cannot share an LLM prior. "
               "Because it fires only on explicit keywords it is a **conservative lower bound** "
               "on d_c. The full rule table is in `code/scripts/31_rule_based_dc_floor.py`.\n\n")
@@ -310,15 +310,15 @@ def main():
               "human annotator's information set).\n\n")
 
     md.append("## Agreement with human benchmark-author theorem labels (n = %d)\n\n" % n_all)
-    md.append("| comparison | Spearman ρ | within ±1 | exact | mean diff | Pearson r |\n")
+    md.append("| comparison | Spearman 蟻 | within 卤1 | exact | mean diff | Pearson r |\n")
     md.append("|---|---:|---:|---:|---:|---:|\n")
     md.append(f"| rule_q (question only) vs human | {ag_rq_h['spearman']:.3f} | {ag_rq_h['within1']:.3f} | {ag_rq_h['exact']:.3f} | {ag_rq_h['mean_diff']:+.3f} | {ag_rq_h['pearson']:.3f} |\n")
     md.append(f"| rule_qs (q+solution) vs human | {ag_rqs_h['spearman']:.3f} | {ag_rqs_h['within1']:.3f} | {ag_rqs_h['exact']:.3f} | {ag_rqs_h['mean_diff']:+.3f} | {ag_rqs_h['pearson']:.3f} |\n\n")
-    md.append(f"Lower-bound property holds for {lb_rq:.1%} of items (rule_q ≤ human) and "
-              f"{lb_rqs:.1%} (rule_qs ≤ human), confirming the extractor behaves as a floor.\n\n")
+    md.append(f"Lower-bound property holds for {lb_rq:.1%} of items (rule_q 鈮?human) and "
+              f"{lb_rqs:.1%} (rule_qs 鈮?human), confirming the extractor behaves as a floor.\n\n")
 
-    md.append("## Per-family presence agreement, rule_qs vs human (Cohen κ, n = %d)\n\n" % n_all)
-    md.append("| family | Cohen κ | rule-positive | human-positive |\n|---|---:|---:|---:|\n")
+    md.append("## Per-family presence agreement, rule_qs vs human (Cohen 魏, n = %d)\n\n" % n_all)
+    md.append("| family | Cohen 魏 | rule-positive | human-positive |\n|---|---:|---:|---:|\n")
     for fam in FAMILIES:
         if fam in fam_kappa:
             k, na, nb = fam_kappa[fam]
@@ -327,23 +327,23 @@ def main():
 
     if three:
         md.append("## Three-way construct-validity subset (items with LLM d_c, n = %d)\n\n" % three["n"])
-        md.append("| comparison | Spearman ρ | within ±1 | mean diff |\n|---|---:|---:|---:|\n")
+        md.append("| comparison | Spearman 蟻 | within 卤1 | mean diff |\n|---|---:|---:|---:|\n")
         for key, lab in [("rule_q_vs_llm", "rule_q (question only) vs LLM"),
                          ("rule_qs_vs_llm", "rule_qs (q+sol) vs LLM"),
                          ("human_vs_llm", "human theorem vs LLM")]:
             a = three[key]
             md.append(f"| {lab} | {a['spearman']:.3f} | {a['within1']:.3f} | {a['mean_diff']:+.3f} |\n")
         md.append("\n**Reading (honest).** The two channels that share the human "
-                  "annotator's information set — the benchmark authors' theorem labels and "
-                  "the zero-LLM regex on question+solution — agree strongly on the full "
+                  "annotator's information set 鈥?the benchmark authors' theorem labels and "
+                  "the zero-LLM regex on question+solution 鈥?agree strongly on the full "
                   "n=%d sample (Spearman 0.79, within +/-1 = 99.8%%, energy Cohen kappa "
                   "0.84, near-zero bias) with a confirmed lower-bound property. On the "
-                  "%d-item three-way subset, the LLM-consensus d_c agrees with the human "
+                  "%d-item three-way subset, the LLM-Consensus conservation-constraint load d_c agrees with the human "
                   "labels at rho = %.2f and with the conservative regex floor at "
                   "rho = %.2f (both positive). The question-only regex is much weaker "
                   "(rho = %.2f vs LLM), indicating that for many items the required "
                   "conservation laws are not lexically explicit in the problem statement "
-                  "and only become visible on the solution path — a property of d_c we flag "
+                  "and only become visible on the solution path 鈥?a property of d_c we flag "
                   "rather than hide. The convergence of a transparent rule system, the "
                   "benchmark authors' human labels, and the LLM rater pool on the same "
                   "conservation structure is evidence that d_c is an objective item "
@@ -368,3 +368,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

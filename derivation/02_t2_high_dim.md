@@ -1,4 +1,4 @@
-# T2 Corollary - High Conservation Dimension
+﻿# T2 Corollary - High Conservation-constraint load
 
 Status: W2 draft.
 
@@ -45,7 +45,7 @@ near `x=0`,
 ## Interpretation
 
 The result is not a claim that all hard physics questions have large `d_c`.
-It only says that, inside this model, increasing conservation dimension is an
+It only says that, inside this model, increasing Conservation-constraint load is an
 accuracy-limiting axis. W4 must distinguish `d_c` from confounders such as
 reading difficulty, algebra length, topic familiarity, and answer format.
 
@@ -63,4 +63,5 @@ Expected sign: `eta_1 < 0`.
 Controls should include at minimum prompt length, answer type, topic, benchmark,
 and model size/tier. A raw negative correlation alone is not enough for a
 paper-grade claim.
+
 

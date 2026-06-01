@@ -104,7 +104,7 @@ def make_fig(summary_rows: list[dict], fit: dict, fig_path: Path) -> None:
     ax.axhline(0, color="0.35", linestyle="--", linewidth=1)
     for dc, ni, yi in zip(dcs, n, delta):
         ax.text(dc, yi + 0.018, f"n={int(ni)}", ha="center", va="bottom", fontsize=8)
-    ax.set_xlabel("Consensus d_c")
+    ax.set_xlabel(r"Consensus conservation-constraint load $d_c$")
     ax.set_ylabel("Paired accuracy gain: CoT - direct")
     ax.set_title("C5 paired direct-vs-CoT pilot (DeepSeek, same judge)")
     ax.set_xlim(0.7, max(dcs) + 0.3)
@@ -220,7 +220,7 @@ def main() -> None:
         "## Inputs\n\n",
         f"- Direct judged: `{args.direct.relative_to(PROJECT)}`\n",
         f"- CoT-allowed judged: `{args.cot.relative_to(PROJECT)}`\n",
-        f"- Consensus d_c: `{args.dc.relative_to(PROJECT)}`\n",
+        f"- Consensus conservation-constraint load d_c: `{args.dc.relative_to(PROJECT)}`\n",
         f"- Valid paired items: {n}; excluded judge-error/unparseable items: {len(excluded)}\n\n",
         "## Overall paired result\n\n",
         f"- Direct accuracy: {direct_acc:.3f}\n",
@@ -275,4 +275,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

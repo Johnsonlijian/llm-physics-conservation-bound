@@ -1,7 +1,7 @@
-"""W6 controlled analysis for conservation dimension (`d_c`).
+﻿"""W6 controlled analysis for conservation-constraint load (`d_c`).
 
 This script is offline-only. It merges existing pilot258 item metadata, V4a
-consensus d_c labels, and existing judged model outputs, then tests whether
+Consensus conservation-constraint load d_c labels, and existing judged model outputs, then tests whether
 `d_c` remains a negative accuracy predictor after local controls.
 """
 from __future__ import annotations
@@ -345,7 +345,7 @@ def make_figure(observed: list[dict], marginal: list[dict], fig_path: Path) -> N
         linewidth=2.4,
         label="Controlled marginal (M3)",
     )
-    ax.set_xlabel("Consensus d_c")
+    ax.set_xlabel(r"Consensus conservation-constraint load $d_c$")
     ax.set_ylabel("Accuracy / predicted accuracy")
     ax.set_title("W6 controlled d_c effect on pilot258")
     ax.set_ylim(-0.02, 0.32)
@@ -482,7 +482,7 @@ def main() -> None:
             f"- Main spec: `M3_topic_controls`.\n",
             f"- d_c beta = {m3['dc_beta']:.4f}; odds ratio per +1 d_c = {m3['dc_odds_ratio_per_unit']:.3f}.\n",
             f"- Cluster bootstrap 95% CI for beta by item = [{float(m3['dc_bootstrap_ci_low']):.4f}, {float(m3['dc_bootstrap_ci_high']):.4f}] (B={args.bootstrap}).\n",
-            "- Interpretation: negative beta means higher conservation dimension predicts lower judged correctness after local controls.\n\n",
+            "- Interpretation: negative beta means higher conservation-constraint load predicts lower judged correctness after local controls.\n\n",
             "## Controlled marginal accuracy\n\n",
             "| d_c | mean predicted accuracy (M3) |\n",
             "|---:|---:|\n",
