@@ -1,12 +1,12 @@
 # Reference Verification Notes
 
-Checked: 2026-06-01
+Checked: 2026-06-12
 
-Primary official sources used for the key mutable references:
+Primary official sources used for the key mutable references and policy-facing sources:
 
-- Nature Computational Science content types and submission guidance: https://www.nature.com/natcomputsci/content and https://www.nature.com/natcomputsci/submission-guidelines/preparing-your-submission
-- Nature Portfolio reporting standards: https://www.nature.com/natcomputsci/editorial-policies/reporting-standards
-- Nature Portfolio AI policy: https://www.nature.com/natcomputsci/editorial-policies/ai
+- Expert Systems with Applications guide for authors: https://www.sciencedirect.com/journal/expert-systems-with-applications/publish/guide-for-authors
+- Elsevier LaTeX instructions for authors: https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions
+- Elsevier artwork and media instructions: https://www.elsevier.com/about/policies-and-standards/author/artwork-and-media-instructions
 - Press et al., compositionality gap: https://arxiv.org/abs/2210.03350
 - Snell et al., test-time compute scaling: https://arxiv.org/abs/2408.03314
 - Hoffmann et al., Chinchilla: https://arxiv.org/abs/2203.15556
@@ -22,4 +22,4 @@ Primary official sources used for the key mutable references:
 - PhySense: https://arxiv.org/abs/2505.24823
 - ABench-Physics: https://arxiv.org/abs/2507.04766
 
-The final manuscript bibliography still needs journal-style formatting and duplicate consolidation, especially GPQA / GPQA-Diamond.
+The current ESWA submission bibliography has been checked against DOI/arXiv/publisher metadata where available. No obvious fabricated DOI or arXiv identifier was found in the local audit, but a final pre-publication reference gate should still re-check every entry after the reference list is frozen.

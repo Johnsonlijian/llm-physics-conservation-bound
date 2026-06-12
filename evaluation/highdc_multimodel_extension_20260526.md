@@ -1,8 +1,8 @@
 # High-d_c +100 Multi-Model Extension
 
-- Item-level CSV: `R:\NAS_DRIVE\IMUT\1-Research_Output\1-Papers\1_In_Preparation\2026-LLM-PhysicsConservation-Bound\evaluation\highdc_multimodel_items_20260526.csv`
-- Summary CSV: `R:\NAS_DRIVE\IMUT\1-Research_Output\1-Papers\1_In_Preparation\2026-LLM-PhysicsConservation-Bound\evaluation\highdc_multimodel_summary_20260526.csv`
-- Figure: `R:\NAS_DRIVE\IMUT\1-Research_Output\1-Papers\1_In_Preparation\2026-LLM-PhysicsConservation-Bound\figures\F9_highdc_multimodel_extension_20260526.png`
+- Item-level CSV: `evaluation/highdc_multimodel_items_20260526.csv`
+- Summary CSV: `evaluation/highdc_multimodel_summary_20260526.csv`
+- Figure: `figures/F9_highdc_multimodel_extension_20260526.png`
 - Scope: 100 newly mined high-d_c candidates, using DeepSeek single-rater prelabels for d_c. This is an extension diagnostic, not a human-gold replacement.
 
 ## Overall by solver

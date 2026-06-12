@@ -1,7 +1,7 @@
 """Figure 3 (hero composite): inference budget moves accuracy along the d_c axis.
 
 Five controlled interventions on the same d_c-heavy 50-item subset, fixed prompt,
-fixed judge. NCS-grade four-panel display item:
+fixed judge. Submission-grade four-panel display item:
   (a) Controlled max_tokens sweep in three model families (DeepSeek, Doubao-1.5-pro,
       Qwen-14B): accuracy vs budget step, fitted log-linear slopes, loose beta/e ref.
   (b) Paired direct-vs-CoT by d_c (DeepSeek): CoT lifts accuracy, concentrated at low d_c.

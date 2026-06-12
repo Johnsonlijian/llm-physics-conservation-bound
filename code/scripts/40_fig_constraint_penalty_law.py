@@ -1,6 +1,6 @@
 """Figure 1 (hero composite): The constraint-penalty law.
 
-Four-panel NCS-grade display item, all panels from released CSVs:
+Four-panel submission-grade display item, all panels from released CSVs:
   (a) Concept: constraint-satisfaction grading -> multiplicative Bernoulli gates
       -> log-odds linear in d_c (a drawn schematic, no data).
   (b) The law on data: per-model observed accuracy vs d_c (faint), the M3

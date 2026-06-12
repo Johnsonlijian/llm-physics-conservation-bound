@@ -1,6 +1,6 @@
 ﻿"""Figure 2 (hero composite): three independent channels validate d_c.
 
-Four-panel NCS-grade construct-validity display item, all panels from
+Four-panel submission-grade construct-validity display item, all panels from
 evaluation/rule_based_dc_floor_items_20260529.csv (+ the documented three-way
 Spearman values):
   (a) Convergence schematic: a deterministic zero-LLM regex, the PhysReason
