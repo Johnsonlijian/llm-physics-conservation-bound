@@ -492,7 +492,7 @@ def main() -> None:
         lines.append(f"| {row['d_c']} | {row['mean_predicted_accuracy']:.3f} |\n")
     lines.extend(
         [
-            "\n## Reviewer-risk notes\n\n",
+            "\n## Robustness notes\n\n",
             "- This is still a pilot panel, not the final 15 x 8 matrix.\n",
             "- Correctness labels are produced by a Qwen14B judge, so judge-family bias is not eliminated.\n",
             "- High-d_c bins remain sparse; controlled estimates for d_c>=4 are extrapolative.\n",

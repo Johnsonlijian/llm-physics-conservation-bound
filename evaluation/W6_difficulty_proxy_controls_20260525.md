@@ -1,6 +1,6 @@
 # W6 Difficulty-Proxy Control Analysis
 
-Offline reviewer-risk check. This analysis adds text-derived difficulty proxies to the W6 control ladder and makes no model/API calls.
+Offline robustness check. This analysis adds text-derived difficulty proxies to the W6 control ladder and makes no model/API calls.
 
 ## Inputs
 

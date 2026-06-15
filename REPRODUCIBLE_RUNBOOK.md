@@ -36,13 +36,19 @@ The `evaluation/` directory contains derived tables and reports that do not incl
 - `rule_based_dc_floor_20260529.md`
 - `C4_*`, `C5_*`, `reasoner_*` compute-intervention summaries
 
+The `figure_inputs/` directory contains the minimal derived CSV inputs needed
+for the npjAI formulation-mechanism and capability-gradient figures. Sanitised
+capability-gradient inputs retain only item IDs, `d_c` and correctness columns
+needed by the plotting script.
+
 ## Regenerate Figures
 
 ```bash
 python code/scripts/40_fig_constraint_penalty_law.py
 python code/scripts/41_fig_construct_validity.py
-python code/scripts/42_fig_testtime_compute.py
-python code/scripts/43_fig_graphical_abstract.py
+python code/scripts/70_fig3_formulation_mechanism.py
+python code/scripts/55_fig_mechanism_schematic.py
+python code/scripts/61_fig_capability_gradient.py
 ```
 
 Expected outputs are written to `figures/`.

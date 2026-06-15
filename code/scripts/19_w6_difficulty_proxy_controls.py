@@ -388,7 +388,7 @@ def main() -> None:
 
     lines = [
         "# W6 Difficulty-Proxy Control Analysis\n\n",
-        "Offline reviewer-risk check. This analysis adds text-derived difficulty proxies to the W6 control ladder and makes no model/API calls.\n\n",
+        "Offline robustness check. This analysis adds text-derived difficulty proxies to the W6 control ladder and makes no model/API calls.\n\n",
         "## Inputs\n\n",
         f"- W6 panel: `{args.panel.relative_to(PROJECT)}`\n",
         f"- Difficulty proxies: `{args.proxies.relative_to(PROJECT)}`\n",

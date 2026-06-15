@@ -1,7 +1,7 @@
-# Conservation-constraint load and LLM physics reasoning
+# Formulation bottleneck in LLM physics reasoning
 
 This repository is the public reproducibility package for the manuscript
-*Conservation-constraint load predicts failure in large language model physics reasoning*.
+*A formulation bottleneck governs physics reasoning in language models*.
 
 The project evaluates whether the number of independent scalar conservation constraints required by a physics problem, denoted `d_c`, predicts large language model failure after controlling for benchmark, topic, answer type, item length, model family and inference budget.
 
@@ -10,6 +10,9 @@ The project evaluates whether the number of independent scalar conservation cons
 - `code/scripts/`: deterministic analysis and figure-generation scripts.
 - `evaluation/`: derived aggregate tables, model/fit summaries and audit reports used by the manuscript figures.
 - `figures/`: generated display figures and cover-art candidate.
+- `figure_inputs/`: minimal derived CSV inputs for the npjAI formulation-mechanism
+  and capability-gradient figures. These files do not redistribute raw
+  third-party benchmark text.
 - `derivation/`: supporting theoretical notes for the constraint-penalty framing.
 - `DATASETS_AND_LINKS.csv`: source registry for third-party benchmarks and model references.
 - `REPRODUCIBLE_RUNBOOK.md`: local rerun instructions.
@@ -33,8 +36,9 @@ Regenerate the main figures from the included derived tables:
 ```bash
 python code/scripts/40_fig_constraint_penalty_law.py
 python code/scripts/41_fig_construct_validity.py
-python code/scripts/42_fig_testtime_compute.py
-python code/scripts/43_fig_graphical_abstract.py
+python code/scripts/70_fig3_formulation_mechanism.py
+python code/scripts/55_fig_mechanism_schematic.py
+python code/scripts/61_fig_capability_gradient.py
 ```
 
 More details are in `REPRODUCIBLE_RUNBOOK.md`.

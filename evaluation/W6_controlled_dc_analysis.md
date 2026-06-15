@@ -38,7 +38,7 @@ Offline-only analysis using existing pilot258 judged outputs. No model/API calls
 | 4 | 0.045 |
 | 5 | 0.032 |
 
-## Reviewer-risk notes
+## Robustness notes
 
 - This is still a pilot panel, not the final 15 x 8 matrix.
 - Correctness labels are produced by a Qwen14B judge, so judge-family bias is not eliminated.
