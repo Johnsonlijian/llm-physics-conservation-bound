@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated manuscript and this repository."
-title: "Conservation-constraint load predicts language-model physics-reasoning failure"
+title: "Conservation-constraint load predicts accuracy loss in language-model physics reasoning"
 authors:
   - family-names: Ren
     given-names: Lijian

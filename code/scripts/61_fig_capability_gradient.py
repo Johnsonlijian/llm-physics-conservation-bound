@@ -1,21 +1,13 @@
-"""Figure: the d_c penalty attenuates with model capability (the capability gradient).
+"""Generate Fig. 5 from the released 14-model capability-gradient table.
 
-For every model with a real-pilot arm, compute (i) overall judged accuracy (a capability proxy) and
-(ii) the univariate per-+1-d_c odds ratio with an item-bootstrap 95% CI. Plot OR vs overall accuracy.
-The story: weak/mid models pay a strong per-constraint penalty (OR ~0.69); the two frontier
-agent-interface arms sit near OR 1 -- they have largely escaped the penalty. Because this
-is measured on the SAME real items, a generic "hard text" confound cannot produce a penalty that is
-present for weak models and absent for frontier models; the d_c effect is capability-modulated, which
-is itself evidence that d_c is separable from generic text difficulty.
-
-Reads the 4-model controlled panel, the reasoner arm, and the two frontier real arms.
-Writes figures/F26_capability_gradient.{png,pdf}.
+The public package releases an aggregate leaderboard rather than raw model
+answers, because several source rows contain benchmark gold answers or model
+responses that should not be redistributed. The released table is sufficient to
+reproduce the submission-facing capability-gradient figure.
 """
 from __future__ import annotations
+
 import csv
-import math
-import random
-from collections import defaultdict
 from pathlib import Path
 
 import matplotlib
@@ -23,134 +15,156 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 PROJECT = Path(__file__).resolve().parents[2]
-RES = PROJECT / "data" / "results"
-if not RES.exists():
-    RES = PROJECT / "figure_inputs" / "capability_gradient"
-PANEL = PROJECT / "evaluation" / "w6_controlled_panel_with_logs.csv"
-REAS = RES / "solve_pilot258_deepseek_reasoner_judged_20260529.csv"
+CSV = PROJECT / "evaluation" / "R06_leaderboard_20260703.csv"
 OUT = PROJECT / "figures" / "F26_capability_gradient.png"
 
 
-def read_csv(p):
-    with open(p, encoding="utf-8-sig", newline="") as f:
+def read_rows(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
 
 
-def logit(xs, ys):
-    b0 = b1 = 0.0
-    for _ in range(60):
-        g0 = g1 = h00 = h01 = h11 = 0.0
-        for x, y in zip(xs, ys):
-            p = 1.0 / (1.0 + math.exp(-(b0 + b1 * x)))
-            w = max(p * (1 - p), 1e-9)
-            g0 += y - p; g1 += (y - p) * x
-            h00 += w; h01 += w * x; h11 += w * x * x
-        det = h00 * h11 - h01 * h01
-        if abs(det) < 1e-12:
-            break
-        b0 += (h11 * g0 - h01 * g1) / det
-        b1 += (-h01 * g0 + h00 * g1) / det
-    return b1
+def apply_style() -> None:
+    plt.rcParams.update({
+        "font.family": "sans-serif",
+        "font.sans-serif": ["Arial", "Helvetica", "DejaVu Sans"],
+        "pdf.fonttype": 42,
+        "ps.fonttype": 42,
+        "svg.fonttype": "none",
+        "font.size": 7.0,
+        "axes.labelsize": 7.5,
+        "xtick.labelsize": 6.5,
+        "ytick.labelsize": 6.5,
+        "legend.fontsize": 6.3,
+        "axes.linewidth": 0.65,
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "figure.facecolor": "white",
+        "savefig.facecolor": "white",
+    })
 
 
-def model_stats(pairs, seed=7):
-    """pairs: list of (d_c, is_correct). Returns (acc, OR, lo, hi)."""
-    xs = [d for d, _ in pairs]; ys = [c for _, c in pairs]
-    acc = sum(ys) / len(ys)
-    orr = math.exp(logit(xs, ys))
-    rng = random.Random(seed); ors = []
-    n = len(pairs)
-    for _ in range(2000):
-        idx = [rng.randrange(n) for _ in range(n)]
-        try:
-            ors.append(math.exp(logit([xs[i] for i in idx], [ys[i] for i in idx])))
-        except Exception:
-            pass
-    ors.sort()
-    return acc, orr, ors[int(0.025 * len(ors))], ors[int(0.975 * len(ors))]
+def save_figure(fig: plt.Figure, out: Path) -> None:
+    out.parent.mkdir(parents=True, exist_ok=True)
+    for ext in (".png", ".pdf", ".svg"):
+        fig.savefig(out.with_suffix(ext), bbox_inches="tight", dpi=300)
 
 
-def main():
-    dc_map = {}
-    for r in read_csv(PANEL):
-        dc_map.setdefault(r["item_id"], int(float(r["d_c"])))
+def main() -> None:
+    rows = read_rows(CSV)
+    rows.sort(key=lambda r: float(r["accuracy"]))
 
-    models = []  # (label, pairs, family)
-    # 4-model controlled panel
-    panel_rows = defaultdict(list)
-    nice = {"Qwen7B-Ollama": "Qwen2.5-7B", "Qwen14B": "Qwen-14B", "KimiK2": "Kimi-K2", "DeepSeekV3": "DeepSeek-chat"}
-    for r in read_csv(PANEL):
-        if str(r.get("is_correct", "")) in ("0", "1"):
-            panel_rows[r["model_label"]].append((int(float(r["d_c"])), int(r["is_correct"])))
-    for ml, pairs in panel_rows.items():
-        models.append((nice.get(ml, ml), pairs, "panel"))
-    # reasoner
-    if REAS.exists():
-        rp = []
-        for r in read_csv(REAS):
-            v = str(r.get("is_correct_judge", "")).strip()
-            if v in ("0", "1") and r["item_id"] in dc_map:
-                rp.append((dc_map[r["item_id"]], int(v)))
-        if rp:
-            models.append(("DeepSeek-reasoner", rp, "reasoner"))
-    # frontier real arms
-    for fname, label in [("realpilot_openai_codex_arm.csv", "OpenAI-Codex arm"),
-                         ("realpilot_anthropic_agent_arm.csv", "Anthropic-agent arm")]:
-        p = RES / fname
-        if p.exists():
-            pr = [(int(x["d_c"]), int(x["is_correct"])) for x in read_csv(p)
-                  if str(x.get("is_correct", "")) in ("0", "1")]
-            models.append((label, pr, "frontier"))
+    colors = {
+        "panel-4family": "#0072B2",
+        "panelx-new": "#009E73",
+        "reasoner": "#E69F00",
+        "frontier": "#D55E00",
+    }
+    markers = {"panel-4family": "o", "panelx-new": "s", "reasoner": "^", "frontier": "D"}
+    class_labels = {
+        "panel-4family": "original open panel",
+        "panelx-new": "extended API panel",
+        "reasoner": "reasoning model",
+        "frontier": "frontier interface arms",
+    }
+    short = {
+        "Qwen7B-Ollama": "Qwen-7B",
+        "Qwen14B": "Qwen-14B",
+        "KimiK2": "Kimi-K2",
+        "DeepSeekV3": "DeepSeek-chat",
+        "doubao-seed2": "doubao-seed2",
+        "DeepSeek-reasoner": "DeepSeek-reasoner",
+        "OpenAI-Codex arm": "OpenAI-Codex arm",
+        "deepseek-v4-pro": "DeepSeek-v4-pro",
+        "Anthropic-agent arm": "Anthropic-agent arm",
+    }
+    label_models = set(short)
+    offsets = {
+        "Qwen7B-Ollama": (9, 12),
+        "Qwen14B": (9, -18),
+        "KimiK2": (-39, -20),
+        "DeepSeekV3": (12, -7),
+        "doubao-seed2": (9, 10),
+        "DeepSeek-reasoner": (-52, -20),
+        "OpenAI-Codex arm": (-28, 23),
+        "deepseek-v4-pro": (10, -23),
+        "Anthropic-agent arm": (-50, 5),
+    }
 
-    stats = []
-    for label, pairs, fam in models:
-        acc, orr, lo, hi = model_stats(pairs)
-        stats.append((label, acc, orr, lo, hi, fam, len(pairs)))
-        print(f"  {label:20s} n={len(pairs):4d} acc={acc:.3f} OR={orr:.3f} CI[{lo:.3f},{hi:.3f}]")
-    stats.sort(key=lambda s: s[1])  # by accuracy
-
-    from pub_style import apply_style, save_figure, OKABE, GREY_DARK, GREY_MID, INK
     apply_style()
-    fig, ax = plt.subplots(figsize=(4.9, 3.4))
-    fig.subplots_adjust(left=0.12, right=0.97, top=0.96, bottom=0.15)
-    cmap = {"panel": OKABE["vermillion"], "reasoner": OKABE["orange"],
-            "frontier": OKABE["blue"]}
-    ax.axhline(1.0, ls="--", color=GREY_MID, lw=0.7, zorder=1)
-    ax.text(0.015, 1.008, "OR = 1 (no per-constraint penalty)",
-            transform=ax.get_yaxis_transform(), fontsize=5.8, color=GREY_MID,
-            va="bottom")
+    fig, ax = plt.subplots(figsize=(7.05, 4.35), dpi=300)
+    fig.subplots_adjust(left=0.10, right=0.985, top=0.965, bottom=0.16)
 
-    for label, acc, orr, lo, hi, fam, n in stats:
-        ax.errorbar(acc, orr, yerr=[[orr - lo], [hi - orr]], fmt="o", ms=4.6,
-                    color=cmap[fam], ecolor=cmap[fam], elinewidth=0.8,
-                    capsize=2.0, zorder=3)
-        dy = 0.055 if label not in ("DeepSeek-chat", "Kimi-K2") else -0.075
-        ha = "left" if acc < 0.5 else "right"
-        ax.annotate(f"{label}\n(OR {orr:.2f})", (acc, orr),
-                    textcoords="offset points",
-                    xytext=(6 if ha == "left" else -6, 8 if dy > 0 else -16),
-                    ha=ha, fontsize=5.6, color=INK)
+    xs = np.array([float(r["accuracy"]) for r in rows])
+    ys = np.array([float(r["OR_dc"]) for r in rows])
+    if len(rows) > 1:
+        coef = np.polyfit(xs, ys, 1)
+        xx = np.linspace(xs.min(), xs.max(), 100)
+        ax.plot(xx, coef[0] * xx + coef[1], color="#b8b8b8", lw=1.3, zorder=1)
 
-    # trend guide
-    accs = [s[1] for s in stats]; ors_ = [s[2] for s in stats]
-    z = np.polyfit(accs, ors_, 1)
-    xx = np.linspace(min(accs) - 0.02, max(accs) + 0.03, 50)
-    ax.plot(xx, np.polyval(z, xx), "-", color=GREY_MID, lw=0.8, alpha=0.7, zorder=2)
+    seen: set[str] = set()
+    for r in rows:
+        x = float(r["accuracy"])
+        y = float(r["OR_dc"])
+        lo = float(r["ci_lo"])
+        hi = float(r["ci_hi"])
+        cls = r["class"]
+        label = class_labels[cls] if cls not in seen else None
+        seen.add(cls)
+        ax.errorbar(
+            x,
+            y,
+            yerr=[[y - lo], [hi - y]],
+            fmt=markers.get(cls, "o"),
+            color=colors.get(cls, "#555555"),
+            ecolor=colors.get(cls, "#555555"),
+            elinewidth=0.9,
+            capsize=2.2,
+            capthick=0.9,
+            markersize=5.8,
+            markeredgecolor="white",
+            markeredgewidth=0.35,
+            label=label,
+            zorder=3,
+        )
+        if r["model"] in label_models:
+            dx, dy = offsets.get(r["model"], (6, 5))
+            ax.annotate(
+                short[r["model"]],
+                (x, y),
+                xytext=(dx, dy),
+                textcoords="offset points",
+                fontsize=5.9,
+                color="#303030",
+                ha="left" if dx >= 0 else "right",
+                va="center",
+                arrowprops=dict(arrowstyle="-", color="#bdbdbd", lw=0.45, shrinkA=2, shrinkB=3),
+                zorder=4,
+            )
 
-    ax.set_xlabel("model capability (overall judged accuracy, real pilot)")
-    ax.set_ylabel("per-constraint penalty (OR per $+1\\,d_c$)")
-    ax.set_ylim(0.41, 1.27)
-    ax.set_xlim(0.0, 0.68)
-    from matplotlib.lines import Line2D
-    leg = [Line2D([0], [0], marker="o", color="w", markerfacecolor=cmap[k],
-                  markersize=5, label=v)
-           for k, v in [("panel", "4-family panel"),
-                        ("reasoner", "reasoning model"),
-                        ("frontier", "frontier interface arms")]]
-    ax.legend(handles=leg, loc="lower right", title="model class")
+    ax.axhline(1.0, ls=(0, (4, 3)), lw=0.9, color="#6f6f6f", zorder=0)
+    ax.text(0.602, 1.015, "OR = 1: no per-constraint penalty", ha="right", va="bottom", fontsize=6.2, color="#595959")
+    ax.text(
+        0.022,
+        0.245,
+        "Spearman(accuracy, OR) = 0.70, all models\n0.89 among non-floor models (accuracy >= 0.15)",
+        ha="left",
+        va="bottom",
+        fontsize=6.2,
+        color="#303030",
+        bbox=dict(boxstyle="round,pad=0.25", facecolor="white", edgecolor="#d0d0d0", linewidth=0.6),
+    )
+    ax.set_xlim(0.0, 0.64)
+    ax.set_ylim(0.15, 1.28)
+    ax.set_xlabel("model capability (overall judged accuracy on the same 258 physics items)")
+    ax.set_ylabel("per-constraint odds ratio OR($d_c$), 95% CI")
+    ax.legend(loc="lower right", frameon=True, edgecolor="#d5d5d5", facecolor="white", framealpha=0.95)
+    ax.grid(axis="y", color="#e7e7e7", lw=0.45)
+    ax.grid(axis="x", color="#eeeeee", lw=0.35)
     save_figure(fig, OUT)
-    print(f"[wrote] {OUT}")
+    print(f"[wrote] {OUT} / .pdf / .svg ({len(rows)} models)")
 
 
 if __name__ == "__main__":

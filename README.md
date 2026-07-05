@@ -1,7 +1,7 @@
 # Conservation-constraint load and language-model physics reasoning
 
 This repository is the public reproducibility package for the manuscript
-*Conservation-constraint load predicts language-model physics-reasoning failure*.
+*Conservation-constraint load predicts accuracy loss in language-model physics reasoning*.
 
 The project evaluates whether the number of independent scalar conservation constraints required by a physics problem, denoted `d_c`, predicts large language model failure after controlling for benchmark, topic, answer type, item length, model family and inference budget.
 
@@ -10,9 +10,10 @@ The project evaluates whether the number of independent scalar conservation cons
 - `code/scripts/`: deterministic analysis and figure-generation scripts.
 - `evaluation/`: derived aggregate tables, model/fit summaries and audit reports used by the manuscript figures.
 - `figures/`: generated display figures and cover-art candidate.
-- `figure_inputs/`: minimal derived CSV inputs for the MLST formulation-mechanism
-  and capability-gradient figures. These files do not redistribute raw
-  third-party benchmark text.
+- `figure_inputs/`: minimal derived CSV inputs for the formulation-mechanism
+  figure. The capability-gradient figure uses the aggregate 14-model
+  leaderboard in `evaluation/R06_leaderboard_20260703.csv`. These files do not
+  redistribute raw third-party benchmark text.
 - `derivation/`: supporting theoretical notes for the constraint-penalty framing.
 - `DATASETS_AND_LINKS.csv`: source registry for third-party benchmarks and model references.
 - `REPRODUCIBLE_RUNBOOK.md`: local rerun instructions.

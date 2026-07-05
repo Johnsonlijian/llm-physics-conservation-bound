@@ -37,9 +37,10 @@ The `evaluation/` directory contains derived tables and reports that do not incl
 - `C4_*`, `C5_*`, `reasoner_*` compute-intervention summaries
 
 The `figure_inputs/` directory contains the minimal derived CSV inputs needed
-for the MLST formulation-mechanism and capability-gradient figures. Sanitised
-capability-gradient inputs retain only item IDs, `d_c` and correctness columns
-needed by the plotting script.
+for the formulation-mechanism figure. The capability-gradient figure is
+generated from `evaluation/R06_leaderboard_20260703.csv`, an aggregate
+14-model table with accuracy, per-constraint odds ratios and confidence
+intervals. Raw model answers and benchmark gold answers are not redistributed.
 
 ## Regenerate Figures
 

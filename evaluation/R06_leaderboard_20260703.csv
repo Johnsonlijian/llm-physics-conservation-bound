@@ -1,0 +1,15 @@
+model,class,n,accuracy,OR_dc,ci_lo,ci_hi,pct_neg
+Qwen7B-Ollama,panel-4family,258,0.058,0.669,0.332,1.047,0.960
+Qwen14B,panel-4family,258,0.089,0.517,0.258,0.793,1.000
+qwen-turbo,panelx-new,257,0.125,0.384,0.185,0.613,1.000
+qwen-plus,panelx-new,258,0.136,0.682,0.415,0.952,0.987
+qwen-max,panelx-new,257,0.136,0.684,0.394,1.003,0.975
+KimiK2,panel-4family,258,0.143,0.508,0.263,0.801,1.000
+qwen3-max,panelx-new,257,0.144,0.608,0.377,0.867,1.000
+doubao-1.5,panelx-new,255,0.200,0.656,0.434,0.893,0.995
+DeepSeekV3,panel-4family,258,0.209,0.569,0.360,0.796,1.000
+doubao-seed2,panelx-new,256,0.410,0.698,0.499,0.923,0.997
+DeepSeek-reasoner,reasoner,254,0.417,0.683,0.499,0.900,0.998
+OpenAI-Codex arm,frontier,245,0.445,0.851,0.647,1.115,0.876
+deepseek-v4-pro,panelx-new,258,0.473,0.712,0.525,0.921,0.996
+Anthropic-agent arm,frontier,257,0.595,0.945,0.733,1.231,0.661

@@ -2,11 +2,10 @@
 
 Checked: 2026-07-05
 
-Primary official sources used for the key mutable references and policy-facing sources:
+Primary sources used for key mutable references and policy-facing checks:
 
-- Machine Learning: Science and Technology author guidelines: https://publishingsupport.iopscience.iop.org/journals/machine-learning-science-and-technology/
-- IOP Publishing research data policy: https://publishingsupport.iopscience.iop.org/research-data/
-- IOP Publishing software and code policy: https://publishingsupport.iopscience.iop.org/software-and-code-policy/
+- Target-journal author instructions are checked in the active local submission package, not treated as part of this public reproducibility repository.
+- Elsevier open-access policy/pricing pages: https://www.elsevier.com/open-access/open-access-journals
 - Press et al., compositionality gap: https://arxiv.org/abs/2210.03350
 - Snell et al., test-time compute scaling: https://arxiv.org/abs/2408.03314
 - Hoffmann et al., Chinchilla: https://arxiv.org/abs/2203.15556
@@ -22,4 +21,4 @@ Primary official sources used for the key mutable references and policy-facing s
 - PhySense: https://arxiv.org/abs/2505.24823
 - ABench-Physics: https://arxiv.org/abs/2507.04766
 
-The current MLST submission bibliography has been checked against DOI/arXiv/publisher metadata where available. No obvious fabricated DOI or arXiv identifier was found in the local audit, but a final pre-publication reference gate should still re-check every entry after the reference list is frozen.
+The current submission bibliography has been checked against DOI/arXiv/publisher metadata where available. No obvious fabricated DOI or arXiv identifier was found in the local audit, but a final pre-publication reference gate should still re-check every entry after the reference list is frozen.
