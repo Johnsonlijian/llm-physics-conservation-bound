@@ -12,7 +12,7 @@ Spearman values):
   (d) Known-groups validity: mean d_c by PhysReason difficulty tier, human vs
       zero-LLM regex tracking the same monotone gradient.
 
-Output: figures/F14_construct_validity.{png,pdf}
+Output: figures/F14_construct_validity.{png,pdf,svg}
 """
 from __future__ import annotations
 import csv
@@ -36,8 +36,8 @@ C_REGEX = "#e08a1e"   # zero-LLM regex (warm)
 C_HUMAN = "#0b6fa4"   # human (blue)
 C_LLM = "#4a7c59"     # LLM (green)
 FAMILIES = ["momentum", "angular_momentum", "energy", "charge", "mass", "entropy"]
-FAM_LABEL = {"momentum": "momentum", "angular_momentum": "angular\nmomentum",
-             "energy": "energy", "charge": "charge", "mass": "mass", "entropy": "entropy"}
+FAM_LABEL = {"momentum": "mom.", "angular_momentum": "ang.\nmom.",
+             "energy": "energy", "charge": "charge", "mass": "mass", "entropy": "2nd-law"}
 DIFF = ["knowledge", "easy", "medium", "difficult"]
 
 
@@ -109,7 +109,7 @@ def draw_substitution(ax):
     *source* swapped from LLM-consensus to the deterministic zero-LLM regex."""
     by = {(r["source"], r["spec"]): r for r in read_csv_any(COEF)}
     specs = ["M0_dc_only", "M1_item_controls", "M2_model_controls", "M3_topic_controls"]
-    series = [("llm_consensus_dc", "LLM-Consensus conservation-constraint load \$d_c\$", C_HUMAN),
+    series = [("llm_consensus_dc", r"LLM-consensus conservation-constraint load $d_c$", C_HUMAN),
               ("regex_dc", "zero-LLM regex $d_c$", C_REGEX)]
     for si, (src, lab, col) in enumerate(series):
         off = 0.17 if si == 0 else -0.17
@@ -144,10 +144,12 @@ def draw_substitution(ax):
     ax.set_xlim(0.28, 1.18)
     ax.set_xlabel("odds ratio per $+1\\,d_c$  (Wald 95% CI)")
     ax.set_title("Swap in a zero-LLM $d_c$: the effect persists", pad=8)
-    ax.legend(loc="lower left", fontsize=7.6, handletextpad=0.4)
+    ax.legend(loc="lower left", fontsize=7.2, handletextpad=0.4,
+              frameon=True, framealpha=0.9, facecolor="white",
+              edgecolor="#dddddd")
     ax.grid(axis="y", alpha=0)
-    ax.text(0.5, -0.235, "identical estimator, controls and items 鈥?only the $d_c$ source changes;\n"
-            "regex M3 is negative in 94.8% of 9000 item bootstraps (搂4.6)",
+    ax.text(0.5, -0.235, "identical estimator, controls and items; only the $d_c$ source changes;\n"
+            "regex M3 is negative in 94.8% of 9000 item bootstraps (Section 4.6)",
             transform=ax.transAxes, ha="center", va="top", fontsize=6.7, color="#777", style="italic")
 
 
@@ -165,13 +167,24 @@ def draw_kappa(ax, rows):
     vals = [0 if np.isnan(k) else k for k in ks]
     ax.bar(x, vals, 0.64, color=cols, zorder=3, edgecolor="white", lw=0.6)
     ax.axhline(0.6, color=INK, ls="--", lw=0.9, alpha=0.6)
-    ax.text(len(FAMILIES) - 0.5, 0.62, "substantial", ha="right", va="bottom", fontsize=7, color="#666")
+    ax.annotate(r"$\kappa=0.6$", xy=(1.0, 0.6), xycoords=("axes fraction", "data"),
+                xytext=(-4, 6), textcoords="offset points",
+                ha="right", va="bottom", fontsize=6.8, color="#666",
+                bbox=dict(boxstyle="round,pad=0.12", facecolor="white",
+                          edgecolor="none", alpha=0.9))
     for xi, k, n in zip(x, ks, npos):
-        ax.text(xi, (0 if np.isnan(k) else k) + 0.025, "n/a" if np.isnan(k) else f"{k:.2f}",
-                ha="center", va="bottom", fontsize=7.5)
+        val = 0 if np.isnan(k) else k
+        if abs(val - 0.6) < 0.08:
+            ax.text(xi, max(val - 0.085, 0.08), "n/a" if np.isnan(k) else f"{k:.2f}",
+                    ha="center", va="top", fontsize=7.3, color="white", fontweight="bold")
+        else:
+            ax.text(xi, val + 0.035, "n/a" if np.isnan(k) else f"{k:.2f}",
+                    ha="center", va="bottom", fontsize=7.3,
+                    bbox=dict(boxstyle="round,pad=0.10", facecolor="white",
+                              edgecolor="none", alpha=0.85))
         ax.text(xi, -0.07, f"n={n}", ha="center", va="top", fontsize=6.3, color="#888")
     ax.set_xticks(x); ax.set_xticklabels([FAM_LABEL[f] for f in FAMILIES], fontsize=8)
-    ax.set_ylim(0, 1.0); ax.set_ylabel("Cohen $\\kappa$ (regex vs human)")
+    ax.set_ylim(-0.12, 1.08); ax.set_ylabel("Cohen $\\kappa$ (regex vs human)")
     ax.set_title("Per-family agreement", pad=8); ax.grid(axis="y", alpha=0.18)
 
 
@@ -213,7 +226,9 @@ def main():
     fig.suptitle("Construct validity of $d_c$ without human labels by us: a deterministic regex, the benchmark authors, and LLMs converge",
                  fontsize=12, fontweight="bold", y=0.985)
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(OUT); fig.savefig(OUT.with_suffix(".pdf"))
+    fig.savefig(OUT)
+    fig.savefig(OUT.with_suffix(".pdf"))
+    fig.savefig(OUT.with_suffix(".svg"))
     print(f"[fig] {OUT}")
 
 

@@ -82,8 +82,10 @@ def main():
     axA.set_ylabel("accuracy")
     axA.set_xticks([1, 2, 3, 4, 6])
     axA.set_ylim(-0.03, 1.05)
-    axA.legend(loc="center right", bbox_to_anchor=(1.0, 0.42), fontsize=5.2,
-               handlelength=1.3, labelspacing=0.25)
+    axA.legend(loc="lower right", bbox_to_anchor=(0.99, 0.44), fontsize=4.8,
+               handlelength=1.1, labelspacing=0.20, borderpad=0.20,
+               frameon=True, framealpha=0.88, facecolor="white",
+               edgecolor="#dddddd")
 
     # ---- (b) failure-stage composition by d_c ----
     fr = read_csv(RES / "structured_solve_chat_pilot258.csv")
@@ -143,7 +145,7 @@ def main():
         axC.text(xi, v + 0.04, f"{v:.2f}", ha="center", fontsize=5.6, color=c)
     axC.text(0.5, base - 0.085, "laws: null", ha="center", va="top",
              fontsize=5.6, color=GREY_DARK)
-    axC.text(3.0, (laws + s70) / 2 + 0.16, "equations:\nmonotone rescue",
+    axC.text(2.85, 0.62, "equations:\nmonotone rescue",
              ha="center", va="center", fontsize=5.6, color=OKABE["vermillion"])
     axC.set_xticks(x)
     axC.set_xticklabels(labels, fontsize=5.8)

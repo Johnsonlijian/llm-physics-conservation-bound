@@ -86,8 +86,9 @@ def panel_label(ax, s: str, dx: float = -0.14, dy: float = 1.02) -> None:
 
 
 def save_figure(fig, out_png: Path) -> None:
-    """Export PNG (600 dpi) and PDF (vector) side by side."""
+    """Export PNG (600 dpi), PDF and SVG side by side."""
     out_png = Path(out_png)
     out_png.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out_png)
     fig.savefig(out_png.with_suffix(".pdf"))
+    fig.savefig(out_png.with_suffix(".svg"))

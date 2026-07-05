@@ -15,7 +15,7 @@ Inputs (all in evaluation/):
   w6_observed_dc_bins.csv, w6_controlled_marginal_by_dc.csv,
   w6_logit_coefficients.csv, w6_proxy_control_coefficients_20260525.csv,
   W6_holdout_cv_20260525.csv
-Output: figures/F13_constraint_penalty_law.{png,pdf}
+Output: figures/F13_constraint_penalty_law.{png,pdf,svg}
 """
 from __future__ import annotations
 import csv
@@ -132,9 +132,11 @@ def draw_law(ax):
     xg = np.linspace(0, 5, 100)
     ax.plot(xg, 1 / (1 + np.exp(-(th0 + th1 * xg))), ls="--", lw=1.4, color=WARM,
             alpha=0.85, zorder=4, label="A1-predicted logistic")
-    ax.annotate(r"$\widehat{\mathrm{OR}}=0.69$ per $+1\,d_c$",
-                xy=(2, 1 / (1 + np.exp(-(th0 + th1 * 2)))), xytext=(2.55, 0.235),
+    ax.annotate(r"$\widehat{\mathrm{OR}}=0.69$" + "\n" + r"per $+1\,d_c$",
+                xy=(2, 1 / (1 + np.exp(-(th0 + th1 * 2)))), xytext=(3.25, 0.145),
                 fontsize=9, color=WARM,
+                bbox=dict(boxstyle="round,pad=0.2", facecolor="white",
+                          edgecolor="none", alpha=0.88),
                 arrowprops=dict(arrowstyle="-|>", color=WARM, lw=1.1))
     ax.set_xlabel(r"conservation-constraint load $d_c$")
     ax.set_ylabel("judged accuracy")
@@ -164,13 +166,20 @@ def draw_forest(ax):
         ax.plot([lo, hi], [y, y], color=col, lw=2.4 if main else 1.6, solid_capstyle="round", zorder=3)
         ax.plot([orv], [y], "o", ms=8 if main else 6, color=col, zorder=4,
                 markeredgecolor="white", markeredgewidth=1.0)
-        ax.text(hi + 0.02, y, f"{orv:.2f}", va="center", ha="left", fontsize=8, color=col)
+        ax.text(1.28, y, f"{orv:.2f}", va="center", ha="right", fontsize=8,
+                color=col, fontweight="bold" if main else "normal",
+                bbox=dict(boxstyle="round,pad=0.16", facecolor="white",
+                          edgecolor="none", alpha=0.92), zorder=6)
     ax.axvline(1.0, color=INK, lw=1.0, ls=":")
-    ax.text(1.0, len(rows) - 0.35, "no effect", rotation=90, va="top", ha="right", fontsize=7, color="#666")
+    ax.annotate("OR = 1", xy=(1.0, 1.0), xycoords=("data", "axes fraction"),
+                xytext=(4, 2), textcoords="offset points",
+                va="bottom", ha="left", fontsize=7, color="#666",
+                bbox=dict(boxstyle="round,pad=0.12", facecolor="white",
+                          edgecolor="none", alpha=0.9))
     ax.set_yticks(ys)
     ax.set_yticklabels([lab for lab, _ in rows], fontsize=8.2)
     ax.set_xlabel("odds ratio per $+1\\,d_c$  (Wald 95% CI)")
-    ax.set_xlim(0.3, 1.25)
+    ax.set_xlim(0.3, 1.32)
     ax.set_title("Penalty is stable as controls accrue", pad=8)
     ax.grid(axis="y", alpha=0)
     ax.text(0.0, -0.235, "M3 item-cluster bootstrap CI [0.44, 0.98]; proxy-expanded reaches 1.0 (see §4.4)",
@@ -207,6 +216,7 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUT)
     fig.savefig(OUT.with_suffix(".pdf"))
+    fig.savefig(OUT.with_suffix(".svg"))
     print(f"[fig] {OUT}")
 
 

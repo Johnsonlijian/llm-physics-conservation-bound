@@ -27,8 +27,8 @@ ITEMS = ROOT / "evaluation" / "rule_based_dc_floor_items_20260529.csv"
 OUT = ROOT / "figures" / "F12_rule_based_dc_floor.png"
 
 FAMILIES = ["momentum", "angular_momentum", "energy", "charge", "mass", "entropy"]
-FAM_LABEL = {"momentum": "momentum", "angular_momentum": "angular\nmomentum",
-             "energy": "energy", "charge": "charge", "mass": "mass", "entropy": "entropy"}
+FAM_LABEL = {"momentum": "mom.", "angular_momentum": "ang.\nmom.",
+             "energy": "energy", "charge": "charge", "mass": "mass", "entropy": "2nd-law"}
 DIFF_ORDER = ["knowledge", "easy", "medium", "difficult"]
 
 
@@ -91,18 +91,28 @@ def main():
     kplot = [0.0 if np.isnan(k) else k for k in kappas]
     ax2.bar(xb, kplot, 0.62, color=colors, zorder=3)
     ax2.axhline(0.6, color="k", ls="--", lw=1.0, alpha=0.6)
-    ax2.text(len(FAMILIES) - 0.5, 0.61, "substantial (κ=0.6)", ha="right", va="bottom",
-             fontsize=7.5, alpha=0.7)
+    ax2.annotate(r"$\kappa=0.6$", xy=(1.0, 0.6), xycoords=("axes fraction", "data"),
+                 xytext=(-4, 6), textcoords="offset points",
+                 ha="right", va="bottom", fontsize=7.0, color="#666",
+                 bbox=dict(boxstyle="round,pad=0.12", facecolor="white",
+                           edgecolor="none", alpha=0.9))
     ax2.set_xticks(xb)
     ax2.set_xticklabels([FAM_LABEL[f] for f in FAMILIES], fontsize=8.5)
     ax2.set_ylabel(r"Cohen $\kappa$  (zero-LLM regex vs human, presence per family)")
-    ax2.set_ylim(0, 1.0)
+    ax2.set_ylim(0, 1.08)
     ax2.set_title("(b) Per-family agreement: zero-LLM regex vs human (n=1200)\n"
                   "single-scalar families agree; rare charge/mass under-detected", fontsize=10.5)
     ax2.grid(True, axis="y", alpha=0.3)
     for xi, k in zip(xb, kappas):
         lab = "n/a" if np.isnan(k) else f"{k:.2f}"
-        ax2.text(xi, (0.0 if np.isnan(k) else k) + 0.02, lab, ha="center", va="bottom", fontsize=7.5)
+        val = 0.0 if np.isnan(k) else k
+        if abs(val - 0.6) < 0.08:
+            ax2.text(xi, max(val - 0.085, 0.08), lab, ha="center", va="top",
+                     fontsize=7.3, color="white", fontweight="bold")
+        else:
+            ax2.text(xi, val + 0.035, lab, ha="center", va="bottom", fontsize=7.3,
+                     bbox=dict(boxstyle="round,pad=0.10", facecolor="white",
+                               edgecolor="none", alpha=0.85))
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     plt.tight_layout()
