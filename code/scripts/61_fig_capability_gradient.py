@@ -3,7 +3,7 @@
 For every model with a real-pilot arm, compute (i) overall judged accuracy (a capability proxy) and
 (ii) the univariate per-+1-d_c odds ratio with an item-bootstrap 95% CI. Plot OR vs overall accuracy.
 The story: weak/mid models pay a strong per-constraint penalty (OR ~0.69); the two frontier
-models (Claude, GPT-5.5-Codex) sit near OR 1 -- they have largely escaped the penalty. Because this
+agent-interface arms sit near OR 1 -- they have largely escaped the penalty. Because this
 is measured on the SAME real items, a generic "hard text" confound cannot produce a penalty that is
 present for weak models and absent for frontier models; the d_c effect is capability-modulated, which
 is itself evidence that d_c is separable from generic text difficulty.
@@ -95,8 +95,8 @@ def main():
         if rp:
             models.append(("DeepSeek-reasoner", rp, "reasoner"))
     # frontier real arms
-    for fname, label in [("realpilot_solved_gpt-5.5-codex.csv", "GPT-5.5-Codex"),
-                         ("realpilot_solved_claude-opus-4.csv", "Claude Opus 4.8")]:
+    for fname, label in [("realpilot_openai_codex_arm.csv", "OpenAI-Codex arm"),
+                         ("realpilot_anthropic_agent_arm.csv", "Anthropic-agent arm")]:
         p = RES / fname
         if p.exists():
             pr = [(int(x["d_c"]), int(x["is_correct"])) for x in read_csv(p)
@@ -147,7 +147,7 @@ def main():
                   markersize=5, label=v)
            for k, v in [("panel", "4-family panel"),
                         ("reasoner", "reasoning model"),
-                        ("frontier", "frontier systems")]]
+                        ("frontier", "frontier interface arms")]]
     ax.legend(handles=leg, loc="lower right", title="model class")
     save_figure(fig, OUT)
     print(f"[wrote] {OUT}")

@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated manuscript and this repository."
-title: "A formulation bottleneck governs physics reasoning in language models"
+title: "Conservation-constraint load predicts language-model physics-reasoning failure"
 authors:
   - family-names: Ren
     given-names: Lijian
     orcid: "https://orcid.org/0000-0003-1629-4368"
 repository-code: "https://github.com/Johnsonlijian/llm-physics-conservation-bound"
-date-released: "2026-06-15"
+date-released: "2026-07-05"
 license: MIT
 keywords:
   - large language models

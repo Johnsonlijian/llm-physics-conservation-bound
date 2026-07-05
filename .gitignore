@@ -34,3 +34,10 @@ manuscript/
 outputs/
 tmp/
 scratch/
+submission_clean/
+writing_audit/
+literature_review/
+
+# Synology / workstation sync-conflict copies
+*_Conflict.*
+*_Conflict/

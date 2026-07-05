@@ -1,4 +1,4 @@
-"""Figure 3 (npj AI reframe): the bottleneck is FORMULATION.
+"""Figure 3: the bottleneck is FORMULATION.
 
 One money figure consolidating the elimination + positive evidence:
   (a) controlled synthetic, constructed d_c, exact grading -- solving is not the
@@ -41,8 +41,8 @@ SYN_MODELS = [
     ("synthetic_solved_dashscope-qwen-plus.csv", "Qwen-Plus", OKABE["orange"]),
     ("synthetic_solved_ark-doubao-seed-2-0-pro-260215.csv", "Doubao-2.0-pro", OKABE["green"]),
     ("synthetic_solved_deepseek-chat.csv", "DeepSeek-chat", OKABE["sky"]),
-    ("synthetic_solved_claude-opus-4.csv", "Claude Opus 4.8 (frontier)", OKABE["blue"]),
-    ("synthetic_solved_gpt-5.5-codex.csv", "GPT-5.5-Codex (frontier)", OKABE["purple"]),
+    ("synthetic_solved_anthropic_agent_arm.csv", "Anthropic-agent arm", OKABE["blue"]),
+    ("synthetic_solved_openai_codex_arm.csv", "OpenAI-Codex arm", OKABE["purple"]),
 ]
 
 

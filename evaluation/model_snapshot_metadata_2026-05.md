@@ -42,7 +42,7 @@ The two "did not evaluate" notes above are historical to the May pilot. Later so
 | Doubao-Seed-2.0-pro | `doubao-seed-2-0-pro-260215` | Volcano ARK API | solver-capable mechanism and expansion arms |
 | Qwen-Max / Qwen-Plus | `qwen-max` / `qwen-plus` | DashScope API | synthetic capability spectrum |
 | Qwen2.5-1.5B / 3B | `qwen2.5:1.5b` / `qwen2.5:3b` | Ollama (local) | weak end of the synthetic spectrum |
-| Claude Opus 4.8 | session model, via Anthropic Agent SDK, 2026-06 | Anthropic | frontier Western solver |
-| GPT-5.5-Codex | Codex desktop agent, 2026-06 | OpenAI | frontier Western solver and expansion arm |
+| Anthropic-agent arm | Anthropic agent interface, 2026-06 | Anthropic | frontier solver; as-run interface label, not a public model-version claim |
+| OpenAI-Codex arm | OpenAI Codex agent interface, 2026-06 | OpenAI | frontier solver and expansion arm; as-run interface label, not a public model-version claim |
 
-The June frontier runs are agent-app runs and therefore do not carry per-item token-budget control. The manuscript treats them as solver-interface arms rather than controlled compute arms.
+The June frontier runs are agent-app/interface runs and therefore do not carry per-item token-budget control. The manuscript treats them as solver-interface arms rather than controlled compute arms. The neutral manuscript labels `Anthropic-agent arm` and `OpenAI-Codex arm` are used to avoid implying externally verifiable public model-version names.

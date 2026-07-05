@@ -1,12 +1,12 @@
 # Reference Verification Notes
 
-Checked: 2026-06-12
+Checked: 2026-07-05
 
 Primary official sources used for the key mutable references and policy-facing sources:
 
-- Expert Systems with Applications guide for authors: https://www.sciencedirect.com/journal/expert-systems-with-applications/publish/guide-for-authors
-- Elsevier LaTeX instructions for authors: https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions
-- Elsevier artwork and media instructions: https://www.elsevier.com/about/policies-and-standards/author/artwork-and-media-instructions
+- Machine Learning: Science and Technology author guidelines: https://publishingsupport.iopscience.iop.org/journals/machine-learning-science-and-technology/
+- IOP Publishing research data policy: https://publishingsupport.iopscience.iop.org/research-data/
+- IOP Publishing software and code policy: https://publishingsupport.iopscience.iop.org/software-and-code-policy/
 - Press et al., compositionality gap: https://arxiv.org/abs/2210.03350
 - Snell et al., test-time compute scaling: https://arxiv.org/abs/2408.03314
 - Hoffmann et al., Chinchilla: https://arxiv.org/abs/2203.15556
@@ -22,4 +22,4 @@ Primary official sources used for the key mutable references and policy-facing s
 - PhySense: https://arxiv.org/abs/2505.24823
 - ABench-Physics: https://arxiv.org/abs/2507.04766
 
-The current ESWA submission bibliography has been checked against DOI/arXiv/publisher metadata where available. No obvious fabricated DOI or arXiv identifier was found in the local audit, but a final pre-publication reference gate should still re-check every entry after the reference list is frozen.
+The current MLST submission bibliography has been checked against DOI/arXiv/publisher metadata where available. No obvious fabricated DOI or arXiv identifier was found in the local audit, but a final pre-publication reference gate should still re-check every entry after the reference list is frozen.

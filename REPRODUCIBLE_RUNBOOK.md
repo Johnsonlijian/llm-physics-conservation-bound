@@ -37,7 +37,7 @@ The `evaluation/` directory contains derived tables and reports that do not incl
 - `C4_*`, `C5_*`, `reasoner_*` compute-intervention summaries
 
 The `figure_inputs/` directory contains the minimal derived CSV inputs needed
-for the npjAI formulation-mechanism and capability-gradient figures. Sanitised
+for the MLST formulation-mechanism and capability-gradient figures. Sanitised
 capability-gradient inputs retain only item IDs, `d_c` and correctness columns
 needed by the plotting script.
 
@@ -75,4 +75,4 @@ Scripts that require raw third-party benchmark files or model-response logs are 
 
 ## Reproducibility Boundary
 
-This package supports verification of the reported analyses through released code, derived tables, figure inputs and source registries. Exact reruns of provider-hosted LLM inference may vary because hosted model aliases, snapshots and safety filters can change; the observed API/model snapshot notes are recorded in `evaluation/model_snapshot_metadata_2026-05.md`.
+This package supports verification of the reported analyses through released code, derived tables, figure inputs and source registries. Exact reruns of provider-hosted LLM inference may vary because hosted model aliases, snapshots, agent interfaces and safety filters can change; the observed API/model snapshot notes and as-run frontier interface labels are recorded in `evaluation/model_snapshot_metadata_2026-05.md`.
