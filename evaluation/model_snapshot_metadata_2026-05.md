@@ -1,7 +1,7 @@
 # Model Snapshot Metadata — Pilot258 (May 2026)
 
 > Reproducibility record: what the API alias *actually* resolved to at run time.
-> Future readers and reviewers should treat the "alias" as a pointer that may have shifted.
+> Future users should treat the "alias" as a pointer that may have shifted.
 
 ## API model identifiers at the time of pilot258 runs
 
@@ -9,7 +9,7 @@
 |---|---|---|---|---|---|
 | Qwen-14B | `qwen2.5-14b-instruct-awq` | (local AWQ) | vLLM @ 5880 | 14 B dense | self-hosted; deterministic |
 | Qwen-7B | `qwen2.5:7b-instruct-q4_K_M` | (local GGUF) | Ollama @ 3070 | 7 B dense | self-hosted; deterministic |
-| **DeepSeek** | `deepseek-chat` | **`deepseek-v4-flash`** (verified 2026-05-23) | DeepSeek API | ~671 B MoE class (declared V3 era; alias migrated to V4) | **Reviewer-relevant**: not the original V3 weights from 2025; treat as "V4-flash served behind the chat alias in May 2026" |
+| **DeepSeek** | `deepseek-chat` | **`deepseek-v4-flash`** (verified 2026-05-23) | DeepSeek API | ~671 B MoE class (declared V3 era; alias migrated to V4) | Reproducibility note: not the original V3 weights from 2025; treat as "V4-flash served behind the chat alias in May 2026" |
 | Kimi-K2 | `kimi-k2-0905-preview` | (snapshot 2025-09-05) | Moonshot API | 1 T MoE | preview snapshot; pinned |
 | Kimi-v1-32k | `moonshot-v1-32k` | (legacy GA) | Moonshot API | ≪ K2 class | included as deliberate weak-rater contrast |
 

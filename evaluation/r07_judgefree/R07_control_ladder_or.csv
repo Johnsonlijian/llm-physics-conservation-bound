@@ -1,0 +1,8 @@
+specification,odds_ratio,ci_low,ci_high
+unadjusted,0.241,0.206,0.277
++ log length,0.201,0.159,0.237
++ digit count,0.211,0.169,0.249
++ verbosity,0.175,0.14,0.211
++ model FE,0.096,0.068,0.125
+parseable only,0.094,0.068,0.123
+measured d_c,0.069,0.037,0.117

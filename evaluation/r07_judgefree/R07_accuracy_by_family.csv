@@ -1,0 +1,10 @@
+,Qwen 3B,Qwen 7B,Qwen 14B,Qwen 32B
+descent,0.975,0.925,1.0,1.0
+descent + inelastic,0.3,1.0,0.925,1.0
+1D elastic,0.075,0.65,0.925,0.975
+descent + spin,0.025,0.225,0.7,0.875
+2D elastic equal,0.025,0.125,0.225,0.275
+2D elastic unequal,0.0,0.05,0.325,0.15
+descent + 2D elastic,0.0,0.225,0.05,0.4
+descent + elastic + spin,0.0,0.075,0.2,0.475
+1D elastic chain,0.0,0.1,0.125,0.575

@@ -42,6 +42,14 @@ generated from `evaluation/R06_leaderboard_20260703.csv`, an aggregate
 14-model table with accuracy, per-constraint odds ratios and confidence
 intervals. Raw model answers and benchmark gold answers are not redistributed.
 
+The `data/r07_judgefree/` directory contains the generated synthetic
+controlled-probe items and exact-graded derived outputs for the judge-free
+validation arm:
+
+- `R07_verdict.json`
+- `synthetic_graded_long.csv`
+- `synthetic_r1b_labeled.jsonl`
+
 ## Regenerate Figures
 
 ```bash
@@ -50,6 +58,7 @@ python code/scripts/41_fig_construct_validity.py
 python code/scripts/70_fig3_formulation_mechanism.py
 python code/scripts/55_fig_mechanism_schematic.py
 python code/scripts/61_fig_capability_gradient.py
+python code/scripts/80_r07_judgefree_figures.py
 ```
 
 Expected outputs are written to `figures/`.
@@ -66,6 +75,13 @@ python code/scripts/34_logodds_linearity_test.py --help
 ```
 
 Scripts that require raw third-party benchmark files or model-response logs are included for transparency but will need local source data reconstructed from the datasets listed in `DATASETS_AND_LINKS.csv`.
+
+The judge-free validation figures can be regenerated from the released
+generated/derived files without third-party benchmark data:
+
+```bash
+python code/scripts/80_r07_judgefree_figures.py
+```
 
 ## Reconstruct Raw Inputs
 

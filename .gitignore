@@ -20,11 +20,16 @@ credentials/
 tokens/
 
 # Raw third-party data and private/generated run logs are intentionally excluded.
-data/
+data/*
+!data/r07_judgefree/
+!data/r07_judgefree/R07_verdict.json
+!data/r07_judgefree/synthetic_graded_long.csv
+!data/r07_judgefree/synthetic_r1b_labeled.jsonl
 logs/
 backup/
 rounds/
 manuscript/
+derivation/
 *.zip
 *.tar
 *.tar.gz

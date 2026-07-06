@@ -1,7 +1,7 @@
 # Conservation-constraint load and language-model physics reasoning
 
 This repository is the public reproducibility package for the manuscript
-*Conservation-constraint load predicts accuracy loss in language-model physics reasoning*.
+*Conservation-constraint load predicts physics-reasoning failures in language models*.
 
 The project evaluates whether the number of independent scalar conservation constraints required by a physics problem, denoted `d_c`, predicts large language model failure after controlling for benchmark, topic, answer type, item length, model family and inference budget.
 
@@ -10,6 +10,9 @@ The project evaluates whether the number of independent scalar conservation cons
 - `code/scripts/`: deterministic analysis and figure-generation scripts.
 - `evaluation/`: derived aggregate tables, model/fit summaries and audit reports used by the manuscript figures.
 - `figures/`: generated display figures and cover-art candidate.
+- `data/r07_judgefree/`: generated synthetic controlled-probe items and
+  exact-graded derived outputs for the judge-free validation arm. These are
+  project-generated data, not third-party benchmark text.
 - `figure_inputs/`: minimal derived CSV inputs for the formulation-mechanism
   figure. The capability-gradient figure uses the aggregate 14-model
   leaderboard in `evaluation/R06_leaderboard_20260703.csv`. These files do not
@@ -40,6 +43,7 @@ python code/scripts/41_fig_construct_validity.py
 python code/scripts/70_fig3_formulation_mechanism.py
 python code/scripts/55_fig_mechanism_schematic.py
 python code/scripts/61_fig_capability_gradient.py
+python code/scripts/80_r07_judgefree_figures.py
 ```
 
 More details are in `REPRODUCIBLE_RUNBOOK.md`.

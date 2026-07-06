@@ -32,4 +32,4 @@
 ## Interpretation rule
 
 - Treat this as C4 evidence only if the same item subset, same model snapshot, and same judge route are used across all budgets.
-- If judge errors exceed 2% or the provider alias moves during the run, downgrade this sweep to a pilot diagnostic.
+- If judge errors exceed 2% or the provider alias moves during the run, report this sweep as a diagnostic rather than as controlled C4 evidence.

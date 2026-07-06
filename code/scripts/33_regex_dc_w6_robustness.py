@@ -1,8 +1,8 @@
-﻿"""W6 robustness under a ZERO-LLM d_c label (kills the 'LLM-labelling artefact' objection).
+﻿"""W6 robustness under a ZERO-LLM d_c label.
 
 The headline W6 result (d_c is a negative predictor of judged correctness after
 topic/source/model/token/length controls; OR = 0.687) uses an LLM-Consensus conservation-constraint load d_c.
-A reviewer can object that the negative effect is an artefact of LLM *labelling*.
+This script separates the observed accuracy effect from model-assisted d_c labelling.
 
 This script re-runs the *identical* M3 ridge logistic on the *identical* 1032-obs
 panel, changing only the SOURCE of the d_c variable: from LLM-consensus to a fully
@@ -205,8 +205,8 @@ def main():
         return f"[{d['lo']:.3f}, {d['hi']:.3f}]"
     md = []
     md.append("# W6 Robustness Under a Zero-LLM (Regex) d_c Label\n\n")
-    md.append("The headline W6 result uses an LLM-Consensus conservation-constraint load d_c, inviting the objection that "
-              "the negative d_c effect is an artefact of LLM *labelling*. Here we re-run the "
+    md.append("The headline W6 result uses an LLM-consensus conservation-constraint load d_c. "
+              "To separate the accuracy effect from model-assisted d_c labelling, we re-run the "
               "**identical** M3 ridge logistic on the **identical** 1032-observation panel, "
               "swapping only the *source* of the d_c variable from LLM-consensus to a fully "
               "deterministic regex extractor (`rule_qs` mode of `code/scripts/31_rule_based_dc_floor.py`, "
