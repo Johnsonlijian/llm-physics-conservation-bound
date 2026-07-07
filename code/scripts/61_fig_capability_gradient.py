@@ -67,7 +67,7 @@ def main() -> None:
         "panel-4family": "original open panel",
         "panelx-new": "extended API panel",
         "reasoner": "reasoning model",
-        "frontier": "frontier interface arms",
+        "frontier": "agent-interface arms",
     }
     short = {
         "Qwen7B-Ollama": "Qwen-7B",

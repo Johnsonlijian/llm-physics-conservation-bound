@@ -93,4 +93,4 @@ python code/scripts/80_r07_judgefree_figures.py
 
 ## Reproducibility Boundary
 
-This package supports verification of the reported analyses through released code, derived tables, figure inputs and source registries. Exact reruns of provider-hosted LLM inference may vary because hosted model aliases, snapshots, agent interfaces and safety filters can change; the observed API/model snapshot notes and as-run frontier interface labels are recorded in `evaluation/model_snapshot_metadata_2026-05.md`.
+This package supports verification of the reported analyses through released code, derived tables, figure inputs and source registries. Exact reruns of provider-hosted LLM inference may vary because hosted model aliases, snapshots, agent interfaces and safety filters can change; the observed API/model snapshot notes and as-run agent-interface labels are recorded in `evaluation/model_snapshot_metadata_2026-05.md`.

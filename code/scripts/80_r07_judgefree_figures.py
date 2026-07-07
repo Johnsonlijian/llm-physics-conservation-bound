@@ -65,17 +65,18 @@ OR_LADDER = [
 ]
 
 
-def save_all(fig: plt.Figure, out: Path) -> None:
+def save_all(fig: plt.Figure, out: Path, *, tight: bool = True) -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(out, bbox_inches="tight")
-    fig.savefig(out.with_suffix(".svg"), bbox_inches="tight")
-    fig.savefig(out.with_suffix(".png"), dpi=220, bbox_inches="tight")
+    save_kwargs = {"bbox_inches": "tight"} if tight else {}
+    fig.savefig(out, **save_kwargs)
+    fig.savefig(out.with_suffix(".svg"), **save_kwargs)
+    fig.savefig(out.with_suffix(".png"), dpi=220, **save_kwargs)
     plt.close(fig)
 
 
 def fig6a(df: pd.DataFrame, out: Path) -> None:
     acc = df.groupby(["arm", "intended_dc"])["correct"].mean().unstack()
-    fig, ax = plt.subplots(figsize=(5.5, 3.4))
+    fig, ax = plt.subplots(figsize=(5.8, 3.55))
     for arm in ARM_ORDER:
         row = acc.loc[arm]
         ax.plot(row.index, row.values, marker="o", lw=2.0, ms=5,
@@ -87,7 +88,8 @@ def fig6a(df: pd.DataFrame, out: Path) -> None:
     ax.set_ylim(-0.02, 1.04)
     ax.grid(axis="y", alpha=0.25)
     ax.legend(frameon=False, ncol=2, fontsize=8, loc="upper right")
-    save_all(fig, out)
+    fig.subplots_adjust(left=0.24, right=0.97, bottom=0.20, top=0.84)
+    save_all(fig, out, tight=False)
 
 
 def fig6b(out: Path) -> None:
@@ -96,19 +98,20 @@ def fig6b(out: Path) -> None:
     lo = np.array([r[2] for r in OR_LADDER])
     hi = np.array([r[3] for r in OR_LADDER])
     y = np.arange(len(labels))[::-1]
-    fig, ax = plt.subplots(figsize=(5.5, 3.35))
+    fig, ax = plt.subplots(figsize=(5.8, 3.55))
     ax.errorbar(ors, y, xerr=[ors - lo, hi - ors], fmt="o", color="#0072B2",
                 ecolor="#0072B2", elinewidth=1.8, capsize=3, markersize=5)
-    for x, yy in zip(ors, y):
-        ax.text(x + 0.018, yy, f"{x:.3f}", va="center", fontsize=8)
+    for x, x_hi, yy in zip(ors, hi, y):
+        ax.text(x_hi + 0.012, yy, f"{x:.3f}", va="center", fontsize=8)
     ax.axvline(1.0, color="#333333", ls=":", lw=1.0)
     ax.set_yticks(y)
     ax.set_yticklabels(labels, fontsize=8.2)
-    ax.set_xlim(0.0, 0.34)
+    ax.set_xlim(0.0, 0.36)
     ax.set_xlabel(r"Odds ratio per +1 $d_c$")
     ax.set_title("Control-adjusted exact-graded penalty", fontsize=10.5, pad=8)
     ax.grid(axis="x", alpha=0.22)
-    save_all(fig, out)
+    fig.subplots_adjust(left=0.24, right=0.97, bottom=0.20, top=0.84)
+    save_all(fig, out, tight=False)
 
 
 def fig6c(df: pd.DataFrame, out: Path) -> None:
