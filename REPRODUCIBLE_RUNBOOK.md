@@ -43,8 +43,9 @@ generated from `evaluation/R06_leaderboard_20260703.csv`, an aggregate
 intervals. Raw model answers and benchmark gold answers are not redistributed.
 
 The `data/r07_judgefree/` directory contains the generated synthetic
-controlled-probe items and exact-graded derived outputs for the judge-free
-validation arm:
+controlled-probe items and exact-graded derived outputs for the deterministic
+validation arm. The directory name is retained as a legacy path for
+reproducibility:
 
 - `R07_verdict.json`
 - `synthetic_graded_long.csv`
@@ -76,7 +77,7 @@ python code/scripts/34_logodds_linearity_test.py --help
 
 Scripts that require raw third-party benchmark files or model-response logs are included for transparency but will need local source data reconstructed from the datasets listed in `DATASETS_AND_LINKS.csv`.
 
-The judge-free validation figures can be regenerated from the released
+The exact-graded validation figures can be regenerated from the released
 generated/derived files without third-party benchmark data:
 
 ```bash

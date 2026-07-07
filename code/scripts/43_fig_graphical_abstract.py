@@ -74,7 +74,7 @@ def main():
     ax.text(
         50,
         95,
-        "Conservation-constraint load $d_c$ predicts physics-reasoning failures",
+        "Conservation-constraint load $d_c$ predicts failures in physics reasoning",
         ha="center",
         va="center",
         fontsize=14.5,

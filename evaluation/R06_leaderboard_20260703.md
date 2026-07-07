@@ -19,6 +19,6 @@ Date 2026-07-03. Fourteen models on the 258-item pilot, LLM-consensus d_c, fixed
 | deepseek-v4-pro | panelx-new | 258 | 0.473 | 0.712 | [0.525, 0.921] | 100% |
 | Anthropic-agent arm | frontier | 257 | 0.595 | 0.945 | [0.733, 1.231] | 66% |
 
-**Capability gradient:** Spearman(accuracy, OR) = 0.697 across all 14 models (= 0.893 among non-floor models, accuracy >= 0.15, where OR is stably estimated); OR range 0.38-0.95. The per-constraint penalty shrinks toward frontier capability, so the instrument tracks formulation competence.
+**Capability gradient:** Spearman(accuracy, OR) = 0.697 across all 14 models (= 0.893 among non-floor models, accuracy >= 0.15, where OR is stably estimated); OR range 0.38-0.95. The per-constraint penalty shrinks toward frontier capability, so the instrument tracks equation formulation in multi-constraint physics problems.
 
 Floor caveat: models below about 0.15 accuracy have unstable OR estimates because there are few correct items. The gradient is therefore reported both across all models and among non-floor models.

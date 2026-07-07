@@ -1,4 +1,4 @@
-"""Generate the R07 judge-free controlled-probe figures.
+"""Generate the R07 exact-graded controlled-probe figures.
 
 The script uses only released derived data:
   data/r07_judgefree/synthetic_graded_long.csv
@@ -106,7 +106,7 @@ def fig6b(out: Path) -> None:
     ax.set_yticklabels(labels, fontsize=8.2)
     ax.set_xlim(0.0, 0.34)
     ax.set_xlabel(r"Odds ratio per +1 $d_c$")
-    ax.set_title("Control-adjusted judge-free penalty", fontsize=10.5, pad=8)
+    ax.set_title("Control-adjusted exact-graded penalty", fontsize=10.5, pad=8)
     ax.grid(axis="x", alpha=0.22)
     save_all(fig, out)
 

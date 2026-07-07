@@ -1,7 +1,7 @@
 # Conservation-constraint load and language-model physics reasoning
 
 This repository is the public reproducibility package for the manuscript
-*Conservation-constraint load predicts physics-reasoning failures in language models*.
+*Conservation-constraint load predicts language-model failures in physics reasoning*.
 
 The project evaluates whether the number of independent scalar conservation constraints required by a physics problem, denoted `d_c`, predicts large language model failure after controlling for benchmark, topic, answer type, item length, model family and inference budget.
 
@@ -11,7 +11,8 @@ The project evaluates whether the number of independent scalar conservation cons
 - `evaluation/`: derived aggregate tables, model/fit summaries and audit reports used by the manuscript figures.
 - `figures/`: generated display figures and cover-art candidate.
 - `data/r07_judgefree/`: generated synthetic controlled-probe items and
-  exact-graded derived outputs for the judge-free validation arm. These are
+  exact-graded derived outputs for the deterministic validation arm. The
+  legacy directory name is retained for reproducibility; these are
   project-generated data, not third-party benchmark text.
 - `figure_inputs/`: minimal derived CSV inputs for the formulation-mechanism
   figure. The capability-gradient figure uses the aggregate 14-model
